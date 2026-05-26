@@ -1,0 +1,160 @@
+% hxnotebook.sty - 环境卫生学复习笔记专用样式
+\ProvidesPackage{hxnotebook}
+
+% 页边距
+\RequirePackage[top=2cm, bottom=2cm, left=2.2cm, right=2.2cm]{geometry}
+
+% 必备宏包
+\RequirePackage{xcolor}
+\RequirePackage{tikz}
+\RequirePackage{titlesec}
+\RequirePackage{fancyhdr}
+\RequirePackage{enumitem}
+\RequirePackage{booktabs}
+\RequirePackage{tabularx}
+\RequirePackage{colortbl}
+\RequirePackage{amsmath,amssymb}
+\RequirePackage{float}
+\RequirePackage{fancyvrb}
+\RequirePackage{multicol}
+\RequirePackage{multirow}
+\RequirePackage{makecell}
+\RequirePackage[most]{tcolorbox}
+\RequirePackage{background}
+\usetikzlibrary{decorations.pathmorphing}
+
+% 全局紧凑
+\linespread{1.05}
+\setlist{noitemsep, topsep=2pt, partopsep=0pt, parsep=0pt, leftmargin=*}
+
+% 水印
+\newif\ifTitlePage
+\TitlePagetrue
+
+% 颜色
+\definecolor{mainblue}{RGB}{0,82,136}
+\definecolor{lightblue}{RGB}{230,240,250}
+\definecolor{keyred}{RGB}{180,30,30}
+\definecolor{darkgreen}{RGB}{0,100,50}
+\definecolor{orange}{RGB}{220,120,0}
+\definecolor{graybg}{RGB}{248,248,248}
+\definecolor{chapterbg}{RGB}{0,82,136}
+\definecolor{highlight}{RGB}{255,255,200}
+\definecolor{warnbg}{RGB}{255,240,240}
+
+\backgroundsetup{
+  contents={\ifTitlePage\else\textcolor{gray!50}{\Huge\textit{By greedyCat}}\fi},
+  placement=center, scale=1.5, angle=45, opacity=0.10, color=black
+}
+
+% 章节格式
+\titleformat{\chapter}[display]
+  {\normalfont\Huge\bfseries\color{white}}
+  {\color{white}\fontsize{60}{60}\selectfont\thechapter}
+  {0pt}{\Huge}
+\titlespacing*{\chapter}{0pt}{-20pt}{20pt}
+
+\titleformat{\section}
+  {\normalfont\Large\bfseries\color{mainblue}}
+  {\thesection}{1em}{}[\vspace{-6pt}\rule{\textwidth}{0.5pt}]
+\titlespacing*{\section}{0pt}{10pt}{5pt}
+
+\titleformat{\subsection}
+  {\normalfont\large\bfseries\color{mainblue!80}}
+  {\thesubsection}{1em}{}
+\titlespacing*{\subsection}{0pt}{6pt}{3pt}
+
+% 页眉页脚
+\setlength{\headheight}{15pt}
+\pagestyle{fancy}
+\fancyhf{}
+\fancyhead[L]{\small\color{mainblue}\leftmark}
+\fancyhead[R]{\small\color{mainblue}\textbf{Agent is all you need!}}
+\fancyfoot[C]{\small\thepage}
+\renewcommand{\headrulewidth}{0.4pt}
+\renewcommand{\footrulewidth}{0.2pt}
+
+% 文本框
+\newtcolorbox{keybox}{
+    colback=warnbg,colframe=keyred,boxrule=1.2pt,arc=3pt,
+    left=4pt,right=4pt,top=3pt,bottom=3pt,
+    before upper={\textbf{\color{keyred}!\ 重点掌握：}},
+    before={\vspace{2pt}},after={\vspace{2pt}},breakable
+}
+\newtcolorbox{defbox}{
+    colback=lightblue,colframe=mainblue,boxrule=0.8pt,arc=3pt,
+    left=4pt,right=4pt,top=3pt,bottom=3pt,
+    before upper={\textbf{\color{mainblue}[概念]\ 概念释义：}},
+    before={\vspace{2pt}},after={\vspace{2pt}},breakable
+}
+\newtcolorbox{tipbox}{
+    colback=graybg,colframe=darkgreen,boxrule=0.8pt,arc=3pt,
+    left=4pt,right=4pt,top=3pt,bottom=3pt,
+    before upper={\textbf{\color{darkgreen}[提示]\ 要点提示：}},
+    before={\vspace{2pt}},after={\vspace{2pt}},breakable
+}
+\newtcolorbox{exambox}{
+    colback=yellow!5,colframe=orange,boxrule=0.8pt,arc=3pt,
+    left=4pt,right=4pt,top=3pt,bottom=3pt,
+    before upper={\textbf{\color{orange}[考点]\ 常见考点：}},
+    before={\vspace{2pt}},after={\vspace{2pt}},breakable
+}
+
+\newcommand{\chapterintro}[1]{%
+    \begin{tcolorbox}[colback=mainblue!5,colframe=mainblue,boxrule=0.5pt,arc=3pt,left=6pt,right=6pt,top=3pt,bottom=3pt,before={\vspace{2pt}},after={\vspace{4pt}},breakable]
+    \textbf{本章导览：}#1\end{tcolorbox}
+}
+
+% 自定义命令
+\newcommand{\keyword}[1]{\textbf{\color{keyred}#1}}
+\newcommand{\imp}[1]{\textbf{\color{mainblue}#1}}
+\raggedbottom
+\newcommand{\seeref}[1]{（详见第\ref{#1}节）}
+
+% ===================== 封面：带渐变蓝色 + 4参数传入 =====================
+\newcommand{\makecover}[5]{
+  \begin{titlepage}
+  \newgeometry{top=2cm, bottom=2cm, left=2.5cm, right=2.5cm}
+  \TitlePagetrue
+
+  \begin{tikzpicture}[remember picture, overlay]
+      % 封面渐变背景（你要的蓝色！）
+      \shade[top color=mainblue!90, bottom color=mainblue!40] (current page.north west) rectangle (current page.south east);
+      % 左侧深蓝色条
+      \fill[mainblue!95] (current page.north west) rectangle ([xshift=2.5cm]current page.south west);
+      % 装饰白点
+      \foreach \x in {1,2,...,10} {
+          \fill[white, opacity=0.03] (current page.north west) ++(rand*20, rand*25) circle (2+rand*2);
+      }
+      % 装饰线
+      \draw[white, line width=1.5pt, opacity=0.6] ([yshift=-2cm]current page.north west) -- ([yshift=-2cm]current page.north east);
+      \draw[white, line width=1.5pt, opacity=0.6] ([yshift=3cm]current page.south west) -- ([yshift=3cm]current page.south east);
+      \node[rotate=90, anchor=south, text=white, opacity=0.5, font=\sffamily\bfseries\fontsize{18}{22}\selectfont] at ([xshift=1.25cm, yshift=4cm]current page.west) {PREVENTIVE MEDICINE};
+  \end{tikzpicture}
+
+  \vspace*{4cm}
+  \begin{center}
+      {\fontsize{52}{62}\selectfont\bfseries\color{white}#1\\[15pt]}
+
+      \begin{tikzpicture}
+          \draw[white, line width=0.8pt, opacity=0.7] (-6,0) -- (6,0);
+          \fill[white, opacity=0.8] (0,0) circle (4pt);
+          \draw[white, line width=0.8pt, opacity=0.4] (-4,0.15) -- (4,0.15);
+      \end{tikzpicture}\\[25pt]
+
+      {\fontsize{20}{26}\selectfont\color{white!75}#2}\\[15pt]
+      {\fontsize{14}{18}\selectfont\color{white!60}#3}\\[60pt]
+
+      {\large\color{white!70}#4\\[30pt]}
+
+      \begin{tikzpicture}
+          \draw[white, line width=0.8pt, opacity=0.5] (-4,0) -- (4,0);
+          \fill[white, opacity=0.6] (0,0) circle (3pt);
+      \end{tikzpicture}\\[25pt]
+
+      {\fontsize{22}{28}\selectfont\color{white!90}\textit{#5}}
+  \end{center}
+  \restoregeometry
+  \end{titlepage}
+  \TitlePagefalse
+}
