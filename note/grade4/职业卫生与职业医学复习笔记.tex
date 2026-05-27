@@ -1,0 +1,2995 @@
+\makeatletter
+\def\input@path{{../}{./}}
+\makeatother
+\documentclass[10pt,a4paper,oneside]{ctexbook}
+\RequirePackage{xcolor}
+\definecolor{main}{RGB}{160,100,20}
+\definecolor{light}{RGB}{255,248,230}
+
+\usepackage{hxnotebook}
+
+\begin{document}
+
+% cover
+\makecover
+  {职业卫生与\\职业医学}       
+  {华西大纲·PPT·历年真题整理}    
+  {复习笔记}                  
+  {\today}                 
+  {greedyCat}                  
+
+% ===== Table of Contents =====
+\tableofcontents
+
+% ===== 使用说明 =====
+\chapter*{使用说明}
+\addcontentsline{toc}{chapter}{使用说明}
+
+\begin{itemize}[leftmargin=*]
+    \item 本复习笔记严格依照《职业卫生与职业医学》教学大纲（2026春）章节编排，重点内容与大纲标注的掌握（双下划线）和熟悉（单下划线）内容一致。
+    \item 教学大纲句尾标注"*"的内容为教学难点，本笔记已在相关知识点处予以标注和详解。
+    \item 主要参考：职业ppt汇总.pdf（本学年PPT核心内容）、教师授课PPT（ppt文件夹）、往届复习参考资料。
+    \item 各章末附有复习题（名词解释、简答题、选择题等），题目来源包括教师PPT中的练习题和根据大纲重难点设计的复习题。
+    \item \textbf{\color{keyred}红色框}标识的内容为必须重点掌握的核心知识。
+    \item \textbf{\color{main}主题框}为概念释义，帮助理解专业术语。
+    \item 建议结合教师授课PPT中的标红内容重点复习。
+\end{itemize}
+
+\vspace{1cm}
+\begin{center}
+\begin{tcolorbox}[colback=yellow!10, colframe=yellow!80!black, boxrule=0.8pt, arc=6pt, width=0.85\textwidth, breakable]
+\textbf{考核形式提示：}
+\begin{itemize}[leftmargin=*]
+    \item 平时考核成绩 50\% + 期末理论考核 50\%
+    \item 考试范围：以教学大纲和教师课堂讲授内容为主
+    \item 大纲下划双线内容 = 掌握内容（本笔记已用红色框标注）
+    \item 大纲下划单线内容 = 熟悉内容
+    \item 大纲句尾"*" = 教学难点
+\end{itemize}
+\end{tcolorbox}
+\end{center}
+
+\newpage
+
+% =====================================================================
+%  CHAPTER 1: 绪论
+% =====================================================================
+\chapter{绪论}
+\setcounter{chapter}{1}
+\chapterintro{
+掌握职业卫生与职业医学的概念和定义；理解劳动与健康的关系；掌握职业有害因素（生产过程、劳动过程、生产环境）及其来源；掌握职业病的特点、诊断原则和三级预防原则；熟悉工作有关疾病和工伤的概念；了解职业卫生服务的基本内容。
+}
+
+% ----- 1.1 基本概念 -----
+\section{职业卫生与职业医学概述}
+
+\begin{defbox}
+\textbf{职业卫生（Occupational Health）}：以职业人群为主要对象，研究劳动条件对健康的影响，主要任务是识别、评价、预测、控制不良劳动条件，为制定措施改善劳动条件、保护劳动者健康、提高作业能力提供科学依据。关注群体，着眼预防（主要属于一级预防）。
+
+\textbf{职业医学（Occupational Medicine）}：以劳动者为对象，对受到职业危害因素损害或存在潜在健康危险的个体，采用临床医学的技术与方法，对发生的职业病、职业相关疾病和早期健康损害进行检测、诊断、治疗和康复处理。
+\end{defbox}
+
+\subsection{职业、工作与劳动}
+
+\begin{defbox}
+\textbf{职业}：人们在社会中所从事的作为主要生活来源的具有特定专业和技能要求的工作类别。特点：专业性、群体性（稳定性和发展性）。
+
+\textbf{工作}：个人在某个工作环境中所承担的具体任务或活动。特点：具体性、任务导向性（多样性和灵活性）。
+
+\textbf{劳动}：人类为了创造物质、精神财富而进行的有目的的活动，是人类生存和发展的基础。特点：基础性、体力和脑力结合、创造性。
+\end{defbox}
+
+\begin{keybox}
+\textbf{劳动与人的关系——双重性：}
+\begin{enumerate}[leftmargin=*]
+    \item \textbf{社会性与功利性}：劳动者生存所必需；体现人身价值，对幸福感和社会身份产生重要影响
+    \item \textbf{健康相关性}：维持健康所必需；职业有关因素导致疾病；造成安全事故；污染环境影响健康
+\end{enumerate}
+\end{keybox}
+
+% ----- 1.2 职业有害因素 -----
+\section{职业有害因素及其来源}
+
+\begin{defbox}
+\textbf{职业有害因素（Occupational Hazards）}：又称职业病危害因素、职业性有害因素。在职业场所中产生或存在的、可能对职业人群健康、安全和作业能力造成不良影响的因素或条件，包括化学、物理、生物等因素。
+\end{defbox}
+
+\begin{keybox}
+\textbf{职业有害因素的分类（按来源）：}
+
+\textbf{一、生产过程中的有害因素}
+\begin{enumerate}[leftmargin=*]
+    \item \imp{化学因素}：
+    \begin{itemize}
+        \item 生产性毒物：铅、汞、CO、苯、农药等
+        \item 生产性粉尘：矽尘、石棉尘、煤尘、有机粉尘等
+    \end{itemize}
+    \item \imp{物理因素}：
+    \begin{itemize}
+        \item 异常气象条件：高温、低温、高湿、高气压、低气压
+        \item 噪声、振动
+        \item 辐射：可见光、紫外线、红外线、微波、激光、X射线、γ射线
+    \end{itemize}
+    \item \imp{生物因素}：炭疽杆菌、布氏杆菌、森林脑炎病毒、过敏性肺炎、艾滋病病毒（职业暴露）
+\end{enumerate}
+
+\textbf{二、劳动过程中的有害因素}
+\begin{itemize}[leftmargin=*]
+    \item 劳动组织和制度不合理（劳动时间过长、休息制度不合理）
+    \item 劳动强度过大
+    \item 精神（心理）紧张
+    \item 器官或系统过度紧张（视力紧张、发音器官紧张）
+    \item 不良体位（下背痛、颈肩腕损伤、下肢静脉曲张）
+    \item 不合理工具设备
+\end{itemize}
+
+\textbf{三、生产环境中的有害因素}
+\begin{itemize}[leftmargin=*]
+    \item 自然环境因素（夏季太阳辐射、冬季寒冷、高山高原环境）
+    \item 工作场所设计不合理（厂房低矮狭窄、布局不合理）
+    \item 卫生技术设施不足（通风换气、照明、防尘防毒防噪防振设备）
+\end{itemize}
+
+\textbf{国际上按因素性质分类（5类）：}
+\begin{enumerate}[leftmargin=*]
+    \item 化学因素：粉尘、毒性气体、金属、有机溶剂等
+    \item 物理因素：高温、振动、噪声、异常气压、辐射等
+    \item 生物因素：细菌、病毒、真菌、立克次体等
+    \item 人机工效学因素：生物力学、人体尺寸、工具、人机界面等
+    \item 社会心理因素：紧张、压力等
+\end{enumerate}
+\end{keybox}
+
+% ----- 1.3 职业病与工作有关疾病 -----
+\section{职业病与工作有关疾病}
+
+\subsection{职业病}
+
+\begin{defbox}
+\textbf{职业病（Occupational Disease）}：劳动者在职业活动中，因接触粉尘、放射性物质和其他有毒、有害因素而引起的疾病。具有\keyword{医学和法律双重含义}。
+
+\textbf{法定职业病的4个基本条件：}
+\begin{enumerate}[leftmargin=*]
+    \item 患病主体：必须是企业、事业单位或个体经济组织的劳动者
+    \item 患病环境：必须在从事职业活动的过程中产生
+    \item 致病原因：必须因接触粉尘、放射性物质和其他有毒、有害物质等职业病危害因素引起
+    \item 疾病类型：必须是国家公布的职业病分类和目录所列的职业病
+\end{enumerate}
+\end{defbox}
+
+\begin{keybox}
+\textbf{职业病的特点：}
+\begin{enumerate}[leftmargin=*]
+    \item \imp{病因明确}——可以预防
+    \item \imp{明确的剂量-反应关系}
+    \item \imp{接触人群中常有一定的发病率}（集群性）
+    \item 如\imp{早期诊断、及时治疗}，预后良好
+    \item \imp{多数无特效治疗方法}
+\end{enumerate}
+
+\textbf{我国职业病分类目录：}2024版，12大类135种。
+
+\textbf{制定职业病清单主要考虑的因素：}职业病的严重程度；职业病的社会与经济影响；国家经济承受能力；国际上可供参考的惯例。
+\end{keybox}
+
+\subsection{工作有关疾病}
+
+\begin{defbox}
+\textbf{工作有关疾病（Work-Related Disease）}：与多因素相关的疾病，在职业活动中，由于职业性有害因素等多种因素的作用，导致劳动者罹患某种疾病或潜在疾病显露或原有疾病加重。
+\begin{itemize}[leftmargin=*]
+    \item 职业因素是疾病发生和发展的诸多因素之一（非唯一病因）
+    \item 职业因素影响健康，从而促使潜在的病症显露或加重
+    \item 通过改善工作条件，可使所患疾病得到控制或缓解
+\end{itemize}
+
+\textbf{常见的工作有关疾病：}
+\begin{itemize}[leftmargin=*]
+    \item 行为与身心疾病：焦虑、抑郁、神经衰弱
+    \item 非特异性呼吸道疾病：慢性支气管炎、哮喘
+    \item 其他：高血压、消化性溃疡、腰背痛
+\end{itemize}
+\end{defbox}
+
+\begin{defbox}
+\textbf{职业特征（Occupational Stigma）}：职业性有害因素导致的生理性代偿，如胼胝、皮肤色素增加等。不属于疾病范畴。
+
+\textbf{工伤（Injuries）}：在生产劳动过程中，由于操作、设备、管理等原因和不可预测的偶然因素所造成的工人身体伤害、残疾甚至死亡。
+\end{defbox}
+
+% ----- 1.4 职业病诊断与三级预防 -----
+\section{职业病的诊断与处理}
+
+\begin{keybox}
+\textbf{职业病诊断原则：}
+\begin{enumerate}[leftmargin=*]
+    \item 详细的职业接触史
+    \item 相应的临床表现和辅助检查
+    \item 职业卫生现场调查资料
+    \item 综合分析，排除其他病因所致类似疾病
+\end{enumerate}
+
+\textbf{处理原则：}
+\begin{enumerate}[leftmargin=*]
+    \item 积极有效的治疗
+    \item 调离作业环境
+    \item 职业伤害鉴定及落实待遇
+    \item 报告制度：急性中毒24小时报告，慢性中毒15天内报告；急性中毒同时发生3名死亡，电话上报；职业炭疽1人以上时，电话上报
+\end{enumerate}
+\end{keybox}
+
+\subsection{三级预防原则}
+
+\begin{keybox}
+\textbf{职业病三级预防原则：}
+
+\textbf{一级预防（病因预防）：}
+\begin{itemize}[leftmargin=*]
+    \item 以无毒代有毒，改进生产工艺
+    \item 制定容许接触水平
+    \item 发现职业禁忌证
+    \item 开展健康教育
+\end{itemize}
+
+\textbf{二级预防（发病预防）：}
+\begin{itemize}[leftmargin=*]
+    \item 职业健康监护
+    \item 早期检测损害
+    \item 早期诊断
+    \item 早期治疗处理
+\end{itemize}
+
+\textbf{三级预防（对症康复预防）：}
+\begin{itemize}[leftmargin=*]
+    \item 脱离接触
+    \item 积极治疗
+    \item 促进康复
+    \item 防止并发症
+\end{itemize}
+\end{keybox}
+
+% ----- 1.5 职业卫生服务 -----
+\section{职业卫生服务与职业健康监护}
+
+\begin{defbox}
+\textbf{职业健康监护}：以预防为目的，根据劳动者职业接触史，通过定期或不定期的医学健康检查和健康相关资料收集，连续地监测劳动者健康状况，分析健康变化与所接触的职业病危害因素的关系，并及时将结果报告给用人单位和劳动者本人，以便采取干预措施。
+
+\textbf{职业卫生服务（Occupational Health Service, OHS）}：由具有预防职能的服务机构，负责向用人单位和劳动者提出建议，帮助用人单位为劳动者创造一个安全与健康的工作环境，以促进劳动者的体力与脑力健康，使工作适合于劳动者的生理特点。
+
+\textbf{基本职业卫生服务（BOHS）}：以预防和控制职业病、保护和促进劳动者的健康和工作能力为目的，采用科学合理和社会可接受的方法，通过初级卫生保健方式，为所有劳动者提供的必要的职业卫生技术服务。
+\end{defbox}
+
+\begin{tipbox}
+\textbf{综合性职业卫生服务的发展方向：}
+\begin{itemize}[leftmargin=*]
+    \item 预防疾病→增进健康：由预防严重职业病转向更为积极地增进劳动者健康
+    \item 单一监控→综合服务：由单一监测、监护、评价转为监测-监护-评价-控制配套系统服务
+    \item 重点人群→所有劳动者：由对部分职业人群监测转为对所有劳动者的监测、监护
+\end{itemize}
+\end{tipbox}
+
+\section{职业卫生防治工作的主要内容}
+
+\begin{enumerate}[leftmargin=*]
+    \item \imp{职业卫生监督}：预防性卫生监督（新、改、扩建项目）；经常性卫生监督（现有项目）
+    \item \imp{职业流行病学的应用}：
+    \begin{itemize}
+        \item 阐明职业性损害在人群中的分布、发生和发展规律
+        \item 发现职业性有害因素对健康的影响
+        \item 为制定、修订职业卫生标准和职业病诊断标准提供依据
+        \item 评价职业卫生和职业病防治工作质量及其预防措施的效果
+    \end{itemize}
+    \item \imp{职业流行病学中的重要概念——健康工人效应（HWE）}：
+    \begin{defbox}
+    \textbf{健康工人效应（Healthy Worker Effect, HWE）}：在进行职业流行病学调查时，观察到暴露于职业有害因素的工人总死亡率低于一般人群总死亡率的现象。产生原因：
+    \begin{enumerate}[leftmargin=*]
+        \item \textbf{初次就业选择效应}：健康状况较好者更可能进入就业队伍
+        \item \textbf{继续就业选择效应}：患病或健康状况不佳者可能被解雇或主动离职
+        \item \textbf{时间相关效应}：健康工人效应在就业初期最明显，随工龄延长而减弱
+    \end{enumerate}
+    HWE的存在可能导致低估职业有害因素的危害程度，是职业流行病学研究中的重要偏倚来源。
+    \end{defbox}
+    \item \imp{培训与宣传}：新的职业危害因素；危害防护的知识与技能；有关法律、法规、标准、制度
+\end{enumerate}
+
+\section{现阶段性职业卫生挑战}
+
+\begin{enumerate}[leftmargin=*]
+    \item 职业有害因素范围扩展与职业危害转移
+    \item 产业结构与就业状态变化与农民工职业健康问题
+    \item 职业紧张和心身疾病
+    \item 职业伤害与职业卫生突发事件
+    \item 职业安全、职业卫生和环境保护的内在联系
+    \item 新理论和技术在职业卫生中的应用
+    \item 从接触标志物到职业健康管理
+    \item 普及基本职业卫生服务，加强一级预防，加强工效学研究
+\end{enumerate}
+
+\section{新业态劳动者的职业健康问题}
+
+\begin{keybox}
+随着互联网经济的快速发展，网约配送员（外卖骑手）、网约车司机、网课教师等新业态劳动者大量涌现。这些职业具有工作时间灵活、工作场所不固定、劳动关系复杂等特点，面临着与传统职业不同的职业健康风险。
+
+\textbf{一、网约配送员（外卖骑手）}
+\begin{itemize}[leftmargin=*]
+    \item \imp{主要职业相关健康风险：}
+    \begin{enumerate}[leftmargin=*]
+        \item \textbf{职业伤害}：交通事故（最主要风险，时间压力导致超速、违章）；跌倒、碰撞
+        \item \textbf{肌肉骨骼疾病}：长期骑行→腰背痛、颈椎病；搬运重物→腰椎劳损
+        \item \textbf{不良气象条件}：夏季高温→中暑风险；冬季寒冷→冻伤、关节疼痛
+        \item \textbf{心理紧张}：时效考核压力、差评焦虑→职业紧张、睡眠障碍
+        \item \textbf{接触空气污染物}：道路PM$_{2.5}$、汽车尾气等
+        \item \textbf{不良生活方式}：饮食不规律→消化系统疾病；憋尿→泌尿系统疾病
+    \end{enumerate}
+    \item \imp{预防建议：}
+    \begin{enumerate}[leftmargin=*]
+        \item 优化配送算法和时效考核（避免不合理的时效压力）
+        \item 交通安全教育和防护装备（头盔、反光背心）
+        \item 高温季节提供防暑降温保障
+        \item 职业伤害保险全覆盖
+        \item 定期健康检查
+        \item 合理安排工作时间，保障基本休息权
+    \end{enumerate}
+\end{itemize}
+
+\textbf{二、网约车司机}
+\begin{itemize}[leftmargin=*]
+    \item \imp{主要职业相关健康风险：}
+    \begin{enumerate}[leftmargin=*]
+        \item \textbf{肌肉骨骼疾病}：长期久坐→腰背痛、颈肩腕损伤、下肢静脉曲张
+        \item \textbf{振动危害}：全身振动→腰椎间盘突出、脊柱退行性改变
+        \item \textbf{视觉紧张}：长时间注视道路和屏幕→视力疲劳、干眼
+        \item \textbf{心理紧张}：收入压力、交通拥堵、乘客纠纷→职业紧张、焦虑
+        \item \textbf{排尿系统问题}：如厕不便→憋尿→泌尿系统感染、膀胱功能障碍
+        \item \textbf{饮食和作息不规律}：胃肠道疾病、肥胖、代谢综合征
+        \item \textbf{接触空气污染}：汽车尾气暴露→呼吸系统疾病风险
+    \end{enumerate}
+    \item \imp{预防建议：}
+    \begin{enumerate}[leftmargin=*]
+        \item 合理规划驾驶时间（连续驾驶不超过2小时）
+        \item 车辆减振设计和座椅人体工学改进
+        \item 定期停车休息、伸展活动
+        \item 健康教育和职业健康监护
+        \item 心理支持和社会支持体系建设
+    \end{enumerate}
+\end{itemize}
+
+\textbf{三、网课教师}
+\begin{itemize}[leftmargin=*]
+    \item \imp{主要职业相关健康风险：}
+    \begin{enumerate}[leftmargin=*]
+        \item \textbf{发音器官过度紧张}：长时间连续授课→声带小结、慢性咽炎、声音嘶哑
+        \item \textbf{视觉紧张（VDT作业）}：长时间注视屏幕→视力下降、干眼症、视疲劳
+        \item \textbf{静力作业和不良体位}：长期久坐→颈肩腕综合征、腰背痛
+        \item \textbf{职业紧张（信息性劳动—综合式）}：课程质量要求高、学生互动压力→焦虑、职业倦怠（Burnout）
+        \item \textbf{辐射暴露}：长期使用电脑→微波和极低频电磁场暴露
+        \item \textbf{作息不规律}：直播课程时间不固定→昼夜节律紊乱、睡眠障碍
+    \end{enumerate}
+    \item \imp{预防建议：}
+    \begin{enumerate}[leftmargin=*]
+        \item 控制连续授课时间（每45--60分钟休息一次）
+        \item 科学用嗓训练和护嗓（多饮水、避免清嗓子）
+        \item 符合工效学的工作站设计（可调节桌椅、屏幕高度与眼齐平）
+        \item 合理安排课程时间，保障规律作息
+        \item 职业紧张干预（心理支持、团队建设）
+        \item 定期健康检查和嗓音功能评估
+    \end{enumerate}
+\end{itemize}
+
+\begin{exambox}
+\textbf{新业态劳动者职业健康问题的共同特点：}
+\begin{enumerate}[leftmargin=*]
+    \item 劳动关系复杂化（平台化用工），传统职业卫生监管体系覆盖不足
+    \item 工作场所分散化、工作时间碎片化，增加了职业健康管理的难度
+    \item 社会保障和职业病保障体系不健全
+    \item 预防措施需要政府、平台、从业者三方共同努力
+\end{enumerate}
+\end{exambox}
+\end{keybox}
+
+% ----- 1.6 复习题 -----
+\section{复习题}
+
+\begin{enumerate}[leftmargin=*, itemsep=8pt]
+    \item \textbf{【名词解释】}职业卫生；职业医学；职业有害因素
+    \item \textbf{【名词解释】}职业病；工作有关疾病；职业特征；工伤
+    \item \textbf{【名词解释】}职业健康监护；基本职业卫生服务（BOHS）；健康工人效应（HWE）
+    \item \textbf{【简答题】}简述职业病的特点（5条）。
+    \item \textbf{【简答题】}简述法定职业病的4个基本条件。
+    \item \textbf{【简答题】}简述职业病的三级预防原则及各级的主要内容。
+    \item \textbf{【简答题】}简述职业有害因素的分类（按来源分为生产过程、劳动过程和生产环境三类）。
+    \item \textbf{【简答题】}简述职业病的诊断原则和处理原则。
+    \item \textbf{【简答题】}简述综合性职业卫生服务的三个发展方向。
+    \item \textbf{【思考题】}网约配送员（外卖骑手）、网约车司机、网课教师可能面临哪些职业健康风险？如何预防？
+\end{enumerate}
+
+\subsection*{参考答案要点}
+
+\begin{enumerate}[leftmargin=*, itemsep=5pt]
+    \item \textbf{职业卫生}：以职业人群为主要对象，研究劳动条件对健康的影响，主要任务是识别、评价、预测、控制不良劳动条件，保护劳动者健康。\textbf{职业医学}：以劳动者为对象，对受到职业危害因素损害的个体进行检测、诊断、治疗和康复处理。\textbf{职业有害因素}：在职业场所中产生或存在的、可能对职业人群健康、安全和作业能力造成不良影响的因素或条件。
+    \item \textbf{职业病}：劳动者在职业活动中因接触粉尘、放射性物质和其他有毒、有害因素而引起的疾病，具有医学和法律双重含义。\textbf{工作有关疾病}：职业因素为诸多致病因素之一的疾病。\textbf{职业特征}：职业性有害因素导致的生理性代偿（如胼胝）。\textbf{工伤}：生产劳动过程中因操作、设备、管理等原因造成的身体伤害、残疾甚至死亡。
+    \item \textbf{职业健康监护}：以预防为目的，通过医学健康检查和健康相关资料收集，连续监测劳动者健康状况。\textbf{BOHS}：以预防和控制职业病为目的，通过初级卫生保健方式为所有劳动者提供的必要职业卫生技术服务。\textbf{健康工人效应}：暴露于职业有害因素的工人总死亡率低于一般人群的现象，由初次就业选择和继续就业选择效应产生，是职业流行病学的重要偏倚来源。
+    \item 五大特点：病因明确可预防；明确的剂量-反应关系；接触人群中常有一定发病率（集群性）；早期诊断及时治疗预后良好；多数无特效治疗方法。
+    \item 四个基本条件：患病主体为企业/事业单位/个体经济组织的劳动者；患病环境为从事职业活动过程中；致病原因为接触职业病危害因素；疾病类型必须为国家公布的职业病目录所列疾病。
+    \item 一级预防（病因预防）：无毒代毒、制定容许接触水平、发现禁忌证、健康教育。二级预防（发病预防）：健康监护、早期发现、早期诊断、早期治疗。三级预防（对症康复）：脱离接触、积极治疗、促进康复、防止并发症。
+    \item 生产过程：化学因素（毒物、粉尘）、物理因素（异常气象、噪声振动、辐射）、生物因素（炭疽、布氏杆菌等）。劳动过程：劳动组织不合理、强度过大、精神紧张、器官过度紧张、不良体位、不合理工具。生产环境：自然环境因素、场所设计不合理、卫生技术设施不足。
+    \item 诊断原则：详细职业接触史+相应临床表现+职业卫生现场调查+综合分析排除其他病因。处理原则：积极治疗+调离作业环境+职业伤害鉴定落实待遇+及时报告。
+    \item 三个发展方向：预防疾病→增进健康；单一监控→综合服务（监测-监护-评价-控制配套）；重点人群→所有劳动者。
+\end{enumerate}
+
+\newpage
+
+% =====================================================================
+%  CHAPTER 2: 职业生理学、心理学与工效学
+% =====================================================================
+\chapter{职业生理学、心理学与工效学}
+\setcounter{chapter}{2}
+\chapterintro{
+掌握体力劳动时的能量代谢、氧消耗的动态及劳动强度分级；掌握动力定型和静力/动力作业的特点；掌握劳动负荷评价；掌握紧张反应的表现；掌握影响作业能力的主要因素；熟悉三种劳动类型（能量性、感觉运动式、信息性）；熟悉职业紧张的概念和模型（JD-C、ERI）；了解工效学原理及其应用。
+}
+
+% ----- 2.1 职业生理学 -----
+\section{职业生理学基础}
+
+\subsection{能量代谢}
+
+\begin{defbox}
+\textbf{职业生理学（Work Physiology）}：研究一定劳动条件下的器官和系统功能。
+\textbf{职业工效学（Ergonomics）}：研究人-机-环境系统的协调关系。
+\textbf{职业心理学（Industrial Psychology）}：研究人的劳动行为与劳动条件之间的关系。
+\end{defbox}
+
+\begin{defbox}
+\textbf{能量代谢（Energy Metabolism）}：物质代谢过程中的能量释放、转移和利用。
+
+\textbf{基础代谢}：维持基本生命活动所需的最低能量消耗。
+
+\textbf{氧需（Oxygen Demand）}：劳动1分钟所需的氧量。
+
+\textbf{最大摄氧量（Maximum Oxygen Uptake）}：血液在1分钟内能供应的最大氧量（氧上限）。正常成年人约3 L，运动员约4 L。
+
+\textbf{氧债（Oxygen Debt）}：氧需和实际供氧量之差。
+\end{defbox}
+
+\begin{keybox}
+\textbf{两种作业类型的氧债特征：}
+
+\begin{table}[H]
+\centering
+\caption{非乳酸氧债与乳酸氧债的比较}
+\begin{tabularx}{\textwidth}{lXX}
+\hline
+\textbf{特征} & \textbf{非乳酸氧债（较轻劳动）} & \textbf{乳酸氧债（较重劳动）} \\
+\hline
+作业初时氧来源 & 呼吸、血氧、氧储备 & 呼吸、血氧、氧储备 \\
+稳定状态 & 氧债恒定 & 氧债持续增加 \\
+稳定状态氧来源 & 呼吸、血氧 & 糖原 \\
+偿还氧债时间 & 休息2--3 min & 休息数十分钟至1h以上 \\
+氧债与偿还关系 & 氧债 = 偿还氧债 & 氧债 < 偿还氧债 \\
+\hline
+\end{tabularx}
+\end{table}
+\end{keybox}
+
+\subsection{劳动强度分级}
+
+\begin{keybox}
+\textbf{体力劳动强度分级（三级）：}
+
+\begin{table}[H]
+\centering
+\caption{劳动强度分级}
+\begin{tabularx}{\textwidth}{lXXX}
+\hline
+\textbf{分级} & \textbf{能消耗状态} & \textbf{氧债} & \textbf{持续时间} \\
+\hline
+\imp{中等强度} & 氧需 $\leq$ 氧上限 & 氧债恒定 & 长时间（我国多数工农业劳动）\\
+\imp{大强度} & 氧需 $>$ 氧上限 & 氧债蓄积 & 数分钟至10 min（重件手工锻打）\\
+\imp{极大强度} & 氧需 $\approx$ 氧债 & 氧需 $\approx$ 氧债 & 不超过2 min（短跑、游泳比赛）\\
+\hline
+\end{tabularx}
+\end{table}
+
+\textbf{国际劳动组织（ILO）分级指标：}
+\begin{itemize}[leftmargin=*]
+    \item 耗氧量 (L/min)、能消耗量 (kJ/min)、心率（次/min）
+    \item 直肠温度（℃）、排汗量 (mL/h)
+    \item 适用范围：氧需 < 氧上限（稳定状态下）
+\end{itemize}
+
+\textbf{我国体力劳动强度分级（GBZ 2.2）：}
+
+劳动强度指数 $I = 3T + 7M$
+
+\begin{itemize}[leftmargin=*]
+    \item T：劳动时间率 = 工作日净劳动时间(min) / 工作日总工时(min)
+    \item M：8h工作日能量代谢率 [kcal/(min·m$^2$)]
+    \item 3和7分别为劳动时间率和能量代谢率的计算系数
+\end{itemize}
+\end{keybox}
+
+\subsection{体力劳动时的机体变化}
+
+\begin{keybox}
+\textbf{一、神经系统——动力定型}
+
+\begin{defbox}
+\textbf{动力定型（Dynamic Stereotype）}：长期在同一劳动环境中从事某一作业活动时，通过复合条件反射逐渐形成的作业能力提高。长期脱离该作业活动，会破坏已形成的动力定型。
+\end{defbox}
+
+\textbf{二、心血管系统}
+
+\begin{table}[H]
+\centering
+\caption{体力劳动时心血管系统变化}
+\begin{tabularx}{\textwidth}{lXXX}
+\hline
+\textbf{指标} & \textbf{安静时} & \textbf{无锻炼者} & \textbf{有锻炼者} \\
+\hline
+心率 HR (min$^{-1}$) & 70--80 & 150--200 & 200--260 \\
+每搏输出量 SV (mL) & 40--70 & 增加不多 & 150--200 \\
+心输出量 COP (L/min) & 3--5 & 20 & 35 \\
+\hline
+\end{tabularx}
+\end{table}
+
+\begin{itemize}[leftmargin=*]
+    \item 血压变化：收缩压↑，脉压差↑；运动后期脉压差↓提示糖原储备↓
+    \item 血液再分配：血液从内脏流向肌肉
+    \item 血液成分：血糖↓、血乳酸↑
+    \begin{itemize}
+        \item 安静时血乳酸浓度：1.0 mmol/L
+        \item 中等体力劳动：2.3 mmol/L
+        \item 重度体力劳动：4.0 mmol/L
+        \item 极重体力劳动：15.0 mmol/L
+    \end{itemize}
+\end{itemize}
+
+\textbf{三、呼吸系统}
+\begin{itemize}[leftmargin=*]
+    \item 肺通气量增加（呼吸次数↑、肺活量↑）
+    \item \keyword{决定最大摄氧量的主要因素是心血管系统的功能}（而非呼吸系统）
+\end{itemize}
+\end{keybox}
+
+\subsection{脑力劳动的特点}
+
+\begin{itemize}[leftmargin=*]
+    \item 特点：抽象性、创造性、非重复性
+    \item 脑的相对氧代谢高，为等量肌肉的\imp{15--20倍}，\imp{葡萄糖}是最重要的能量来源
+    \item 脑力劳动总能量消耗不高，最紧张的脑力劳动能耗不超过基础代谢的10\%
+    \item 脑力劳动可使心率减慢，但紧张劳动时心率加快、血压上升、呼吸加速
+    \item 血液成分、尿量、尿液成分、汗液、体温等变化不明显
+\end{itemize}
+
+\subsection{劳动类型的分类}
+
+\begin{table}[H]
+\centering
+\caption{劳动类型的分类}
+\begin{tabularx}{\textwidth}{lllX}
+\hline
+\textbf{劳动种类} & \textbf{劳动形式} & \textbf{涉及器官} & \textbf{举例} \\
+\hline
+\imp{能量性劳动} & 肌力式劳动（付出体力） & 肌肉、骨骼、循环、呼吸 & 搬运、铲砂子 \\
+\imp{感觉运动式劳动} & 手和臂精确活动 & 肌肉、肌腱、感官 & 流水线装配、驾驶 \\
+\imp{信息性劳动（反应式）} & 吸收加工信息 & 感官（肌肉） & 警卫、监控 \\
+\imp{信息性劳动（综合式）} & 信息转换输出 & 感官、脑力 & 编程、翻译 \\
+\imp{信息性劳动（创造式）} & 产生信息输出 & 脑力 & 发明、解决问题 \\
+\hline
+\end{tabularx}
+\end{table}
+
+\subsection{静力作业与动力作业}
+
+\begin{keybox}
+\textbf{静力作业（Static Work）vs 动力作业（Dynamic Work）：}
+
+\begin{table}[H]
+\centering
+\caption{静力作业与动力作业的比较}
+\begin{tabularx}{\textwidth}{lXX}
+\hline
+\textbf{对比项} & \textbf{静力（态）作业} & \textbf{动力（态）作业} \\
+\hline
+肌肉收缩 & 等长收缩 & 等张收缩 \\
+关节是否活动 & 否 & 是 \\
+能量消耗 & 不高 & 高 \\
+血液灌流 & 不充分（压迫血管） & 充分 \\
+疲劳程度 & 容易疲劳 & 不易疲劳 \\
+\hline
+\end{tabularx}
+\end{table}
+\end{keybox}
+
+% ----- 2.2 劳动负荷与应激 -----
+\section{劳动负荷评价}
+
+\begin{defbox}
+\textbf{劳动系统（Work System）}：劳动者、劳动对象、劳动工具、劳动环境、产品等相互作用的元素构成的整体。
+
+\textbf{负荷（Stress）}：劳动系统对机体生理心理总的需求和产生的压力，强调外界因素和情景。
+
+\textbf{应激（Strain）}：负荷对具体个人的影响，强调在负荷作用下机体内部的生物过程和反应。
+
+\textbf{适宜水平}：在该负荷下能够连续劳动8小时，不至于疲劳，长期劳动时也不损害健康的卫生限值。约为最大摄氧量的1/3（男：1.1 L/min，女：0.8 L/min）。
+\end{defbox}
+
+\begin{tipbox}
+\textbf{劳动负荷的评价方法与指标：}
+
+\textbf{客观方法：}
+\begin{itemize}[leftmargin=*]
+    \item 体力劳动：能量代谢、心率、肌电、皮温、中心体温、血乳酸
+    \item 脑力劳动：瞳孔测量、心率与心率变异性、脑诱发电位
+\end{itemize}
+
+\textbf{主观方法：}
+\begin{itemize}[leftmargin=*]
+    \item 体力劳动：调查表、访谈
+    \item 脑力劳动：Cooper-Harper量表、SWAT评估法、NASA任务负荷指数
+\end{itemize}
+
+\textbf{观察方法：}AET工作分析法、OWAS观察分析劳动姿势和负荷大小
+\end{tipbox}
+
+% ----- 2.3 职业心理学 -----
+\section{职业心理学与职业紧张}
+
+\subsection{职业心理因素}
+
+\begin{itemize}[leftmargin=*]
+    \item \imp{单调作业（Monotonous Work）}
+    \item \imp{夜班作业（Night Work）}
+    \item 物理因素作业、生产性毒物作业、粉尘作业、脑力作业
+\end{itemize}
+
+\subsection{职业紧张模型}
+
+\begin{keybox}
+\textbf{职业紧张（Occupational Stress）}：在某种职业条件下，客观需求与个人适应能力之间的失衡所带来的生理和心理压力。
+
+\textbf{紧张反应曲线：}平静（Calm）→ 良性紧张（Eustress，绩效提升）→ 不良紧张（Distress，绩效下降）
+
+\textbf{核心概念：}紧张源（Stressor）→ 个体资源（Personal Resources）→ 应对（Modifier）→ 紧张反应（Strain）
+
+\textbf{JD-C模型（工作要求-自主程度模型，Karasek, 1979）：}
+\begin{itemize}[leftmargin=*]
+    \item A. 高要求-低控制：\textbf{高紧张工作}，易导致职业紧张和健康问题
+    \item B. 高要求-高控制：\textbf{积极工作}，可能带来挑战和成长
+    \item C. 低要求-高控制：\textbf{低紧张工作}，较为轻松
+    \item D. 低要求-低控制：\textbf{被动工作}，可能导致倦怠
+\end{itemize}
+
+\textbf{付出-回报失衡模型（ERI, Siegrist, 1996）：}
+\begin{itemize}[leftmargin=*]
+    \item A. 高努力-低回报：\textbf{高紧张状态}，易导致职业紧张和健康问题
+    \item B. 高努力-高回报：\textbf{平衡状态}，可能带来满足感
+    \item C. 低努力-高回报：\textbf{低紧张状态}，较为轻松
+    \item D. 低努力-低回报：可能导致\textbf{职业倦怠}
+\end{itemize}
+
+\textbf{应对资源：}
+\begin{itemize}[leftmargin=*]
+    \item 个人应对能力：克服困难、认真对待
+    \item 社会支持：有助于缓解紧张，提高职业满意度和职业生命质量
+\end{itemize}
+\end{keybox}
+
+\subsection{职业紧张反应的表现}
+
+\begin{keybox}
+\textbf{心理反应：}工作不满意、躯体不适、疲倦感、抑郁、注意力不集中、易怒等
+
+\textbf{生理反应：}血压升高、心率加快、皮肤生物电反应增强；血与尿中儿茶酚胺和17-羟类固醇增加
+
+\textbf{行为表现：}吸烟、酗酒、频繁就医、药物依赖、不愿参加集体活动等
+
+\textbf{精疲力竭（Burnout）：}
+\begin{itemize}[leftmargin=*]
+    \item 核心表现：情绪耗竭、人格解体、职业效能下降
+    \item 数据：91.1\%中国员工出现疲劳、倦怠、压力等症状，15.4\%出现7种以上症状，5\%出现10种以上症状
+\end{itemize}
+\end{keybox}
+
+\subsection{心身疾病}
+
+\begin{defbox}
+\textbf{心身疾病（Psychophysiological Disorder）}：又称心身障碍或心理生理障碍，是一组与心理和社会因素密切相关，但以躯体症状表现为主的疾病。
+
+常见心身疾病：支气管哮喘、消化性溃疡、原发性高血压、癌症、甲状腺功能亢进。
+\end{defbox}
+
+% ----- 2.4 工效学 -----
+\section{工效学原理与应用}
+
+\begin{defbox}
+\textbf{工效学（Ergonomics）}：研究人-机-环境系统中人的生理、心理特征与机器、环境的协调关系，使劳动工具、劳动环境和劳动组织适合人的生理和心理特征，以达到安全、健康、舒适和高效的目的。
+\end{defbox}
+
+\subsection{劳动过程中的工效学问题}
+
+\begin{itemize}[leftmargin=*]
+    \item \imp{强制体位引起的疾病}：扁平足、下肢静脉曲张、脊柱弯曲、腰背痛
+    \item \imp{个别器官过度紧张}：视力紧张（近视）、发音器官紧张（声带小结）
+    \item \imp{压迫及摩擦引起的疾病}：胼胝、滑囊炎
+\end{itemize}
+
+\subsection{生物力学应用}
+
+\begin{itemize}[leftmargin=*]
+    \item \imp{人体测量学}：工作台、座椅设计应符合人体尺寸
+    \item \imp{生物力学}：合理用力避免肌肉骨骼损伤
+    \item \imp{人机界面设计}：显示器、控制器的设计应符合人的认知特征
+\end{itemize}
+
+% ----- 2.5 影响作业能力的主要因素 -----
+\section{影响作业能力的主要因素}
+
+\begin{enumerate}[leftmargin=*]
+    \item \imp{社会与心理因素}：工作动机、人际关系、组织氛围
+    \item \imp{个体因素}：年龄、性别、体质、健康状况、营养、技能熟练度
+    \item \imp{环境因素}：气温、噪声、照明、有害物质等
+    \item \imp{劳动组织}：工作时间、休息制度、轮班制度
+    \item \imp{工效学因素}：工具设计的合理性、人机匹配程度
+\end{enumerate}
+
+\subsection{作业能力的动态变化}
+
+\begin{itemize}[leftmargin=*]
+    \item \imp{工作入门期}：作业开始后1--2小时，效率较低
+    \item \imp{稳定期}：工作能力稳定，效率最高
+    \item \imp{疲劳期}：工作能力下降，出现疲劳感
+    \item \imp{终末激发}：临近下班时出现的短暂工作效率提高
+\end{itemize}
+
+% ----- 2.6 复习题 -----
+\section{复习题}
+
+\begin{enumerate}[leftmargin=*, itemsep=8pt]
+    \item \textbf{【名词解释】}能量代谢；氧需；最大摄氧量；氧债；动力定型
+    \item \textbf{【名词解释】}静力作业与动力作业；劳动系统；负荷与应激
+    \item \textbf{【名词解释】}职业紧张；精疲力竭（Burnout）；心身疾病
+    \item \textbf{【名词解释】}工效学（Ergonomics）
+    \item \textbf{【简答题】}简述体力劳动强度分级（三级）及各级特征。
+    \item \textbf{【简答题】}简述静力作业与动力作业的主要区别。
+    \item \textbf{【简答题】}简述JD-C模型和付出-回报失衡模型的主要内容。
+    \item \textbf{【简答题】}简述职业紧张反应的表现（心理、生理、行为三个层面）。
+    \item \textbf{【简答题】}简述影响作业能力的主要因素。
+    \item \textbf{【简答题】}简述作业能力的动态变化过程。
+\end{enumerate}
+
+\subsection*{参考答案要点}
+
+\begin{enumerate}[leftmargin=*, itemsep=5pt]
+    \item \textbf{能量代谢}：物质代谢过程中的能量释放、转移和利用。\textbf{氧需}：劳动1分钟所需的氧量。\textbf{最大摄氧量}：血液在1分钟内能供应的最大氧量（约3L）。\textbf{氧债}：氧需与实际供氧量之差。\textbf{动力定型}：长期从事同一作业通过复合条件反射形成的作业能力提高。
+    \item \textbf{静力作业}：等长收缩，关节不活动，能量消耗不高，血液灌流不充分，容易疲劳。\textbf{动力作业}：等张收缩，关节活动，能量消耗高，血液灌流充分，不易疲劳。\textbf{劳动系统}：劳动者、劳动对象、工具、环境和产品等相互作用的整体。\textbf{负荷}指外界对机体的需求，\textbf{应激}指机体对负荷的反应。
+    \item \textbf{职业紧张}：客观需求与个人适应能力之间的失衡所带来的生理和心理压力。\textbf{精疲力竭}：情绪耗竭、人格解体、职业效能下降的综合征。\textbf{心身疾病}：与心理和社会因素密切相关但以躯体症状表现为主的疾病。
+    \item \textbf{工效学}：研究人-机-环境系统的协调关系，使劳动工具、环境和劳动组织适合人的生理和心理特征。
+    \item 三级：中等强度（氧需≤氧上限，氧债恒定，长时间）、大强度（氧需>氧上限，氧债蓄积，数分钟至10min）、极大强度（氧需≈氧债，不超过2min）。
+    \item 五项区别：肌肉收缩方式（等长 vs 等张）、关节活动（否 vs 是）、能量消耗（低 vs 高）、血液灌流（不充分 vs 充分）、疲劳程度（易 vs 不易）。
+    \item JD-C模型：按工作要求和自主程度分为四象限（高紧张/积极/低紧张/被动工作）。ERI模型：按努力和回报分为高紧张/平衡/低紧张/倦怠。
+    \item 心理：工作不满意、疲倦、抑郁、注意力不集中、易怒。生理：血压↑、心率↑、儿茶酚胺↑。行为：吸烟、酗酒、频繁就医、药物依赖。
+    \item 五大因素：社会与心理因素、个体因素（年龄、性别、健康等）、环境因素（气温、噪声、照明等）、劳动组织（工休制度等）、工效学因素（工具设计等）。
+    \item 四个阶段：工作入门期（效率较低）→稳定期（效率最高）→疲劳期（效率下降）→终末激发（下班前短暂提高）。
+\end{enumerate}
+
+\newpage
+% =====================================================================
+%  CHAPTER 3: 生产性毒物与职业中毒
+% =====================================================================
+\chapter{生产性毒物与职业中毒}
+\setcounter{chapter}{3}
+\chapterintro{
+本章为课程核心章节（12学时）。掌握毒物、生产性毒物、职业中毒的基本概念；掌握毒物进入机体的途径及体内过程（吸收、分布、代谢、排泄）；掌握影响毒物毒作用的因素；掌握职业中毒的临床类型和诊断原则；掌握铅、汞、锰的毒作用机制及临床表现；掌握刺激性气体（中毒性肺水肿）和窒息性气体（CO、HCN、H₂S）的毒作用特点及救治原则；熟悉苯、有机溶剂、苯的氨基和硝基化合物、高分子化合物、农药的中毒机制与预防。
+}
+
+% ----- 3.1 毒理学基本概念 -----
+\section{毒理学基本概念}
+
+\begin{defbox}
+\textbf{毒物（Poison）}：在一定条件下，摄入较小剂量即可引起机体暂时或永久性病理改变，甚至危及生命的化学物质。
+
+\textbf{毒素（Toxin）}：生物体（如细菌、真菌、植物、动物等）产生的具有毒性的化学物质。
+
+\textbf{中毒（Poisoning）}：机体受毒物作用后引起一定程度损害而出现的疾病状态。
+
+\textbf{生产性毒物（Productive Toxicant）}：生产过程中产生的，存在于工作环境中的毒物。
+
+\textbf{职业中毒（Occupational Poisoning）}：工作人员在生产过程中由于接触生产性毒物而引起的中毒。
+\end{defbox}
+
+\subsection{职业中毒的分类}
+
+\begin{keybox}
+职业中毒按照接触毒物种类可分为：
+\begin{enumerate}[leftmargin=*]
+    \item \imp{金属和类金属}：铅、汞、锰、镉、铍、铊、钒、砷、磷、铀
+    \item \imp{刺激性气体}：氯气、光气、氨、氮氧化物
+    \item \imp{窒息性气体}：一氧化碳、氰化氢、硫化氢、甲烷
+    \item \imp{有机溶剂}：苯、甲苯、二甲苯、二氯乙烷、二硫化碳、正己烷
+    \item \imp{苯的氨基和硝基化合物}：苯胺、三硝基甲苯
+    \item \imp{农药}：有机磷酸酯、拟除虫菊酯、百草枯
+    \item \imp{其他毒物}：氯乙烯、含氟塑料、丙烯腈等
+\end{enumerate}
+\end{keybox}
+
+% ----- 3.2 毒物的体内过程 -----
+\section{生产性毒物的体内过程}
+
+\subsection{毒物的存在状态与接触途径}
+
+\begin{defbox}
+生产性毒物主要以\keyword{气溶胶}和\keyword{气态}两大类形式存在：
+
+\textbf{气溶胶：}
+\begin{itemize}[leftmargin=*]
+    \item 液态——雾（Mist）：悬浮于空气中的液态小微粒
+    \item 固态——粉尘（Dust）：悬浮于空气中粒径0.1--10$\mu$m的固态小微粒
+    \item 固态——烟（Smoke）：悬浮于空气中粒径<0.1$\mu$m的固态小微粒
+\end{itemize}
+
+\textbf{气态：}
+\begin{itemize}[leftmargin=*]
+    \item 气体：常温常压下呈气态的物质
+    \item 蒸气：固体升华或液体蒸发形成
+\end{itemize}
+\end{defbox}
+
+\subsection{毒物的吸收途径}
+
+\begin{keybox}
+\textbf{呼吸道（最主要途径）：}
+\begin{itemize}[leftmargin=*]
+    \item 气态毒物：受空气中浓度/分压、分子量、血/气分配系数、水溶性、劳动强度、肺通气量、肺血流量及气象条件等影响
+    \item 气溶胶毒物：受气道结构、粒子形状、粒子分散度、溶解度、呼吸道清除功能影响
+\end{itemize}
+
+\textbf{消化道：}
+\begin{itemize}[leftmargin=*]
+    \item 一般通过简单扩散吸收；胃液pH极低（2.0），弱有机酸多未解离易吸收
+    \item 高脂溶性物质（有机氯农药等）可经肠道淋巴系统吸收
+\end{itemize}
+
+\textbf{皮肤：}
+\begin{itemize}[leftmargin=*]
+    \item 脂溶性物质可经皮肤吸收；某些物质（如有机磷农药）经皮肤吸收是重要的中毒途径
+\end{itemize}
+\end{keybox}
+
+\subsection{毒物在体内的分布与蓄积}
+
+\begin{defbox}
+\textbf{贮存库（Storage Depot）}：毒物在体内的蓄积部位，与血浆中游离毒物保持动态平衡。
+\begin{itemize}[leftmargin=*]
+    \item 血浆贮存库——血浆蛋白结合
+    \item 肝贮存库——金属硫蛋白等
+    \item 肾贮存库——金属硫蛋白
+    \item 脂肪组织贮存库——脂溶性毒物（有机氯农药等）
+    \item 骨骼贮存库——铅、氟等（占体内铅90\%）
+\end{itemize}
+\end{defbox}
+
+\subsection{毒物的排泄途径}
+
+\begin{enumerate}[leftmargin=*]
+    \item \imp{经尿液排泄}：肾小球滤过+肾小管简单扩散+主动转运。脂溶性物质可被重吸收，只有水溶性/离子型物质进入尿液
+    \item \imp{经胆汁排泄}：肝脏代谢产物排入胆汁→粪便排出。部分经\keyword{肝肠循环}重吸收
+    \item \imp{经肺呼出}：气态化合物经呼吸道排出，速度取决于血中溶解度、呼吸速度、肺血流速度
+    \item \imp{其他途径}：汗液、唾液、乳汁（有机氯杀虫剂、多卤联苯、咖啡碱、某些金属可随乳汁排出，对婴儿有损害意义）
+\end{enumerate}
+
+\subsection{毒物的生物转化}
+
+\begin{keybox}
+\textbf{生物转化的意义：}
+\begin{itemize}[leftmargin=*]
+    \item 使污染物极性和水溶性增高，易于排出
+    \item 使一些污染物生物学活性降低或消除（灭活/解毒作用）
+    \item 但也可使某些物质毒性增强（\keyword{代谢活化}）：
+    \begin{itemize}
+        \item 代谢解毒：化学物（毒性）→中间产物（低毒/无毒）→产物（无毒）
+        \item \textbf{代谢活化}：化学物（无毒）→中间产物（毒性）→产物（无毒）
+    \end{itemize}
+\end{itemize}
+
+\textbf{生物转化反应分类：}
+\begin{enumerate}[leftmargin=*]
+    \item \imp{I相代谢}：氧化、还原、水解——官能团化反应，引入极性基团（-OH、-COOH、-NH$_2$、-SH）
+    \item \imp{II相代谢（结合反应）}：与葡萄糖醛酸、硫酸等内源性小分子结合，产生极性强或水溶性的结合物排出
+\end{enumerate}
+
+\textbf{发生部位：}肝（主要）、肾、胃肠道、肺、皮肤、胎盘。肝细胞定位：微粒体、胞液、线粒体。
+
+\textbf{影响生物转化的因素：}
+\begin{itemize}[leftmargin=*]
+    \item 物种差异和个体差异（如苯胺在小鼠t$_{1/2}$=35min，狗t$_{1/2}$=167min）
+    \item 毒物代谢酶的诱导和激活、抑制和阻遏
+    \item 性别、遗传、年龄、营养、疾病等
+\end{itemize}
+\end{keybox}
+
+% ----- 3.3 职业中毒的临床 -----
+\section{职业中毒的临床类型与诊断}
+
+\subsection{临床类型}
+
+\begin{table}[H]
+\centering
+\caption{职业中毒的临床类型}
+\begin{tabularx}{\textwidth}{llX}
+\hline
+\textbf{类型} & \textbf{接触特征} & \textbf{典型举例} \\
+\hline
+\imp{急性中毒} & 一次或短时间（几分钟至数小时）内大量接触 & 急性苯中毒、氯气中毒 \\
+\imp{慢性中毒} & 少量、长期接触 & 慢性铅中毒、锰中毒 \\
+亚急性中毒 & 介于急性和慢性之间 & 亚急性铅中毒 \\
+迟发性中毒 & 脱离接触毒物一定时间后发病 & 迟发性锰中毒 \\
+\hline
+\end{tabularx}
+\end{table}
+
+\subsection{不同靶系统的中毒表现}
+
+\begin{table}[H]
+\centering
+\caption{职业中毒的靶系统及临床表现}
+\begin{tabularx}{\textwidth}{lXl}
+\hline
+\textbf{靶系统} & \textbf{临床症状} & \textbf{典型毒物} \\
+\hline
+\imp{神经系统} & 周围神经病变、锥体外系症状、中毒性脑病 & 重金属、有机溶剂、窒息性气体 \\
+\imp{呼吸系统} & 呼吸道炎症、化学性肺炎、肺水肿 & 刺激性气体、窒息性气体 \\
+\imp{血液系统} & 造血功能抑制、血红蛋白变性 & 重金属、苯系化合物 \\
+\imp{消化系统} & 中毒性肝病、腹痛 & 重金属、农药、有机溶剂 \\
+\imp{泌尿系统} & 中毒性肾病、泌尿系统肿瘤 & 重金属、苯系化合物 \\
+\imp{循环系统} & 心肌损害、心律失常 & 重金属、有机溶剂 \\
+皮肤 & 接触性皮炎、职业性痤疮 & 酸碱、有机溶剂、石油产品 \\
+\hline
+\end{tabularx}
+\end{table}
+
+\subsection{职业中毒的诊断与治疗}
+
+\begin{keybox}
+\textbf{诊断依据：}
+\begin{enumerate}[leftmargin=*]
+    \item 详细的职业接触史
+    \item 相应的临床表现和辅助检查结果
+    \item 职业卫生现场调查（车间空气测定等）
+    \item 综合分析，排除其他病因所致类似疾病
+\end{enumerate}
+
+\textbf{治疗原则：}
+\begin{enumerate}[leftmargin=*]
+    \item \imp{病因治疗}：使用特效解毒剂（络合剂、高铁血红蛋白生成剂等）
+    \item \imp{对症治疗}：缓解临床症状
+    \item \imp{支持疗法}：维持生命体征，促进康复
+\end{enumerate}
+
+\textbf{预防原则：}
+\begin{enumerate}[leftmargin=*]
+    \item 无毒/低毒材料替代
+    \item 降低车间空气中毒物浓度（工艺改革、通风）
+    \item 加强个人防护（防护服、防毒口罩）
+    \item 定期监测和职业健康检查
+\end{enumerate}
+\end{keybox}
+
+% ----- 3.4 金属与类金属中毒 -----
+\section{金属与类金属中毒}
+
+\subsection{金属中毒概述}
+
+\begin{defbox}
+\textbf{必需微量元素}：铜、铁、锌、硒、铬、碘、钴、钼
+\textbf{可能必需微量元素}：锰、硅、镍、钒
+\textbf{潜在毒性微量元素}：氟、汞、砷、铝、锡、锂、铅（低剂量可能对人体有作用）
+
+金属对人体的影响机制：
+\begin{enumerate}[leftmargin=*]
+    \item 与\keyword{巯基（-SH）}共价结合，改变生物大分子结构和功能
+    \item 产生过多自由基，破坏氧化还原系统，引起氧化损伤
+    \item 与必需微量元素相互作用，干扰正常生理生化功能
+    \item 诱导细胞合成保护性蛋白
+    \item 表观遗传调控（DNA甲基化、非编码RNA、组蛋白修饰）
+\end{enumerate}
+
+\textbf{络合剂治疗：}
+\begin{itemize}[leftmargin=*]
+    \item \imp{氨羧络合剂}：如依地酸二钠钙（CaNa$_2$-EDTA），与多种金属络合成无毒络合物排出
+    \item \imp{巯基络合剂}：如二巯基丙醇、二巯基丙磺酸钠、二巯基丁二酸钠、青霉胺，保护巯基酶系统
+\end{itemize}
+\end{defbox}
+
+% ----- 3.4.1 铅中毒 -----
+\subsection{铅中毒（Lead Poisoning）}
+
+\begin{keybox}
+\textbf{理化特性：}柔软、略带灰白色重金属，熔点327$^\circ$C；加热至400--500$^\circ$C有大量铅蒸气逸出，在空气中迅速氧化为PbO。
+
+\textbf{接触机会：}
+\begin{itemize}[leftmargin=*]
+    \item 职业暴露（呼吸道吸入）：铅矿开采冶炼、含铅蓄电池生产回收、含铅制品制造
+    \item 生活暴露（消化道）：含铅输水管道、含铅颜料、草药（铅丹Pb$_3$O$_4$、密陀僧PbO）
+\end{itemize}
+
+\textbf{毒作用机制——卟啉代谢障碍（血液系统）*：}
+
+铅抑制血红素合成过程中的关键酶：
+\begin{enumerate}[leftmargin=*]
+    \item 抑制\keyword{$\delta$-氨基乙酰丙酸脱水酶（ALAD）}→ 血/尿ALA↑
+    \item 抑制\keyword{亚铁螯合酶}→ 红细胞游离原卟啉（FEP）↑、锌原卟啉（ZPP）↑
+    \item 血红素合成障碍 → 血红蛋白↓ → 低色素性贫血
+    \item 嗜碱性点彩红细胞↑、网织红细胞↑
+\end{enumerate}
+
+\textbf{铅中毒的异常血红素前体：}ALA↑（血、尿）；FEP↑、ZPP↑（红细胞）
+
+\textbf{其他毒作用机制：}
+\begin{itemize}[leftmargin=*]
+    \item \imp{神经系统}：ALA升高→GABA受体竞争性抑制→神经效应改变；损害周围神经→脱髓鞘→神经传导速度减慢→\textbf{垂腕、垂足}
+    \item \imp{泌尿系统}：损害近曲小管→Fanconi综合征（尿糖、尿氨基酸、尿磷酸盐↑）
+    \item \imp{消化系统}：抑制肠壁碱性磷酸酶和ATP酶→肠壁平滑肌痉挛→\textbf{铅绞痛}
+\end{itemize}
+\end{keybox}
+
+\begin{keybox}
+\textbf{慢性铅中毒临床表现（较常见）：}
+\begin{itemize}[leftmargin=*]
+    \item \imp{神经系统}：
+    \begin{itemize}
+        \item 类神经症：头昏、头痛、无力、记忆力减退、睡眠障碍（功能性）
+        \item 周围神经病：感觉型（肢端麻木、手套袜套型感觉障碍）；运动型（肌无力、腕下垂、足下垂）；混合型
+        \item 中毒性脑病（最严重，少见）：头痛、恶心、呕吐、高热、烦躁、抽搐、昏迷
+    \end{itemize}
+    \item \imp{造血系统}：低色素正常细胞/小细胞性贫血（血浆铁不降低）；点彩红细胞↑、网织红细胞↑
+    \item \imp{消化系统}：食欲不振、恶心、铅线（齿龈边缘蓝黑色PbS沉积）、\keyword{铅绞痛}（突发剧烈腹痛）
+    \item \imp{其他}：铅容（面色苍白）、高血压、铅性肾病
+\end{itemize}
+
+\textbf{急性铅中毒（较少见）：}经口服用大量铅化合物。潜伏期4--6小时至1--2周。铅绞痛、口内金属味、铅容。
+
+\textbf{诊断（GBZ37-2024）：}职业接触史（密切接触铅$\geq$3个月）+车间空气测定+临床症状（神经、消化、造血系统）+实验室检查（血铅、尿铅、$\delta$-ALA、FEP、ZPP）
+
+\textbf{治疗：}金属络合剂驱铅治疗——依地酸二钠钙（CaNa$_2$-EDTA）；对症治疗。血铅>700$\mu$g/L尤其有中枢/周围神经紊乱时考虑络合剂驱铅。
+
+\textbf{预防：}无毒/低毒材料替代（锌钡白代替铅白；铁红代替铅丹；激光排版代替铅字）；降低车间铅浓度（工艺改革、通风，控制熔铅温度减少铅蒸气）；个人防护（防护服、防烟尘口罩）；定期健康检查（妊娠及哺乳期女工调离）
+\end{keybox}
+
+% ----- 3.4.2 汞中毒 -----
+\subsection{汞中毒（Mercury Poisoning）}
+
+\begin{keybox}
+\textbf{接触机会：}汞矿开采冶炼、温度计/气压计/血压计制造（逐步替代）、催化剂、汞齐生产应用、军工雷汞、核工业冷却剂、含汞化妆品、误服汞盐
+
+\textbf{体内过程：}
+\begin{itemize}[leftmargin=*]
+    \item 吸收：呼吸道（金属汞约85\%经肺泡壁吸收）；消化道（汞盐及有机汞，>0.01\%）；皮肤基本不吸收
+    \item 分布不均：肾中最高，其次为肝、脑
+    \item 蓄积：肾（金属硫蛋白）
+    \item 排泄：以尿汞为主
+\end{itemize}
+
+\textbf{慢性汞中毒临床表现*（较常见，6个月及以上发病）：}
+\begin{itemize}[leftmargin=*]
+    \item \imp{易兴奋症}：急躁、易怒、胆怯、性格改变等——\textbf{特有表现}
+    \item \imp{震颤}：眼睑、舌尖、手指→意向性大震颤（动作开始时震颤，动作过程中加重，动作完成后停止；紧张或刻意控制时明显加重）
+    \item \imp{口腔炎}：流涎、汞线、牙龈肿胀
+\end{itemize}
+
+\textbf{急性汞中毒：}短时间吸入高浓度汞蒸气或摄入可溶性汞盐。起病急骤，发热、咳嗽、呼吸困难、口腔炎和胃肠道症状，可发生化学性肺炎、汞毒性皮炎。口服升汞→急性口腔炎/腐蚀性肠胃炎、汞毒性肾炎、蛋白尿甚至肾衰竭。
+
+\textbf{诊断（GBZ 89-2024）：}金属汞职业接触史+临床表现+职业卫生学调查+综合分析。尿汞生物接触限值：20$\mu$mol/mol肌酐。驱汞试验：5\%二巯丙磺钠5mL肌注，尿汞>45$\mu$g/L提示过量汞吸收。
+
+\textbf{治疗：}
+\begin{itemize}[leftmargin=*]
+    \item 误服汞盐：\textbf{不能洗胃}，应灌服高蛋白物质（蛋清/牛奶/豆浆）+活性炭吸附+硫酸镁导泻
+    \item 驱汞治疗：二巯基丙磺酸钠、二巯基丁二酸、二巯基丁二酸钠
+\end{itemize}
+
+\textbf{汞中毒的独特预防措施（与其他金属中毒不同）：}
+\begin{enumerate}[leftmargin=*]
+    \item 车间地面、工作台面应光滑无裂缝，便于冲洗（防止汞滴积聚）
+    \item 墙壁和天花板应涂刷过氯乙烯漆（减少汞蒸气吸附）
+    \item 定期用1\%碘蒸气熏蒸车间（碘与汞生成不挥发的碘化汞）
+    \item 作业场所温度控制在15--16$^\circ$C以下（降低汞蒸发速度）
+    \item 加强通风，在汞发生源设置槽边吸风装置
+    \item 定期进行尿汞检测和职业健康检查
+\end{enumerate}
+\end{keybox}
+
+% ----- 3.4.3 锰中毒 -----
+\subsection{锰中毒（Manganese Poisoning）}
+
+\begin{keybox}
+\textbf{接触机会：}锰矿开采冶炼、干电池制造（二氧化锰为原料）、电焊条制造及使用、染料工业
+
+\textbf{中毒机制（尚未完全清楚*）：}
+\begin{enumerate}[leftmargin=*]
+    \item 使中枢神经突触线粒体ATP酶活性降低 → 影响神经突触传导能力
+    \item 抑制胆碱酯酶合成 → 乙酰胆碱蓄积 → \textbf{肌张力增高}（震颤麻痹）
+    \item 基底神经节、纹状体内\keyword{5-羟色胺和多巴胺含量降低} → 神经传导障碍
+\end{enumerate}
+
+\textbf{慢性锰中毒临床表现（较多见）*：}
+\begin{itemize}[leftmargin=*]
+    \item 早期：类神经症和自主神经功能障碍（记忆力减退、嗜睡、精神萎靡）
+    \item 继而：锥体外系神经受损——肌张力增高、手指细小震颤、腱反射亢进、激动多汗
+    \item 后期：\keyword{帕金森氏综合征}——说话含糊不清、面部表情减少（面具脸）、动作笨拙、慌张步态、肌张力齿轮样增强、静止性震颤、记忆力减退、智能下降、强迫观念
+\end{itemize}
+
+\textbf{急性锰中毒（较少见）：}口服高锰酸钾→腐蚀性胃肠炎/刺激性支气管炎；电焊→金属烟热（咽痛、咳嗽、寒颤高热）
+
+\textbf{治疗：}
+\begin{itemize}[leftmargin=*]
+    \item 驱锰：依地酸二钠钙（CaNa$_2$-EDTA）、二巯基丁二酸、对氨基水杨酸钠（PAS）
+    \item 对症（震颤麻痹）：左旋多巴制剂、金刚烷胺
+    \item 急救（口服KMnO$_4$）：温水洗胃、口服牛奶和氢氧化铝凝胶
+\end{itemize}
+
+\textbf{预防：}通风降尘、焊接密闭吸尘装置、自动电焊代替手工、佩戴滤膜口罩
+\end{keybox}
+
+\subsection{铅、汞、锰中毒对比总结}
+
+\begin{table}[H]
+\centering
+\caption{铅、汞、锰中毒对比}
+\begin{tabularx}{\textwidth}{lXXX}
+\hline
+\textbf{特征} & \textbf{铅（Pb）} & \textbf{汞（Hg）} & \textbf{锰（Mn）} \\
+\hline
+主要吸收途径 & 呼吸道 & 呼吸道（85\%） & 呼吸道 \\
+主要排泄 & 尿液（血铅、尿铅） & 尿液（尿汞） & 胆道→粪便 \\
+毒作用机制 & 卟啉代谢障碍、巯基结合 & 与巯基结合、抑制酶活性 & 线粒体ATP酶↓、ACh蓄积、多巴胺↓ \\
+特征性表现 & 铅绞痛、垂腕、铅线、贫血 & 易兴奋症、意向性震颤、口腔炎 & 帕金森综合征、面具脸、齿轮样肌张力 \\
+解毒剂 & CaNa$_2$-EDTA & 二巯基丙磺酸钠 & CaNa$_2$-EDTA、PAS \\
+\hline
+\end{tabularx}
+\end{table}
+
+% ----- 3.5 刺激性气体 -----
+\section{刺激性气体}
+
+\begin{defbox}
+\textbf{刺激性气体（Irritant Gases）}：对眼、呼吸道黏膜及皮肤有刺激作用，引起机体以急性炎症、\keyword{肺水肿}为主要病理改变的一类气态物质。多具腐蚀性。
+
+\textbf{常见类型：}Cl$_2$、NH$_3$、NOx、SO$_2$、COCl$_2$（光气）、SO$_3$、甲醛
+
+\textbf{分类：}酸类（硫酸、硝酸、盐酸）；氮的氧化物；硫的化合物；氯及其化合物；醛类；酯类；卤烃类
+\end{defbox}
+
+\subsection{刺激性气体的毒作用机制与特点}
+
+\begin{keybox}
+\textbf{毒作用机制：}
+\begin{enumerate}[leftmargin=*]
+    \item \imp{直接刺激腐蚀作用}：酸——吸收组织水分、凝固蛋白、细胞坏死；碱——吸收细胞水分、皂化脂肪、细胞坏死
+    \item \imp{引起呼吸道炎症反应}：刺激细胞因子"瀑布效应"扩大炎症损伤
+    \item \imp{自由基损伤作用}：自身或产物为自由基，基于炎症反应的自由基
+\end{enumerate}
+
+\textbf{毒作用特点*：}
+\begin{itemize}[leftmargin=*]
+    \item 病变程度主要取决于\keyword{吸入浓度和持续接触时间}
+    \item 病变部位与\keyword{毒物水溶性}密切相关：
+    \begin{itemize}
+        \item \textbf{水溶性大}（NH$_3$、HCl）：主要作用于上呼吸道，刺激症状明显
+        \item \textbf{水溶性中等}（Cl$_2$、SO$_2$）：作用于整个呼吸道
+        \item \textbf{水溶性小}（光气、NO$_2$）：主要作用于深呼吸道和肺泡，刺激症状轻但危害重
+    \end{itemize}
+    \item 接触时间短-浓度低：局部刺激为主
+    \item 浓度高/时间长：局部损害和全身反应（喉痉挛、支气管痉挛；反射性中枢抑制、昏迷或休克）
+\end{itemize}
+\end{keybox}
+
+\subsection{中毒性肺水肿}
+
+\begin{keybox}
+\textbf{中毒性肺水肿（Toxic Pulmonary Edema）*}：吸入高浓度刺激性气体后引起肺泡及肺间质过量体液潴留的病理过程，最终可导致急性呼吸功能衰竭。是刺激性气体所致\keyword{最严重危害}和\keyword{职业病最常见急症}之一。
+
+\textbf{常见引起肺水肿的气体：}光气、二氧化氮、氨、氯、臭氧、硫酸二甲酯、羰基镍
+
+\textbf{发病机制：}刺激性气体 → 神经-体液反射/局部刺激 → 肺血管、淋巴管痉挛 → 肺淋巴循环梗阻 → 血管活性物质释放 → 肺泡表面活性物质减少 → 肺泡/毛细血管通透性增加 → 肺水肿 → 缺氧 → 休克 → ARDS
+
+\textbf{临床过程（四期）*：}
+\begin{enumerate}[leftmargin=*]
+    \item \imp{刺激期}：气管-支气管黏膜急性炎症。水溶性低的气体此期症状不明显
+    \item \imp{潜伏期}（一般2--6小时）：\textbf{假象期}——症状减轻或消失，无明显体征。\textbf{病情转归的关键期}
+    \item \imp{肺水肿期}（24h内剧变）：症状突然加重——呼吸困难、烦躁、大汗淋漓、咳大量粉红色泡沫痰、口唇发绀、两肺湿啰音。胸片可见蝴蝶形阴影，持续1--3天
+    \item \imp{恢复期}（2--15天）：1--2周内逐渐恢复，多无后遗症
+\end{enumerate}
+
+\textbf{救治原则（关键是积极防治肺水肿和ARDS）：}
+\begin{enumerate}[leftmargin=*]
+    \item 现场急救处理（脱离接触、清洗皮肤眼）
+    \item 迅速纠正缺氧（氧疗浓度50\%，机械通气）
+    \item 糖皮质激素（\textbf{早期、足量、短程}使用，降低肺毛细血管通透性）
+    \item 去泡沫剂二甲硅酮、维持呼吸道通畅
+    \item 控制液体入量、预防继发感染
+\end{enumerate}
+\end{keybox}
+
+\subsection{氯气（Cl$_2$）}
+
+\begin{keybox}
+\textbf{理化特性：}黄绿色、有异臭和强烈刺激性气体，易溶于水和碱性溶液。遇水生成次氯酸和盐酸；高温与CO作用生成光气。
+
+\textbf{接触机会：}电解食盐、制造氯化物（四氯化碳、漂白粉、环氧树脂）、制药/皮革/造纸/印染业作氧化剂或漂白剂
+
+\textbf{急性中毒分级：}
+\begin{itemize}[leftmargin=*]
+    \item 刺激反应：眼、呼吸道刺激
+    \item 轻度：支气管炎或支气管周围炎
+    \item 中度：支气管肺炎、间质性/局限性肺泡性肺水肿
+    \item 重度：弥漫性肺泡性肺水肿或中央性肺水肿
+\end{itemize}
+
+\textbf{慢性影响：}慢性支气管炎、支气管哮喘、肺气肿；类神经症；皮肤痤疮样皮疹或疱疹
+
+\textbf{治疗：}现场处理→合理氧疗→糖皮质激素（早期、足量、短程）→维持呼吸道通畅→控制液体入量→预防继发感染。皮肤接触液氯→灼伤或急性皮炎。
+
+\textbf{预防：}防止跑冒滴漏、保持管道负压、加强通风和密闭操作、含氯废气石灰净化处理、MAC=1 mg/m$^3$
+\end{keybox}
+
+% ----- 3.6 窒息性气体 -----
+\section{窒息性气体}
+
+\begin{defbox}
+\textbf{窒息性气体的分类：}
+\begin{enumerate}[leftmargin=*]
+    \item \imp{单纯窒息性气体}：无毒或惰性气体，使空气中氧含量降低 → 机体缺氧（N$_2$、CH$_4$、CO$_2$）
+    \item \imp{化学窒息性气体}：
+    \begin{itemize}
+        \item 血液窒息性：使血液运氧能力下降（如CO竞争性结合Hb）
+        \item 细胞窒息性：使组织利用氧的能力障碍（如HCN、H$_2$S抑制细胞呼吸酶）
+    \end{itemize}
+\end{enumerate}
+\end{defbox}
+
+\begin{keybox}
+\textbf{毒作用特点*：}
+\begin{itemize}[leftmargin=*]
+    \item 主要致病环节均为\keyword{引起机体组织细胞缺氧}
+    \item \keyword{脑对缺氧极为敏感}——脑重量仅占体重2--3\%，但耗氧量占总耗氧量20--30\%，无供能物质储备，全靠脑循环供给氧气
+    \item \textbf{防治脑水肿是治疗的关键}
+    \item 慢性中毒尚未确证
+\end{itemize}
+
+\textbf{临床表现：}
+\begin{itemize}[leftmargin=*]
+    \item 缺氧表现：中枢神经系统（头痛、烦躁、肌肉抽搐、语言障碍、嗜睡、昏迷）；呼吸循环系统（呼吸浅促、紫绀、心跳过速、血压下降、休克）
+    \item 脑水肿（严重缺氧或窒息3--5min）：颅压增高、头痛、呕吐、血压升高、心率减慢
+    \item 面部颜色：CO中毒呈\keyword{樱桃红色}；氰化物中毒可有心肌损害、肺水肿
+\end{itemize}
+
+\textbf{治疗原则（防治脑水肿是关键）：}
+\begin{enumerate}[leftmargin=*]
+    \item 积极纠正脑缺氧（吸氧40--60\%）
+    \item 解毒治疗；降低颅压和解除脑水肿（肾上腺糖皮质激素、脱水剂）
+    \item 降低血液粘稠度；改善脑组织代谢
+    \item 清除自由基；钙通道阻滞剂；对症及支持治疗
+\end{enumerate}
+\end{keybox}
+
+\subsection{一氧化碳（CO）中毒}
+
+\begin{keybox}
+\textbf{理化特性：}无色、无臭、无味、无刺激；易燃易爆；微溶于水；不易被活性炭吸附。\textbf{CO中毒是我国发病和死亡人数最高的急性职业中毒。}
+
+\textbf{中毒机制*：}
+\begin{enumerate}[leftmargin=*]
+    \item CO与Hb（Fe$^{2+}$）结合 → \keyword{碳氧血红蛋白（HbCO）}——\textbf{亲和力比O$_2$大200--300倍}，解离速度比O$_2$慢3600倍 → 阻碍氧运输
+    \item 与肌红蛋白结合 → 损害氧的细胞弥散和线粒体功能
+    \item 与还原型细胞色素氧化酶结合 → 阻碍氧利用
+\end{enumerate}
+
+\textbf{急性CO中毒分级（依据HbCO\%）：}
+\begin{itemize}[leftmargin=*]
+    \item \imp{轻度}（HbCO >10\%）：剧烈头痛、头晕、四肢无力、恶心呕吐、无昏迷
+    \item \imp{中度}（HbCO >30\%）：面色潮红、多汗、脉快、浅至中度昏迷
+    \item \imp{重度}（HbCO >50\%）：深度昏迷、脑水肿、休克、严重心肌损害、肺水肿、呼吸衰竭
+    \item \imp{迟发性脑病*}：\textbf{2--60天"假愈期"}后出现精神及意识障碍（痴呆状态）、锥体外系/锥体系神经损害
+\end{itemize}
+
+\textbf{实验室检查：}血中HbCO测定（t$_{1/2}$=5h）；脑电图及诱发电位；脑CT与核磁共振；心肌酶检查；心电图
+
+\textbf{治疗：}立即脱离中毒环境→高浓度氧疗（高压氧治疗）→防治脑水肿→对症支持
+\end{keybox}
+
+\subsection{氰化氢（HCN）中毒}
+
+\begin{keybox}
+\textbf{理化特性：}无色、具\keyword{苦杏仁味}气体，密度0.93，易扩散，易溶于水、脂肪及有机溶剂。
+
+\textbf{接触机会：}氰化物生产、电镀、贵重金属提炼、制药、合成材料、灭鼠剂/杀虫剂生产、钢铁热处理。\textbf{日常生活：}苦杏仁、桃仁、枇杷仁、木薯食用不当中毒。
+
+\textbf{中毒机制*：}CN$^-$与细胞色素氧化酶Fe$^{3+}$结合 → 氰化高铁细胞色素氧化酶 → Fe$^{3+}$失去传递电子能力 → \keyword{中断呼吸链}→ 阻断细胞内氧化代谢 → \keyword{细胞窒息死亡}。氰化物可经呼吸道、皮肤、消化道进入机体。大部分在硫氰酸酶作用下转化为硫氰酸盐随尿排出。
+
+\textbf{急性中毒四期（未发生"电击样"死亡者）：}
+\begin{enumerate}[leftmargin=*]
+    \item \imp{前驱期}：刺激症状、呼气带苦杏仁味
+    \item \imp{呼吸困难期}：胸闷、心悸、呼吸困难
+    \item \imp{痉挛期}：强直性痉挛
+    \item \imp{麻痹期}：肌肉松弛、反射消失，重者昏迷死亡
+\end{enumerate}
+
+\textbf{特效解毒剂——"亚硝酸钠-硫代硫酸钠"疗法：}
+\begin{enumerate}[leftmargin=*]
+    \item 高铁血红蛋白生成剂（亚硝酸钠/4-DMAP）将Fe$^{2+}$-Hb氧化为Fe$^{3+}$-Hb → 后者与CN$^-$结合 → 氰化高铁血红蛋白（暂时解毒）
+    \item 硫代硫酸钠在硫氰酸酶/转硫酶作用下 → 将CN$^-$转化为无毒硫氰酸盐（NaSCN）→ 随尿排出
+\end{enumerate}
+\end{keybox}
+
+\subsection{硫化氢（H$_2$S）}
+
+H$_2$S是具有臭蛋味的无色气体，比重1.19。主要由含硫有机物腐败产生，常见于下水道清理、粪坑、腌渍池、造纸厂等场所。中毒机制与HCN类似，抑制细胞色素氧化酶。治疗可用高铁血红蛋白生成剂。
+
+% ----- 3.7 有机溶剂 -----
+\section{有机溶剂}
+
+\subsection{概述}
+
+有机溶剂多为脂溶性、易挥发的有机液体，主要经呼吸道吸入，也可经皮肤吸收。共同毒性特点：\textbf{中枢神经系统抑制作用（麻醉作用）}；对皮肤黏膜有刺激作用。
+
+\subsection{苯（Benzene）}
+
+\begin{keybox}
+\textbf{接触机会：}苯的生产（煤焦油分馏、石油裂解）、用作溶剂和稀释剂（油漆、喷漆、制鞋、箱包）、化工原料（合成橡胶、塑料等）
+
+\textbf{毒作用机制*：}
+\begin{itemize}[leftmargin=*]
+    \item 代谢产物（酚类、氢醌、苯醌等）在骨髓中蓄积 → \keyword{抑制造血功能}
+    \item 损害骨髓造血干细胞和骨髓基质细胞
+    \item 致染色体畸变和白血病
+\end{itemize}
+
+\textbf{临床表现：}
+\begin{itemize}[leftmargin=*]
+    \item \imp{急性中毒}：中枢神经系统麻醉症状——头痛、眩晕、步态蹒跚、醉酒感；重者昏迷、抽搐、呼吸循环衰竭
+    \item \imp{慢性中毒}：
+    \begin{itemize}
+        \item 造血系统损害（最特征性）：\textbf{白细胞减少→血小板减少→全血细胞减少→再生障碍性贫血→白血病}
+        \item 神经系统：类神经症
+    \end{itemize}
+\end{itemize}
+
+\textbf{诊断（GBZ 68-2022）：}职业接触史+血常规异常+排除其他原因。苯为\keyword{IARC 1类致癌物}（致白血病）。
+
+\textbf{预防：}以无毒/低毒溶剂替代（甲苯、二甲苯代替苯作溶剂）；加强通风排毒；个人防护。
+\end{keybox}
+
+\subsection{其他常见有机溶剂}
+
+\begin{table}[H]
+\centering
+\caption{常见有机溶剂的中毒特点}
+\begin{tabularx}{\textwidth}{lX}
+\hline
+\textbf{名称} & \textbf{主要毒作用及临床特点} \\
+\hline
+\imp{甲苯、二甲苯} & 麻醉作用较苯强；对造血系统损害较苯弱；皮肤黏膜刺激 \\
+\imp{正己烷} & 主要损害\keyword{周围神经系统}——远端轴索病、手套袜套样感觉障碍、肌无力 \\
+\imp{二硫化碳（CS$_2$）} & 神经系统损害（类神经症、周围神经病）；心血管系统（动脉粥样硬化）\\
+\imp{四氯化碳（CCl$_4$）} & \keyword{肝毒性}（中毒性肝炎）和肾毒性；麻醉作用 \\
+\hline
+\end{tabularx}
+\end{table}
+
+% ----- 3.8 苯的氨基和硝基化合物 -----
+\section{苯的氨基和硝基化合物}
+
+\begin{keybox}
+\textbf{共同毒作用特点：}
+\begin{enumerate}[leftmargin=*]
+    \item \imp{形成高铁血红蛋白（MetHb）}：使Fe$^{2+}$-Hb氧化为Fe$^{3+}$-Hb → 失去携氧能力 → 组织缺氧（\keyword{化学性青紫}）
+    \item \imp{溶血作用}：赫恩氏小体（Heinz body）形成 → 溶血性贫血
+    \item \imp{肝脏损害}：中毒性肝炎
+    \item \imp{泌尿系统损害}：出血性膀胱炎
+    \item \imp{致癌作用}：苯胺致膀胱癌（IARC 1类）；联苯胺致膀胱癌
+\end{enumerate}
+
+\begin{exambox}
+\textbf{常见物质形成高铁血红蛋白能力的强弱比较（考试常考排序）：}\\
+硝基苯 $\gg$ 苯胺 $>$ 硝基甲苯 $>$ 二硝基甲苯 $>$ 三硝基甲苯（TNT）
+
+MetHb形成能力最强的是硝基苯，其次为苯胺。TNT虽有三硝基结构但其MetHb形成能力相对较弱，其主要毒性表现为中毒性白内障和中毒性肝炎。
+\end{exambox}
+
+\textbf{高铁血红蛋白血症的治疗：}亚甲蓝（美蓝）——将Fe$^{3+}$-Hb还原为Fe$^{2+}$-Hb。需小剂量使用（1--2mg/kg），大剂量反而氧化Hb。
+
+\subsection{苯胺（Aniline）}
+经呼吸道和皮肤吸收。主要表现为高铁血红蛋白血症（发绀）、溶血性贫血、中毒性肝炎和膀胱刺激症状。
+
+\subsection{三硝基甲苯（TNT）}
+经呼吸道、皮肤和消化道吸收。主要损害：\keyword{中毒性白内障}（最特征性改变，晶状体混浊*）、中毒性肝炎（中毒性肝病）和再生障碍性贫血。
+\end{keybox}
+
+% ----- 3.9 高分子化合物 -----
+\section{高分子化合物生产中的毒物}
+
+\begin{table}[H]
+\centering
+\caption{高分子化合物主要职业中毒}
+\begin{tabularx}{\textwidth}{lX}
+\hline
+\textbf{名称} & \textbf{接触机会与主要毒作用} \\
+\hline
+\imp{氯乙烯} & 聚氯乙烯（PVC）生产；\keyword{肝血管肉瘤}（IARC 1类致癌物*）；肢端溶骨症；肝纤维化 \\
+\imp{含氟塑料热解物} & 聚四氟乙烯（PTFE）高温热解产生；\keyword{聚合物烟雾热}；肺纤维化 \\
+\imp{丙烯腈} & 合成腈纶纤维的原料；类似氰化物中毒机制（释放CN$^-$）；高铁血红蛋白血症 \\
+\hline
+\end{tabularx}
+\end{table}
+
+% ----- 3.10 农药中毒 -----
+\section{农药中毒}
+
+\subsection{有机磷酸酯类农药}
+
+\begin{keybox}
+\textbf{毒作用机制*：}不可逆性抑制\keyword{乙酰胆碱酯酶（AChE）}→ 乙酰胆碱（ACh）蓄积 → 胆碱能神经过度兴奋 → 毒蕈碱样症状、烟碱样症状和中枢神经系统症状。
+
+\textbf{临床表现：}
+\begin{itemize}[leftmargin=*]
+    \item \imp{毒蕈碱样症状（M样）}：瞳孔缩小、视力模糊、流泪流涎、恶心呕吐、腹痛腹泻、大小便失禁、支气管痉挛、呼吸困难、肺水肿
+    \item \imp{烟碱样症状（N样）}：肌束震颤、肌无力、肌麻痹（呼吸肌麻痹致死亡）
+    \item \imp{中枢神经系统症状}：头痛、头晕、抽搐、昏迷
+\end{itemize}
+
+\textbf{诊断依据：}接触史+M样和N样症状+全血ChE活性降低（<70\%轻度，<50\%中度，<30\%重度）
+
+\textbf{治疗：}
+\begin{enumerate}[leftmargin=*]
+    \item 清除毒物（脱离接触、洗胃、皮肤清洗）
+    \item \imp{特效解毒剂——阿托品}（对抗M样症状，\textbf{早期、足量、反复给药}，阿托品化标志：瞳孔扩大、颜面潮红、口干、心率加快）
+    \item \imp{胆碱酯酶复能剂——氯磷定/解磷定}（恢复ChE活性，对N样症状有效，对老化的ChE无效）
+\end{enumerate}
+
+\textbf{中间期肌无力综合征（IMS）：}急性中毒后1--4天，出现颈屈肌、四肢近端肌和呼吸肌无力。
+
+\textbf{迟发性多神经病（OPIDN）：}急性中毒后2--3周出现，四肢远端感觉和运动障碍。
+\end{keybox}
+
+\subsection{其他农药}
+
+\begin{itemize}[leftmargin=*]
+    \item \imp{氨基甲酸酯类农药}：与有机磷类似但ChE抑制为\keyword{可逆性}，临床症状较轻。\textbf{治疗：}阿托品（\textbf{不宜使用肟类复能剂}）
+    \item \imp{拟除虫菊酯类农药}：作用于神经系统钠通道。面部灼烧感、皮肤刺激、抽搐。对症支持为主
+    \item \imp{百草枯（Paraquat）}：\keyword{剧毒}，特征性损害——\keyword{进行性不可逆肺纤维化}，多死于呼吸衰竭。无特效解毒剂
+\end{itemize}
+
+% ----- 3.11 复习题 -----
+\section{复习题}
+
+\begin{enumerate}[leftmargin=*, itemsep=8pt]
+    \item \textbf{【名词解释】}毒物；生产性毒物；职业中毒；代谢活化
+    \item \textbf{【名词解释】}中毒性肺水肿；高铁血红蛋白血症
+    \item \textbf{【名词解释】}单纯窒息性气体与化学窒息性气体
+    \item \textbf{【简答题】}简述毒物进入机体的主要途径及影响因素。
+    \item \textbf{【简答题】}简述毒物生物转化的I相和II相反应及其意义。
+    \item \textbf{【简答题】}简述铅中毒致卟啉代谢障碍的机制及实验室诊断指标。
+    \item \textbf{【简答题】}简述慢性铅中毒、汞中毒、锰中毒的主要临床表现对比。
+    \item \textbf{【简答题】}简述刺激性气体的毒作用特点及中毒性肺水肿的四期临床过程。
+    \item \textbf{【简答题】}试比较CO和HCN的中毒机制、临床表现及解毒治疗。
+    \item \textbf{【简答题】}简述苯的慢性中毒表现及其致癌性。
+    \item \textbf{【简答题】}简述有机磷农药的中毒机制、临床表现及特效解毒治疗（含阿托品和复能剂的使用特点）。
+    \item \textbf{【简答题】}简述百草枯中毒的特征性损害及治疗原则。
+\end{enumerate}
+
+\subsection*{参考答案要点}
+
+\begin{enumerate}[leftmargin=*, itemsep=5pt]
+    \item \textbf{毒物}：较小剂量即可引起机体病理改变甚至危及生命的化学物质。\textbf{生产性毒物}：生产过程中产生、存在于工作环境中的毒物。\textbf{职业中毒}：劳动者在生产过程中接触生产性毒物引起的中毒。\textbf{代谢活化}：无毒化学物经生物转化生成有毒中间产物的过程。
+    \item \textbf{中毒性肺水肿}：吸入高浓度刺激性气体后引起肺泡及肺间质过量体液潴留的病理过程。\textbf{高铁血红蛋白血症}：Fe$^{2+}$-Hb氧化为Fe$^{3+}$-Hb失去携氧能力，以化学性青紫为特征。
+    \item \textbf{单纯窒息性}：稀释空气中氧浓度导致缺氧（N$_2$、CH$_4$）。\textbf{化学窒息性}：血液窒息性（CO竞争Hb）和细胞窒息性（HCN、H$_2$S抑制细胞呼吸酶）。
+    \item 三大途径：呼吸道（最主要）、消化道、皮肤。影响因素：浓度/分压、水溶性、血/气分配系数、劳动强度、肺通气量等。
+    \item I相：氧化、还原、水解（官能团化，引入极性基团）。II相：结合反应（与葡萄糖醛酸、硫酸等结合）。意义：增加水溶性促进排泄，但也可代谢活化增毒。
+    \item 铅抑制ALAD（→ALA↑）、亚铁螯合酶（→FEP↑、ZPP↑）→血红素合成障碍→Hb↓。诊断指标：血铅、尿铅、$\delta$-ALA↑、FEP↑、ZPP↑、点彩红细胞↑。
+    \item 铅：类神经症、周围神经病（垂腕垂足）、铅绞痛、贫血、铅线。汞：易兴奋症（特有）、意向性震颤、口腔炎。锰：帕金森综合征（面具脸、慌张步态、齿轮样肌张力、静止性震颤）。
+    \item 特点：病变程度取决于浓度和时间；部位与水溶性相关。四期：刺激期→潜伏期（假象期，2--6h，关键期）→肺水肿期（24h剧变，粉红色泡沫痰）→恢复期（2--15天）。
+    \item CO：与Hb结合→HbCO（樱桃红色），亲和力大200--300倍。氧疗/高压氧。HCN：抑制细胞色素氧化酶Fe$^{3+}$→中断呼吸链→细胞窒息（苦杏仁味）。亚硝酸钠-硫代硫酸钠疗法。
+    \item 慢性苯中毒：造血系统损害（白细胞↓→血小板↓→全血↓→再障→白血病）。IARC 1类致癌物（致白血病）。
+    \item 机制：不可逆抑制AChE→ACh蓄积→胆碱能危象。M样（缩瞳、流涎、肺水肿）+N样（肌束震颤、肌麻痹）+CNS症状。解毒：阿托品（早期足量反复，抗M样）+氯磷定/解磷定（复能ChE，抗N样，对老化酶无效）。
+    \item 特征性损害：进行性不可逆肺纤维化，多死于呼吸衰竭。无特效解毒剂。治疗：早期血液灌流、免疫抑制剂、对症支持。
+\end{enumerate}
+
+\newpage
+% =====================================================================
+%  CHAPTER 4: 粉尘与职业性肺部疾病
+% =====================================================================
+\chapter{生产性粉尘与职业性肺部疾病}
+\setcounter{chapter}{4}
+\chapterintro{
+本章为课程核心章节（15学时，占比最大）。掌握生产性粉尘的定义、来源及分类；掌握粉尘的理化性质及其卫生学意义*；掌握矽肺的定义、病理改变（矽结节）和X线诊断分期；掌握石棉肺的病理特征和临床表现；掌握煤工尘肺、硅酸盐尘肺、有机粉尘引起的肺部疾病；掌握尘肺病的预防和控制（防尘八字方针）。
+}
+
+% ----- 4.1 概述 -----
+\section{生产性粉尘概述}
+
+\begin{defbox}
+\textbf{生产性粉尘}：在生产活动中产生的、能够较长时间悬浮于生产环境中的固体微粒。粒径多为0.1--10 $\mu$m。
+
+\textbf{尘肺（Pneumoconiosis）}：在职业活动中长期吸入生产性矿物性粉尘并在肺内潴留而引起的以肺组织\keyword{弥漫性纤维化}为主的全身性疾病。
+\end{defbox}
+
+\subsection{生产性粉尘的来源与分类}
+
+\begin{keybox}
+\textbf{来源：}
+\begin{enumerate}[leftmargin=*]
+    \item 固体物质的机械加工或粉碎（采矿、凿岩、破碎、研磨）
+    \item 物质加热时产生的蒸气在空气中冷凝或氧化（熔炼、焊接）
+    \item 有机物质不完全燃烧（烟尘）
+    \item 粉末状物质的混合、过筛、包装、搬运
+\end{enumerate}
+
+\textbf{分类（按性质）：}
+\begin{enumerate}[leftmargin=*]
+    \item \imp{无机粉尘}：
+    \begin{itemize}
+        \item 矿物性粉尘：矽尘（石英尘）、石棉尘、煤尘、滑石尘等
+        \item 金属性粉尘：铅尘、铁尘、锡尘等
+        \item 人工无机粉尘：水泥尘、玻璃纤维等
+    \end{itemize}
+    \item \imp{有机粉尘}：
+    \begin{itemize}
+        \item 植物性粉尘：棉尘、木尘、谷物粉尘等
+        \item 动物性粉尘：皮毛尘、骨粉等
+        \item 人工有机粉尘：塑料尘、染料尘等
+    \end{itemize}
+    \item \imp{混合性粉尘}：上述两类或两类以上粉尘混合存在
+\end{enumerate}
+\end{keybox}
+
+\subsection{粉尘的理化性质及其卫生学意义*}
+
+\begin{keybox}
+\textbf{1. 粉尘的化学组成}：决定其对机体危害性质的最重要因素。含游离SiO$_2$的粉尘致矽肺；石棉尘致石棉肺；含铅粉尘致铅中毒。
+
+\textbf{2. 粉尘浓度}：单位体积空气中的粉尘重量（mg/m$^3$）。浓度越高，危害越大。
+
+\textbf{3. 粉尘分散度*}：粉尘颗粒大小的组成，用粒径分布的百分数表示。
+\begin{itemize}[leftmargin=*]
+    \item 粒径越小，悬浮时间越长，被吸入机会越多
+    \item \keyword{可吸入性粉尘（IP）}：粒径$\leq$15$\mu$m，能进入呼吸道
+    \item \keyword{呼吸性粉尘（RP）}：粒径$\leq$5$\mu$m，能到达肺泡
+    \item >10$\mu$m：主要沉积在上呼吸道；<5$\mu$m：可达肺泡
+    \item 2--5$\mu$m的粉尘致肺纤维化能力最强
+\end{itemize}
+
+\textbf{4. 粉尘的溶解度：}有毒粉尘（铅、砷等）溶解度越大，毒性越强；无毒粉尘溶解度越大，越易排出，危害越小。致纤维化粉尘（石英等）溶解度很低但危害持久。
+
+\textbf{5. 粉尘的荷电性：}同种电荷相互排斥，增加悬浮稳定性；荷电粉尘易滞留于呼吸道。
+
+\textbf{6. 粉尘的形状与硬度：}球形沉降快，片状/纤维状沉降慢；硬质粉尘对呼吸道机械损伤较大。
+
+\textbf{7. 粉尘的爆炸性：}某些粉尘（煤尘、面粉）在空气中达到一定浓度时遇火可引起爆炸。
+
+\textbf{8. 粉尘的吸湿性：}吸湿性强的粉尘易在呼吸道沉积。
+\end{keybox}
+
+\subsection{人体对生产性粉尘的防御和清除}
+
+\begin{keybox}
+人体呼吸道具有完善的多层次防御和清除机制，能将绝大部分吸入的粉尘排出体外，但当粉尘浓度过高或长期持续接触时，防御清除机制可能被破坏，导致粉尘在肺内潴留。
+
+\textbf{一、鼻腔和咽喉部}
+\begin{itemize}[leftmargin=*]
+    \item 鼻毛和鼻腔结构：阻挡>10$\mu$m的粉尘颗粒
+    \item 鼻甲弯曲结构：产生湍流，增加粉尘粒子撞击并沉积于黏膜表面的机会
+    \item 喷嚏反射：将粉尘颗粒排出
+\end{itemize}
+
+\textbf{二、气管和支气管——黏液-纤毛清除系统（最重要清除机制）}
+\begin{itemize}[leftmargin=*]
+    \item 纤毛上皮细胞：以每分钟约1200次的频率向上摆动，推动黏液（含粉尘）以每分钟1--3cm的速度向咽喉部移动
+    \item 黏液层：杯状细胞和黏液腺分泌的黏液捕获粉尘颗粒（主要捕获2--10$\mu$m的粉尘）
+    \item 咳嗽反射：纤毛推动的含粉尘黏液到达咽喉部后被咳出或咽下
+\end{itemize}
+
+\textbf{三、肺泡——肺泡巨噬细胞清除}
+\begin{itemize}[leftmargin=*]
+    \item 到达肺泡（<5$\mu$m，即呼吸性粉尘）的粉尘主要通过\keyword{肺泡巨噬细胞}吞噬清除
+    \item 巨噬细胞吞噬粉尘后：
+    \begin{itemize}
+        \item 大部分携带粉尘的巨噬细胞沿肺泡表面向终末细支气管移动→纤毛-黏液系统排出
+        \item 部分进入肺间质淋巴系统→淋巴结
+        \item 部分在肺泡内死亡，释放出吞噬的粉尘颗粒→被其他巨噬细胞再次吞噬
+    \end{itemize}
+    \item \keyword{巨噬细胞吞噬SiO$_2$后发生损伤和死亡}是矽肺发病的起始环节
+\end{itemize}
+
+\textbf{四、淋巴系统清除}
+\begin{itemize}[leftmargin=*]
+    \item 进入肺间质的粉尘颗粒沿淋巴引流进入肺门淋巴结和纵隔淋巴结
+    \item 粉尘在淋巴结中蓄积可引起淋巴结病变（淋巴结肿大、纤维化）
+\end{itemize}
+
+\textbf{五、影响清除效率的因素：}
+\begin{itemize}[leftmargin=*]
+    \item 粉尘浓度和粒径（浓度越高、粒径越小，越易穿透防御系统）
+    \item 粉尘的细胞毒性（SiO$_2$对巨噬细胞有毒害作用→抑制清除功能）
+    \item 吸烟（抑制纤毛运动和巨噬细胞功能，显著降低清除效率）
+    \item 个体因素（年龄、呼吸系统疾病等）
+\end{itemize}
+
+\textbf{六、清除机制的局限性：}
+\begin{itemize}[leftmargin=*]
+    \item 长期高浓度粉尘暴露→清除系统超负荷→粉尘在肺内潴留
+    \item 致纤维化粉尘（SiO$_2$、石棉）可损伤清除系统本身（巨噬细胞死亡、纤毛受损）
+    \item 潴留粉尘在肺内逐渐形成纤维化病灶
+\end{itemize}
+\end{keybox}
+
+\subsection{粉尘对健康的影响}
+
+\begin{enumerate}[leftmargin=*]
+    \item \imp{致纤维化作用}：引起尘肺病（矽肺、石棉肺、煤工尘肺等）——最严重
+    \item \imp{局部刺激作用}：呼吸道炎症（鼻炎、咽炎、支气管炎）
+    \item \imp{中毒作用}：吸入铅、锰、砷等有毒粉尘可致全身性中毒
+    \item \imp{致癌作用}：石棉致肺癌和间皮瘤（IARC 1类）；放射性粉尘致肺癌
+    \item \imp{致敏作用}：有机粉尘可引起变态反应性肺泡炎（如农民肺、棉尘症）
+    \item \imp{感染作用}：带有病原菌的粉尘（炭疽杆菌等）
+    \item \imp{皮肤损害}：堵塞皮脂腺→毛囊炎、粉刺
+    \item \imp{对眼和上呼吸道的损害}：结膜炎、角膜炎
+\end{enumerate}
+
+\subsection{粉尘危害的控制}
+
+\begin{keybox}
+\textbf{防尘八字方针：}\keyword{革、水、密、风、护、管、教、查}
+
+\begin{enumerate}[leftmargin=*]
+    \item \textbf{革}——技术革新，改革工艺设备和生产方法
+    \item \textbf{水}——湿式作业（湿式凿岩、水磨）
+    \item \textbf{密}——密闭尘源（密闭输送、密闭粉碎）
+    \item \textbf{风}——通风除尘（局部排风、全面通风）
+    \item \textbf{护}——个人防护（防尘口罩、防尘服）
+    \item \textbf{管}——维护管理（设备维护、制度管理）
+    \item \textbf{教}——宣传教育（防尘知识教育）
+    \item \textbf{查}——定期检查（环境监测、健康检查）
+\end{enumerate}
+\end{keybox}
+
+% ----- 4.2 矽肺 -----
+\section{矽肺（Silicosis）}
+
+\begin{defbox}
+\textbf{矽肺（Silicosis）}：在生产过程中长期吸入含有游离二氧化硅（SiO$_2$）粉尘而引起的以\keyword{肺组织弥漫性纤维化}为主的全身性疾病。是尘肺中\keyword{危害最严重、进展最快、最常见}的一种。
+\end{defbox}
+
+\subsection{影响矽肺发病的主要因素}
+
+\begin{enumerate}[leftmargin=*]
+    \item 粉尘中\keyword{游离SiO$_2$含量}：含量越高，危害越大，发病越快
+    \item 粉尘浓度：浓度越高，发病越早
+    \item 粉尘分散度：粒径越小，危害越大
+    \item 接触工龄：一般10--15年以上，少数1--2年即可发病（\keyword{快型矽肺}）
+    \item 个体因素：年龄、健康状况、遗传因素
+    \item 混合性粉尘的联合作用
+\end{enumerate}
+
+\subsection{矽肺的病理改变*}
+
+\begin{keybox}
+\textbf{基本病理改变：}
+\begin{enumerate}[leftmargin=*]
+    \item \imp{矽结节}——矽肺的特征性病理改变
+    \begin{itemize}
+        \item 细胞性结节：巨噬细胞聚集，吞噬SiO$_2$颗粒
+        \item 纤维性结节：成纤维细胞增生、胶原纤维形成
+        \item 玻璃样结节：胶原纤维透明变性（典型矽结节）
+    \end{itemize}
+    \item \imp{弥漫性间质纤维化}
+    \item \imp{团块状纤维化}——矽结节融合成大块纤维化病变
+\end{enumerate}
+
+\textbf{病理形态分裂：}
+\begin{itemize}[leftmargin=*]
+    \item \imp{结节型}：以矽结节形成为主，多见于接触含矽量高的粉尘
+    \item \imp{弥漫纤维化型}：以弥漫性间质纤维化为主，多见于接触含矽量较低的粉尘
+    \item \imp{矽性蛋白沉积型}：肺泡腔内含大量蛋白性液体
+\end{itemize}
+\end{keybox}
+
+\subsection{矽肺的发病机制——主要学说*}
+
+\begin{enumerate}[leftmargin=*]
+    \item \imp{机械刺激学说}：早期理论，SiO$_2$颗粒机械刺激引起纤维化
+    \item \imp{化学中毒学说（溶解学说）}：SiO$_2$在体液中缓慢溶解形成矽酸（H$_2$SiO$_3$），对细胞产生毒性作用
+    \item \imp{免疫学说}：SiO$_2$使巨噬细胞释放抗原物质，引发自身免疫反应
+    \item \imp{细胞毒学说}：SiO$_2$损伤肺泡巨噬细胞→释放致纤维化因子→成纤维细胞增生→胶原纤维形成（目前公认的主要机制）：
+    \begin{itemize}
+        \item SiO$_2$+巨噬细胞→损伤、死亡→释放IL-1、TNF-$\alpha$、FN等→成纤维细胞活化→胶原纤维增生
+    \end{itemize}
+\end{enumerate}
+
+\subsection{矽肺的临床表现与X线诊断}
+
+\begin{keybox}
+\textbf{临床表现：}
+\begin{itemize}[leftmargin=*]
+    \item 早期可无症状或症状轻微
+    \item 主要症状：胸闷、胸痛、气短、咳嗽、咳痰
+    \item 体征：早期常无阳性体征；晚期可出现肺气肿、肺心病体征
+    \item 并发症：肺结核（\keyword{矽肺结核}，最常见最严重并发症）、肺部感染、自发性气胸、肺心病、呼吸衰竭
+\end{itemize}
+
+\textbf{X线胸片诊断（尘肺诊断的主要依据）*：}
+\begin{itemize}[leftmargin=*]
+    \item 小阴影（<10mm）：圆形小阴影（p/q/r型）、不规则小阴影（s/t/u型）
+    \item 大阴影（$\geq$10mm）：矽结节融合成团块
+    \item 胸膜改变
+\end{itemize}
+
+\textbf{X线诊断分期：}
+\begin{enumerate}[leftmargin=*]
+    \item \imp{一期尘肺（I）}：有总体密集度1级的小阴影，分布范围至少达到2个肺区
+    \item \imp{二期尘肺（II）}：有总体密集度2级的小阴影，分布范围超过4个肺区；或有总体密集度3级的小阴影，分布范围达到4个肺区
+    \item \imp{三期尘肺（III）}：有大阴影出现，其长径$\geq$20mm，短径$\geq$10mm
+\end{enumerate}
+\end{keybox}
+
+\subsection{矽肺的处理}
+
+\begin{enumerate}[leftmargin=*]
+    \item \imp{调离粉尘作业}：一旦确诊，立即调离
+    \item \imp{综合治疗}：药物治疗（克矽平等）、对症治疗、康复治疗
+    \item \imp{职业伤残程度鉴定}：按GB/T 16180进行劳动能力鉴定
+\end{enumerate}
+
+% ----- 4.3 硅酸盐尘肺 -----
+\section{硅酸盐尘肺}
+
+\subsection{概述}
+
+\begin{defbox}
+\textbf{硅酸盐（Silicate）}：由SiO$_2$、金属氧化物和结晶水组成的矿物。石棉、滑石、云母、水泥等均为硅酸盐。
+
+\textbf{硅酸盐尘肺的共同特点*：}
+\begin{enumerate}[leftmargin=*]
+    \item 病理改变主要表现为\keyword{弥漫性间质纤维化}（与矽肺的结节型不同）
+    \item 组织切片中可见\keyword{石棉小体}（石棉肺）、滑石小体等
+    \item X线胸片以不规则小阴影为主
+    \item 致纤维化能力一般弱于石英
+\end{enumerate}
+\end{defbox}
+
+\subsection{石棉肺（Asbestosis）}
+
+\begin{keybox}
+\textbf{石棉的理化性质：}具有纤维结构的硅酸盐矿物。分为蛇纹石类（温石棉，占90\%以上）和角闪石类（青石棉、铁石棉等）。耐热、耐酸碱、绝缘、抗拉强度大。
+
+\textbf{接触机会：}石棉矿开采选矿、石棉制品制造（石棉瓦、石棉板、刹车片）、建筑拆除和维修。
+
+\textbf{影响石棉肺发病的因素：}
+\begin{itemize}[leftmargin=*]
+    \item 石棉种类：角闪石类（青石棉）>蛇纹石类（温石棉）
+    \item 纤维长度和直径：长纤维（>5$\mu$m）、细纤维（<0.25$\mu$m）致病力强
+    \item 粉尘浓度和接触时间
+    \item 个体因素
+\end{itemize}
+
+\textbf{病理改变与发病机制*：}
+\begin{itemize}[leftmargin=*]
+    \item 弥漫性间质纤维化（与矽肺的结节型不同）
+    \item \keyword{石棉小体}：石棉纤维外包绕铁蛋白形成的哑铃状或串珠状结构，是石棉肺的\keyword{病理学标志}
+    \item 胸膜斑：壁层胸膜的局限性增厚
+\end{itemize}
+
+\textbf{临床表现：}
+\begin{itemize}[leftmargin=*]
+    \item 症状：呼吸困难（最早、最常见）、咳嗽、胸痛
+    \item 体征：双肺底吸气末Velcro啰音（爆裂音），杵状指
+    \item X线特征*：不规则小阴影为主（s/t/u型），胸膜斑，肺门结构紊乱
+\end{itemize}
+
+\textbf{并发症：}
+\begin{itemize}[leftmargin=*]
+    \item \imp{肺癌}：石棉致肺癌（IARC 1类致癌物），吸烟与石棉暴露有协同致癌作用
+    \item \imp{弥漫性恶性间皮瘤}：胸膜或腹膜间皮瘤，与石棉暴露密切相关（青石棉>温石棉）
+\end{itemize}
+
+\textbf{其他石棉相关疾病：}石棉所致胸膜斑、石棉所致胸腔积液、石棉所致支气管肺癌
+\end{keybox}
+
+\subsection{其他硅酸盐尘肺}
+
+\begin{table}[H]
+\centering
+\caption{其他硅酸盐尘肺}
+\begin{tabularx}{\textwidth}{lX}
+\hline
+\textbf{类型} & \textbf{特点} \\
+\hline
+\imp{滑石肺} & 滑石矿开采和加工；病理以间质纤维化为主，可见滑石小体；可伴胸膜改变 \\
+\imp{云母肺} & 云母矿开采加工；纤维化程度较矽肺轻 \\
+\imp{水泥尘肺} & 水泥制造；混合性粉尘；病程进展缓慢 \\
+\hline
+\end{tabularx}
+\end{table}
+
+% ----- 4.4 煤工尘肺 -----
+\section{煤工尘肺（CWP）}
+
+\begin{defbox}
+\textbf{煤工尘肺（Coal Worker's Pneumoconiosis, CWP）}：煤矿工人长期吸入煤尘和含矽混合性粉尘所致的尘肺。包括：
+\begin{enumerate}[leftmargin=*]
+    \item \imp{煤肺}：吸入纯煤尘（采煤工），病理以煤斑和灶周肺气肿为特征
+    \item \imp{煤矽肺}：吸入煤尘和矽尘的混合粉尘（掘进工），兼有煤肺和矽肺的病理特征
+\end{enumerate}
+\end{defbox}
+
+\begin{keybox}
+\textbf{病理改变：}
+\begin{itemize}[leftmargin=*]
+    \item \imp{煤斑（Coal Macule）}：由含煤尘的巨噬细胞聚集而成，周围伴有\keyword{灶周肺气肿}
+    \item 煤结节：煤尘+少量胶原纤维
+    \item 进行性大块纤维化（PMF）：晚期煤结节融合成大块
+\end{itemize}
+
+\textbf{类风湿性尘肺结节（Caplan综合征）：}煤工尘肺合并类风湿关节炎，X线胸片显示圆形结节影，短期内出现并增大。
+
+\textbf{临床表现与诊断：}胸闷、气短、咳嗽、咳黑痰。X线以小阴影为主。
+\end{keybox}
+
+% ----- 三种主要尘肺的对比 -----
+\subsection{矽肺、石棉肺与煤工尘肺的比较*}
+
+\begin{keybox}
+以下三种尘肺的异同点是考试核心内容，需重点掌握其病理特征和X线表现的区别。
+
+\begin{table}[H]
+\centering
+\caption{三种主要尘肺的全面对比}
+\begin{tabularx}{\textwidth}{lXXX}
+\hline
+\textbf{对比项目} & \textbf{矽肺（Silicosis）} & \textbf{石棉肺（Asbestosis）} & \textbf{煤工尘肺（CWP）} \\
+\hline
+\imp{致病粉尘} & 游离SiO$_2$粉尘 & 石棉纤维 & 煤尘（煤肺）或煤尘+矽尘（煤矽肺）\\
+\hline
+\imp{主要行业} & 采矿、隧道、陶瓷、玻璃 & 石棉矿、石棉制品、建筑拆除 & 煤矿开采（采煤工/掘进工）\\
+\hline
+\imp{病理类型} & \textbf{结节型}纤维化为主 & \textbf{弥漫性间质}纤维化为主 & 煤斑伴\textbf{灶周肺气肿}为主 \\
+\hline
+\imp{特征性结构} & \textbf{矽结节}（细胞性→纤维性→玻璃样） & \textbf{石棉小体}（哑铃状/串珠状）、\textbf{胸膜斑} & \textbf{煤斑}（煤尘+巨噬细胞聚集）\\
+\hline
+\imp{X线表现} & 圆形/类圆形小阴影（p/q/r型）为主；三期可见大阴影 & \textbf{不规则小阴影}（s/t/u型）为主；胸膜斑；肺门结构紊乱 & 小阴影（圆形或不规则）；晚期PMF形成大阴影 \\
+\hline
+\imp{肺功能损害} & 限制性通气功能障碍 & \textbf{限制性通气功能障碍}为主，肺顺应性↓ & 阻塞性或混合性通气功能障碍 \\
+\hline
+\imp{临床症状} & 胸闷、胸痛、气短、咳嗽 & \textbf{呼吸困难}（最早最常见）、Velcro啰音、杵状指 & 胸闷、气短、咳嗽、\textbf{咳黑痰} \\
+\hline
+\imp{主要并发症} & \textbf{肺结核（矽肺结核）}——最常见最严重 & \textbf{肺癌、弥漫性恶性间皮瘤} & 肺结核、慢性支气管炎、肺气肿 \\
+\hline
+\imp{致癌性} & IARC 1类（1997） & IARC 1类——肺癌和间皮瘤 & 未明确分类 \\
+\hline
+\imp{病程进展} & 脱离粉尘后病情仍可继续进展 & 脱离粉尘后可缓慢进展 & 脱离粉尘后进展极缓慢或停止 \\
+\hline
+\imp{特殊类型} & 快型矽肺（1--2年发病） & 胸膜间皮瘤（青石棉风险最高）& Caplan综合征（合并类风湿）\\
+\hline
+\hline
+\end{tabularx}
+\end{table}
+
+\textbf{矽结节与煤尘纤维灶（煤斑）的形态学对比：}
+\begin{table}[H]
+\centering
+\caption{矽结节与煤尘纤维灶的形态学对比}
+\begin{tabularx}{\textwidth}{lXX}
+\hline
+\textbf{对比项目} & \textbf{矽结节} & \textbf{煤尘纤维灶（煤斑）} \\
+\hline
+成分 & 大量胶原纤维+少量粉尘 & 大量煤尘+少量胶原纤维 \\
+质地 & 硬韧、玻璃样变 & 柔软 \\
+大小 & 较大（可达数mm至数cm） & 较小（1--3mm） \\
+网状纤维 & 早期有，晚期减少 & 丰富 \\
+胶原纤维 & 大量，致密透明变性 & 少量，疏松 \\
+周围肺气肿 & 结节周围可见 & 明显灶周肺气肿（特征性）\\
+可逆性 & 不可逆 & 部分可逆（脱离粉尘后）\\
+\hline
+\end{tabularx}
+\end{table}
+\end{keybox}
+
+% ----- 4.5 其他粉尘所致尘肺 -----
+\section{其他粉尘所致尘肺}
+
+\begin{table}[H]
+\centering
+\caption{其他类型尘肺}
+\begin{tabularx}{\textwidth}{lX}
+\hline
+\textbf{类型} & \textbf{致病粉尘及特点} \\
+\hline
+\imp{电焊工尘肺} & 电焊烟尘（氧化铁、MnO等混合粉尘）；X线以不规则小阴影为主 \\
+\imp{铸工尘肺} & 铸造用型砂（含SiO$_2$）；多为轻型尘肺，进展缓慢 \\
+\imp{碳黑尘肺} & 碳黑生产和使用 \\
+\imp{石墨尘肺} & 天然石墨矿开采；含矽石墨致纤维化较重 \\
+\imp{铝尘肺（铝土肺）} & 金属铝粉吸入 \\
+\hline
+\end{tabularx}
+\end{table}
+
+% ----- 4.6 有机粉尘 -----
+\section{有机粉尘所致的肺部疾病}
+
+\begin{keybox}
+\subsection{职业性变态反应性肺泡炎（EAA）}
+
+\begin{defbox}
+\textbf{职业性变态反应性肺泡炎（Extrinsic Allergic Alveolitis）}：反复吸入某些有机粉尘中具有抗原性的物质所引起的以肺泡壁和间质过敏性炎症为主的免疫性肺部疾病。
+\end{defbox}
+
+\textbf{常见类型：}
+\begin{itemize}[leftmargin=*]
+    \item \imp{农民肺}：吸入发霉干草中的嗜热放线菌孢子
+    \item \imp{蔗渣肺}：吸入发霉甘蔗渣中的嗜热放线菌
+    \item \imp{蘑菇工肺}：吸入蘑菇堆肥中微生物孢子
+    \item \imp{饲鸟者肺}：吸入鸟类羽毛和排泄物中的蛋白抗原
+\end{itemize}
+
+\textbf{发病机制：}III型（免疫复合物型）和IV型（细胞免疫型）变态反应。
+
+\textbf{临床分期：}急性期（接触后4--8小时发热、咳嗽、呼吸困难）；亚急性期；慢性期（不可逆性肺纤维化）。
+
+\subsection{棉尘症（Byssinosis）}
+
+又称"星期一热"，棉纺工人吸入棉尘后出现的胸部紧束感、呼吸困难，休息日后第一天工作症状最重。机制与棉尘中内毒素有关。
+\end{keybox}
+
+% ----- 4.7 复习题 -----
+\section{复习题}
+
+\begin{enumerate}[leftmargin=*, itemsep=8pt]
+    \item \textbf{【名词解释】}生产性粉尘；尘肺；矽肺；呼吸性粉尘
+    \item \textbf{【名词解释】}矽结节；石棉小体；胸膜斑；Caplan综合征
+    \item \textbf{【名词解释】}农民肺；棉尘症（星期一热）
+    \item \textbf{【简答题】}简述粉尘的理化性质及其卫生学意义。
+    \item \textbf{【简答题】}简述人体对生产性粉尘的防御和清除机制。
+    \item \textbf{【简答题】}简述防尘八字方针及其内涵。
+    \item \textbf{【简答题】}简述矽肺的基本病理改变和发病机制（主要学说）。
+    \item \textbf{【简答题】}简述矽肺的X线诊断分期标准。
+    \item \textbf{【简答题】}简述硅酸盐尘肺的共同特点及石棉肺的特征性改变。
+    \item \textbf{【简答题】}比较矽肺与石棉肺的病理和临床特征。
+    \item \textbf{【简答题】}简述煤工尘肺的病理类型和特征。
+    \item \textbf{【简答题】}简述有机粉尘所致肺部疾病的类型及特点。
+\end{enumerate}
+
+\subsection*{参考答案要点}
+
+\begin{enumerate}[leftmargin=*, itemsep=5pt]
+    \item \textbf{生产性粉尘}：生产活动中产生的能较长时间悬浮的固体微粒。\textbf{尘肺}：长期吸入矿物性粉尘所致以肺弥漫性纤维化为主的疾病。\textbf{矽肺}：长期吸入游离SiO$_2$粉尘所致肺弥漫性纤维化，危害最严重。\textbf{呼吸性粉尘}：粒径$\leq$5$\mu$m，能到达肺泡的粉尘。
+    \item \textbf{矽结节}：矽肺特征性病理改变，细胞性→纤维性→玻璃样结节。\textbf{石棉小体}：石棉纤维外包铁蛋白形成的哑铃状结构，石棉肺病理学标志。\textbf{胸膜斑}：壁层胸膜局限性增厚。\textbf{Caplan综合征}：煤工尘肺合并类风湿关节炎的圆形结节影。
+    \item \textbf{农民肺}：吸入发霉干草中嗜热放线菌孢子所致变态反应性肺泡炎。\textbf{棉尘症}：棉纺工人吸入棉尘出现的胸部紧束感，休息日后第一天最重（星期一热）。
+    \item 八项：化学组成（决定危害性质）、浓度、分散度（粒径越小危害越大，呼吸性粉尘$\leq$5$\mu$m）、溶解度、荷电性、形状硬度、爆炸性、吸湿性。
+    \item 六层防御清除机制：鼻腔（阻挡>10$\mu$m，鼻甲产生湍流）→气管支气管（黏液-纤毛清除系统，最重要，捕获2--10$\mu$m粉尘）→肺泡（巨噬细胞吞噬<5$\mu$m呼吸性粉尘，SiO$_2$损伤巨噬细胞是矽肺起始环节）→淋巴系统（进入肺门和纵隔淋巴结）→清除受限因素（浓度过高、细胞毒性粉尘、吸烟抑制清除）。最终潴留粉尘在肺内引起纤维化。
+    \item 革（技术革新）、水（湿式作业）、密（密闭尘源）、风（通风除尘）、护（个人防护）、管（维护管理）、教（宣传教育）、查（定期检查）。
+    \item 基本病理：矽结节（细胞性→纤维性→玻璃样）、弥漫性间质纤维化、团块状纤维化。主要学说：细胞毒学说（公认）——SiO$_2$损伤巨噬细胞→释放致纤维化因子→成纤维细胞增生→胶原纤维形成。
+    \item 一期：总体密集度1级小阴影，分布至少2个肺区。二期：密集度2级小阴影，分布超4个肺区；或3级达4个肺区。三期：大阴影长径$\geq$20mm，短径$\geq$10mm。
+    \item 共同特点：弥漫性间质纤维化为主；可见特征性小体；不规则小阴影为主。石棉肺特征：石棉小体（病理标志）、胸膜斑、Velcro啰音、肺癌和间皮瘤。
+    \item 矽肺：结节型纤维化、矽结节、圆形小阴影、并发症以肺结核为最常见。石棉肺：弥漫性纤维化、石棉小体、不规则小阴影、胸膜斑、并发症以肺癌和间皮瘤为主。
+    \item 煤肺（纯煤尘，煤斑和灶周肺气肿）和煤矽肺（混合粉尘，兼有煤肺和矽肺特征）。晚期可出现进行性大块纤维化（PMF）。
+    \item 职业性变态反应性肺泡炎（农民肺、蔗渣肺、蘑菇工肺——III/IV型变态反应）；棉尘症（星期一热——内毒素机制）。
+\end{enumerate}
+
+\newpage
+
+% =====================================================================
+%  CHAPTER 5: 物理因素及其对健康的影响
+% =====================================================================
+\chapter{物理因素及其对健康的影响}
+\setcounter{chapter}{5}
+\chapterintro{
+本章为课程重要章节（12学时）。掌握高温作业的类型、中暑的临床分型及救治原则；掌握生产性噪声的类型、评价指标和听力损伤的特征；掌握局部振动病（手臂振动病）的概念和临床表现；了解电离辐射和非电离辐射的健康危害；熟悉异常气压（高气压、低气压）对健康的影响及减压病。
+}
+
+% ----- 5.1 高温作业 -----
+\section{高温作业与中暑}
+
+\subsection{高温作业的基本概念}
+
+\begin{defbox}
+\textbf{高温作业}：工作地点有高气温，或有强烈的热辐射，或伴有高气湿相结合的异常气象条件，WBGT指数超过规定限值的作业。
+
+\textbf{高温作业类型：}
+\begin{enumerate}[leftmargin=*]
+    \item \imp{高温、强热辐射作业（干热型）}：炼钢、炼铁、铸造、玻璃熔制等，特点是气温高、热辐射强、相对湿度低
+    \item \imp{高温、高湿作业（湿热型）}：纺织、印染、造纸、深井煤矿等，特点是气温高、湿度大（>80\%）、热辐射不强
+    \item \imp{夏季露天作业}：农业、建筑、搬运等，受太阳直接辐射和地面的二次辐射
+\end{enumerate}
+\end{defbox}
+
+\subsection{高温作业对机体的影响*}
+
+\begin{keybox}
+\textbf{（一）体温调节与水盐代谢}
+\begin{itemize}[leftmargin=*]
+    \item 高温下机体主要通过\keyword{出汗蒸发}散热
+    \item 当环境温度超过皮肤温度（35$^\circ$C）时，辐射和对流散热停止，出汗蒸发成为唯一散热方式
+    \item 大量出汗导致水盐丢失（日出汗量可达6--8L），若不及时补水补盐，可引起水盐代谢紊乱
+\end{itemize}
+
+\textbf{（二）循环系统}
+\begin{itemize}[leftmargin=*]
+    \item 心率加快（每升高1$^\circ$C，心率增加10次/分）、血压先升后降
+    \item 外周血管扩张、内脏血管收缩——血液重新分配
+    \item 心脏负担加重，长期高温作业可致心肌损害
+\end{itemize}
+
+\textbf{（三）消化系统}
+\begin{itemize}[leftmargin=*]
+    \item 消化液分泌减少、消化酶活性降低→食欲减退、消化不良
+    \item 胃肠运动减弱
+\end{itemize}
+
+\textbf{（四）泌尿系统}
+\begin{itemize}[leftmargin=*]
+    \item 肾血流量减少、尿液浓缩→肾负担加重
+    \item 可出现蛋白尿、管型尿
+\end{itemize}
+
+\textbf{（五）神经系统}
+\begin{itemize}[leftmargin=*]
+    \item 中枢神经系统受抑制——注意力不集中、反应迟钝、肌肉工作能力下降、作业能力降低
+\end{itemize}
+\end{keybox}
+
+\subsection{热适应与热习服}
+
+\begin{defbox}
+\textbf{热适应（Heat Adaptation）}：机体在长期高温环境下产生的形态、结构和生理功能的适应性变化。热适应是机体与环境之间形成的相对稳定的适应关系，涉及体温调节、水盐代谢、心血管功能等多系统的综合性改变。
+
+\textbf{热适应与热习服的区别：}
+\begin{table}[H]
+\centering
+\caption{热适应与热习服的区别}
+\begin{tabularx}{\textwidth}{lXX}
+\hline
+\textbf{特征} & \textbf{热适应（Heat Adaptation）} & \textbf{热习服（Heat Acclimatization）} \\
+\hline
+形成时间 & 长期（世代/常年） & 短期（数天至数周，一般7--14天）\\
+机制 & 基因表达和生理结构改变 & 生理功能补偿性调整 \\
+可逆性 & 较稳定，不易消退 & 脱离高温后数天至数周消退 \\
+接触条件 & 多年在高温环境下生活和工作 & 短期反复接触高温 \\
+出汗特点 & 出汗效率高，NaCl损失少 & 出汗量增加，NaCl损失减少 \\
+循环系统 & 心率较稳定，心血管负荷小 & 心率适应性降低 \\
+\hline
+\end{tabularx}
+\end{table}
+
+\textbf{热习服的机制：}
+\begin{enumerate}[leftmargin=*]
+    \item 体温调节改善：出汗阈值降低，出汗量增加，散热效率提高
+    \item 水盐代谢调整：醛固酮分泌增加减少钠盐丢失
+    \item 心血管系统适应：心率降低，每搏输出量增加
+    \item 细胞热休克蛋白（HSP）表达增强，提高细胞耐热能力
+\end{enumerate}
+
+\textbf{热习服的临床意义：}热习服可显著提高高温作业能力和预防中暑。缺乏热习服者（如新工、休假返工者）是中暑的高危人群。高温作业前应安排3--7天的热习服期。
+\end{defbox}
+
+\subsection{中暑（Heat Illness）}
+
+\begin{keybox}
+\textbf{中暑的临床分型*：}
+
+\textbf{1. 热射病（Heat Stroke）*}：
+\begin{itemize}[leftmargin=*]
+    \item 最严重类型，体温调节功能衰竭，死亡率高
+    \item 特征：\keyword{高热（体温>40$^\circ$C）+ 无汗 + 意识障碍}
+    \item 机制：体温调节中枢功能衰竭→产热>散热
+\end{itemize}
+
+\textbf{2. 热痉挛（Heat Cramps）}：
+\begin{itemize}[leftmargin=*]
+    \item 大量出汗后仅补水未补盐→低钠血症→肌肉痉挛（腓肠肌最多见）
+    \item 体温多正常或轻度升高
+\end{itemize}
+
+\textbf{3. 热衰竭（Heat Exhaustion）}：
+\begin{itemize}[leftmargin=*]
+    \item 大量失水失盐→有效循环血量不足→虚脱
+    \item 特征：面色苍白、皮肤湿冷、脉搏细弱、血压降低、昏厥
+\end{itemize}
+
+\textbf{中暑的诊断（GBZ 41-2019）：}
+\begin{itemize}[leftmargin=*]
+    \item 中暑先兆：头晕、头痛、口渴、多汗、心悸、注意力不集中
+    \item 轻症中暑：体温>38.5$^\circ$C，面色潮红、口渴、脉搏增快
+    \item 重症中暑：热射病、热痉挛、热衰竭
+\end{itemize}
+
+\textbf{救治原则：}
+\begin{enumerate}[leftmargin=*]
+    \item 立即脱离高温环境
+    \item \imp{快速降温}——冷水/冰水擦浴、冰袋（颈、腋、腹股沟）
+    \item 补充水分和电解质（口服补盐液、静脉输液）
+    \item 对症治疗（呼吸循环支持、防治脑水肿等）
+\end{enumerate}
+
+\textbf{预防措施：}
+\begin{enumerate}[leftmargin=*]
+    \item 技术措施：隔绝热源、隔热、通风降温（自然通风+机械通风）、空调
+    \item 保健措施：合理供应清凉饮料（含盐0.15--0.2\%）；合理膳食（补充蛋白质、维生素）
+    \item 组织措施：合理安排作息制度（轮换作业、延长休息）、高温作业标准（WBGT）
+\end{enumerate}
+\end{keybox}
+
+\subsection{我国高温作业卫生标准}
+
+以\keyword{湿球黑球温度指数（WBGT）}为评价指标。WBGT综合反映气温、气湿、气流和热辐射四种物理因素对机体的作用。根据体力劳动强度和接触时间制定不同限值。
+
+% ----- 5.2 异常气压 -----
+\section{异常气压}
+
+\subsection{高气压作业}
+
+\begin{defbox}
+\textbf{高气压作业}：潜水作业（每下沉10.3m增加1个大气压）和潜涵作业（隧道、桥墩等地下工程）。
+
+\textbf{高气压对机体的影响：}
+\begin{itemize}[leftmargin=*]
+    \item 减压过程：溶解在体内的氮气（N$_2$）从组织中释放形成气泡
+    \item 若减压速度过快→\keyword{减压病（Decompression Sickness）}
+\end{itemize}
+\end{defbox}
+
+\begin{keybox}
+\textbf{减压病的发病机制*：}在高压环境下，氮气大量溶解于组织和体液中。若减压过快，溶解的氮气迅速释放形成气泡，栓塞血管和压迫组织→组织缺血缺氧。
+
+\textbf{临床表现：}
+\begin{itemize}[leftmargin=*]
+    \item 皮肤瘙痒、大理石样斑纹
+    \item 关节和肌肉剧痛（\textbf{屈肢症}——被迫屈曲患肢以缓解疼痛）
+    \item 脊髓损害——截瘫、感觉障碍
+    \item 脑部气泡栓塞——昏迷
+\end{itemize}
+
+\textbf{治疗：}及时送入\keyword{加压舱}进行\keyword{加压治疗}（唯一有效治疗）+吸氧+对症
+
+\textbf{预防：}严格遵守减压程序（分段减压、足够减压时间）；控制作业时间；健康监护（禁忌证：呼吸系统疾病、心血管疾病、肥胖）
+\end{keybox}
+
+\subsection{低气压作业}
+
+高原作业（海拔>3000m）。主要问题是\keyword{低氧}——海拔越高，氧分压越低。机体通过增加肺通气量、心率加快、红细胞增多等进行代偿适应。急性高原病：头痛、恶心、呼吸困难、肺水肿、脑水肿。
+
+% ----- 5.3 噪声 -----
+\section{生产性噪声}
+
+\subsection{基本概念}
+
+\begin{defbox}
+\textbf{生产性噪声}：在生产过程中产生的，频率和强度无规律组合、使人感到厌烦或影响健康的声音。
+
+\textbf{噪声的分类（按来源）：}
+\begin{enumerate}[leftmargin=*]
+    \item 机械性噪声：机械撞击、摩擦、转动产生
+    \item 流体动力性噪声：气体/液体流速或压力突变产生
+    \item 电磁性噪声：交变电磁场产生
+\end{enumerate}
+
+\textbf{噪声的分类（按频谱）：}
+\begin{itemize}[leftmargin=*]
+    \item 低频噪声（<300Hz）、中频噪声（300--800Hz）、高频噪声（>800Hz）
+\end{itemize}
+
+\textbf{噪声的分类（按时间分布）：}
+\begin{itemize}[leftmargin=*]
+    \item 稳态噪声：声压级波动<5dB
+    \item 脉冲噪声：声压级波动$\geq$5dB，持续时间短
+    \item 非稳态噪声：声压级波动$\geq$5dB
+\end{itemize}
+\end{defbox}
+
+\subsection{噪声的物理特性与评价指标}
+
+\begin{keybox}
+\textbf{声强与声强级：}声强——单位时间内通过单位面积波阵面的声能。人耳能感受的声强范围极宽（10$^{-12}$--1 W/m$^2$）。
+
+\textbf{声压与声压级（SPL）：}$L_p = 20 \lg \frac{p}{p_0}$ (dB)
+
+\textbf{响度级与等响曲线：}以1000 Hz纯音为基准，将不同频率的声音与基准音比较得出的主观感觉量，单位为\keyword{方（phon）}。
+
+\textbf{A计权声级（A声级）*}：用A计权网络测量的声压级，模拟人耳对40方纯音的响应，单位为\keyword{dB(A)}。是评价环境噪声和工业噪声最常用的指标。
+
+\textbf{等效连续A声级（$L_{Aeq}$）}：在规定时间内，某一连续稳态声的A声级具有与实际噪声相同的能量。用于评价非稳态噪声。
+
+\textbf{累积百分声级（$L_N$）}：在规定的测量时间内，有N\%的时间超过的A声级。如$L_{10}$、$L_{50}$、$L_{90}$。
+\end{keybox}
+
+\subsection{噪声对听觉系统的影响}
+
+\begin{keybox}
+\textbf{听觉适应}：短时间暴露于强噪声环境中，听力下降（听阈提高10--15dB），脱离后数分钟恢复。属于生理性保护反应。
+
+\textbf{听觉疲劳}：较长时间暴露于强噪声，听力明显下降（听阈提高15--30dB），脱离后数小时至十几小时才能恢复。属生理性反应的延续。
+
+\textbf{噪声性听力损伤（永久性听阈位移，NIPTS）*}：
+\begin{itemize}[leftmargin=*]
+    \item 长期暴露于强噪声引起的不可逆性听力损害
+    \item \imp{高频听力下降}（3000--6000 Hz，尤其4000 Hz出现V形凹陷——\keyword{4kHz听谷}）为最早特征
+    \item 随着损害加重，语言频率（500--2000 Hz）听力也下降
+    \item 听力曲线由高频向低频扩展
+\end{itemize}
+
+\textbf{噪声聋（Noise-Induced Deafness）}：长期接触生产性噪声引起的以高频听力下降为主、继而语言频率听力下降的\keyword{感音性耳聋}。属于法定职业病。
+
+\textbf{爆震性耳聋}：一次或数次接触高强度脉冲噪声（如爆破、枪炮发射）引起的急性听觉器官损伤。常伴鼓膜破裂、听骨链损伤。
+
+\textbf{噪声对听觉外系统的影响：}
+\begin{itemize}[leftmargin=*]
+    \item \imp{神经系统}：头痛、头晕、失眠、多梦、记忆力减退
+    \item \imp{心血管系统}：心率增快或减慢、血压升高（高血压患病率↑）
+    \item \imp{消化系统}：胃肠功能紊乱、胃溃疡发病率↑
+    \item \imp{内分泌系统}：ACTH、TSH等分泌异常
+    \item \imp{生殖系统}：女性月经异常、妊娠不良结局↑
+    \item \imp{心理影响}：烦躁、焦虑、注意力不集中、工作效率↓
+\end{itemize}
+\end{keybox}
+
+\subsection{影响噪声危害的因素}
+
+\begin{enumerate}[leftmargin=*]
+    \item 噪声的强度和频谱特性（强度越大、频率越高，危害越大）
+    \item 接触时间和方式（连续接触>间断接触）
+    \item 噪声的类型（脉冲噪声危害>稳态噪声）
+    \item 个体敏感性与个体差异
+    \item 振动、高温、毒物等的联合作用
+\end{enumerate}
+
+\subsection{防止噪声危害的措施}
+
+\begin{enumerate}[leftmargin=*]
+    \item 控制和消除噪声源（技术革新、低噪设备）
+    \item 控制噪声的传播和反射（隔声、吸声、消声、减振）
+    \item 个体防护（耳塞、耳罩、防声帽）
+    \item 健康监护（就业前体检、定期听力检查）
+    \item 合理安排劳动和休息
+    \item 制定和遵守噪声卫生标准（85dB(A)）
+\end{enumerate}
+
+% ----- 5.4 振动 -----
+\section{生产性振动}
+
+\subsection{基本概念}
+
+\begin{defbox}
+\textbf{振动（Vibration）}：质点或物体相对于平衡位置作的往复运动。
+
+\textbf{振动参数*：}频率（Hz）、位移（mm）、速度（m/s）、加速度（m/s$^2$）。其中\keyword{加速度}与人体健康效应关系最密切。振动的频率决定了其对机体作用的部位——低频振动主要引起全身振动效应，高频振动主要引起局部振动效应。
+
+\textbf{振动的分类：}
+\begin{itemize}[leftmargin=*]
+    \item \imp{全身振动}：通过身体支持面（站立的足、坐着的臀部）传导至全身
+    \item \imp{局部振动（手传振动）}：通过手或手指作用于人体的振动
+\end{itemize}
+\end{defbox}
+
+\subsection{局部振动病（手臂振动病）}
+
+\begin{keybox}
+\textbf{概念：}长期使用振动工具引起以\keyword{手部末梢循环障碍、末梢神经功能障碍和骨关节损害}为主要表现的疾病。
+
+\textbf{主要接触机会：}凿岩工、油锯工、链锯工、砂轮磨光工等。
+
+\textbf{发病机制*：}
+\begin{enumerate}[leftmargin=*]
+    \item \imp{末梢血管损伤}：振动刺激血管平滑肌→血管痉挛→血管内皮细胞损伤→血管壁增厚、管腔狭窄→末梢循环障碍
+    \item \imp{末梢神经损伤}：振动直接损伤神经纤维和神经末梢→脱髓鞘改变→感觉传导速度减慢
+    \item \imp{骨关节损伤}：振动使关节软骨和骨组织反复受力→微小损伤累积→关节退行性改变
+    \item 寒冷是振动危害的重要\imp{诱发和加重因素}——寒冷使末梢血管收缩，加重缺血
+\end{enumerate}
+
+\textbf{手传振动的测量与评价（GBZ/T 189.9）：}
+\begin{itemize}[leftmargin=*]
+    \item 对多轴向振动，需分别测量X、Y、Z三个轴向的振动加速度
+    \item \keyword{以三个轴向中最大振动加速度（最大值）作为评价依据}
+    \item 评价指标：频率计权振动加速度有效值（a$_{hw}$）
+    \item 日暴露时间、累积暴露时间直接影响危害程度
+\end{itemize}
+
+\textbf{影响振动危害的因素：}
+\begin{itemize}[leftmargin=*]
+    \item 振动频率和强度（高频振动危害更大）
+    \item 接触振动的时间和方式
+    \item 环境温度（寒冷加重振动危害——\keyword{振动性白指}在寒冷环境下易诱发）
+    \item 机体状况
+\end{itemize}
+
+\textbf{临床表现——三大特征：}
+\begin{enumerate}[leftmargin=*]
+    \item \imp{末梢循环障碍}：\keyword{振动性白指（VWF）}——手指在寒冷刺激下出现发白（雷诺现象），是局部振动病最特征性改变，以食指、中指多见。发作顺序：苍白→青紫→潮红（反应性充血）
+    \item \imp{末梢神经功能障碍}：手麻、触觉和痛觉减退、振动觉阈值升高
+    \item \imp{骨关节和肌肉损害}：指关节变形、骨质疏松、骨质增生
+\end{enumerate}
+
+\textbf{诊断（GBZ 7-2014）：}明确的职业接触史+振动性白指+末梢神经功能障碍和/或骨关节损害。
+
+\textbf{预防：}
+\begin{enumerate}[leftmargin=*]
+    \item 改革工艺和设备（减少手持振动工具的使用）
+    \item 缩短接触时间（轮换作业）
+    \item 改善环境温度（保暖、防寒）
+    \item 个人防护（防振手套）
+    \item 健康监护和就业禁忌证
+\end{enumerate}
+\end{keybox}
+
+% ----- 5.5 辐射 -----
+\section{非电离辐射与电离辐射}
+
+\subsection{非电离辐射}
+
+\begin{table}[H]
+\centering
+\caption{非电离辐射类型及健康效应}
+\begin{tabularx}{\textwidth}{lX}
+\hline
+\textbf{类型} & \textbf{主要健康效应} \\
+\hline
+\imp{紫外线（UV）} & \textbf{电光性眼炎（急性角膜结膜炎）}——潜伏期4--12h，异物感、畏光、流泪；皮肤红斑和光感性皮炎；皮肤癌 \\
+\imp{红外线} & 红外线白内障（玻璃工人白内障）；皮肤热损伤 \\
+\imp{可见光} & 强光对视网膜的损伤 \\
+\imp{激光} & 视网膜灼伤；角膜损伤 \\
+\imp{射频辐射（微波）} & 热效应（组织加热）；非热效应（神经系统功能改变——神经衰弱综合征）\\
+\imp{极低频电磁场} & 神经系统功能改变，潜在致癌风险（儿童白血病）\\
+\hline
+\end{tabularx}
+\end{table}
+
+\begin{defbox}
+\textbf{射频电磁场的分类（按频率和波长）：}
+\begin{table}[H]
+\centering
+\caption{射频电磁场分类}
+\begin{tabularx}{\textwidth}{llll}
+\hline
+\textbf{频段名称} & \textbf{频率范围} & \textbf{波长范围} & \textbf{主要应用} \\
+\hline
+高频（HF） & 0.1--30 MHz & 3km--10m & 感应加热、短波通讯、广播 \\
+超高频（VHF/UHF）& 30--300 MHz & 10m--1m & 电视广播、移动通讯 \\
+微波（MW） & 300MHz--300GHz & 1m--1mm & 雷达、微波炉、卫星通讯 \\
+\hline
+\end{tabularx}
+\end{table}
+
+\textbf{射频辐射对机体的主要影响：}
+\begin{itemize}[leftmargin=*]
+    \item \imp{热效应}：射频能量被组织吸收转化为热能→局部或全身温度升高
+    \item \imp{非热效应}：在不足以引起明显体温升高的低强度暴露下，仍可出现神经衰弱综合征（头痛、头晕、失眠、记忆力减退）、自主神经功能紊乱
+    \item 敏感器官：眼（晶状体——微波白内障）、睾丸（精子生成障碍）
+\end{itemize}
+\end{defbox}
+
+\subsection{电离辐射}
+
+\begin{enumerate}[leftmargin=*]
+    \item 外照射急性放射病（骨髓型、胃肠型、脑型）
+    \item 外照射慢性放射病（以造血系统损害为主）
+    \item 放射性皮肤损伤
+    \item 远后效应：致癌（白血病、甲状腺癌、肺癌等）、遗传效应
+\end{enumerate}
+
+\textbf{防护三原则：}时间防护（缩短接触时间）、距离防护（增大与源距离）、屏蔽防护（铅板、混凝土等屏蔽材料）。
+
+% ----- 5.6 复习题 -----
+\section{复习题}
+
+\begin{enumerate}[leftmargin=*, itemsep=8pt]
+    \item \textbf{【名词解释】}高温作业；中暑；热射病；减压病；热适应；热习服
+    \item \textbf{【名词解释】}噪声聋；振动性白指（VWF）；手臂振动病
+    \item \textbf{【名词解释】}A计权声级（A声级）；等效连续A声级；听觉疲劳
+    \item \textbf{【简答题】}简述高温作业的类型及高温对机体的主要生理影响。
+    \item \textbf{【简答题】}简述中暑的三种临床分型及其特征（热射病、热痉挛、热衰竭）。
+    \item \textbf{【简答题】}简述减压病的发病机制、临床表现和治疗原则。
+    \item \textbf{【简答题】}简述噪声对听觉系统影响的进程（从听觉适应到噪声聋）。
+    \item \textbf{【简答题】}简述手臂振动病的三大临床特征及发病机制。
+    \item \textbf{【简答题】}简述防止噪声危害的主要措施。
+    \item \textbf{【简答题】}简述电离辐射防护的三原则。
+    \item \textbf{【简答题】}简述射频电磁场的分类及其健康效应。
+\end{enumerate}
+
+\subsection*{参考答案要点}
+
+\begin{enumerate}[leftmargin=*, itemsep=5pt]
+    \item \textbf{高温作业}：WBGT指数超过规定限值的作业。\textbf{中暑}：高温环境下热平衡和/或水盐代谢紊乱引起的急性疾病。\textbf{热射病}：最严重类型，高热>40$^\circ$C、无汗、意识障碍。\textbf{减压病}：高气压环境减压过快使溶解的氮气释放形成气泡栓塞引起的疾病。\textbf{热适应}：机体在长期高温环境下产生的形态、结构和生理功能的适应性变化。\textbf{热习服}：短期反复接触高温后生理功能补偿性调整（7--14天），脱离高温后消退。
+    \item \textbf{噪声聋}：长期接触生产性噪声引起的以高频听力下降为主的感音性耳聋。\textbf{VWF}：手指在寒冷刺激下出现的苍白现象（雷诺现象），局部振动病最特征性改变。\textbf{手臂振动病}：长期使用振动工具引起的手部末梢循环障碍、末梢神经功能障碍和骨关节损害。
+    \item \textbf{A声级}：用A计权网络测量的声压级，模拟人耳对40方纯音的响应，dB(A)。\textbf{等效连续A声级}：能量等效于实际噪声的连续稳态A声级。\textbf{听觉疲劳}：长时间暴露于强噪声后听力明显下降，脱离后数小时至十几小时恢复。
+    \item 三类：干热型（高温、强辐射、低湿）、湿热型（高温、高湿、辐射不强）、夏季露天作业。影响：体温调节（出汗蒸发散热为主）、循环（心率↑、血液重新分配）、消化（分泌↓）、泌尿（浓缩）、神经（抑制→作业能力↓）。
+    \item 热射病：体温>40$^\circ$C、无汗、意识障碍（最严重，死亡率高）。热痉挛：大量出汗补水未补盐→低钠→肌肉痉挛（腓肠肌多见）。热衰竭：失水失盐→有效循环血量不足→虚脱（面色苍白、皮肤湿冷、血压↓）。
+    \item 机制：高压下氮气大量溶解→减压过快→氮气形成气泡→栓塞血管和压迫组织→缺血缺氧。表现：皮肤瘙痒、屈肢症（关节肌肉剧痛）、脊髓损害。治疗：加压舱加压治疗（唯一有效）。
+    \item 进程：听觉适应（生理性，数分钟恢复）→听觉疲劳（听阈提高15--30dB，数小时恢复）→永久性听阈位移（NIPTS，不可逆）→噪声聋（先高频↓，4kHz听谷为早期特征，后语言频率↓）。
+    \item 三大特征：末梢循环障碍（振动性白指VWF——寒冷诱发手指苍白→青紫→潮红）；末梢神经功能障碍（手麻、触觉振动觉减退）；骨关节肌肉损害（指关节变形、骨质疏松）。
+    \item 控制和消除噪声源；控制噪声传播（隔声、吸声、消声、减振）；个体防护（耳塞、耳罩）；健康监护（定期听力检查）；合理安排劳动休息；执行卫生标准（85dB(A)）。
+    \item 时间防护（缩短接触时间）、距离防护（增大与源距离）、屏蔽防护（铅板、混凝土等屏蔽材料）。
+\end{enumerate}
+
+\newpage
+% =====================================================================
+%  CHAPTER 6: 职业性致癌因素与职业性肿瘤
+% =====================================================================
+\chapter{职业性致癌因素与职业性肿瘤}
+\setcounter{chapter}{6}
+\chapterintro{
+掌握职业性致癌因素的概念和分类（确认致癌物、可疑致癌物、潜在致癌物）；掌握职业性肿瘤的特点*（潜伏期、阈值、剂量-反应关系、好发部位、影响因素）；掌握我国法定职业性肿瘤（11种）及其接触因素；了解职业性致癌因素的识别与判定方法。
+}
+
+% ----- 6.1 概述 -----
+\section{职业性致癌因素}
+
+\begin{defbox}
+\textbf{职业性致癌因素}：在劳动过程中，可能引起劳动者发生职业性肿瘤的各种因素。包括化学因素（最常见）、物理因素和生物因素。
+
+\textbf{分类：}
+\begin{enumerate}[leftmargin=*]
+    \item \imp{确认致癌物}：流行病学调查和动物实验均有充分证据证明对人致癌
+    \item \imp{可疑致癌物}：动物实验证据充分，对人体致癌证据有限（IARC 2A类）
+    \item \imp{潜在致癌物}：动物实验已获阳性结果但人群流行病学调查尚无明确证据（IARC 2B类）
+\end{enumerate}
+\end{defbox}
+
+% ----- 6.2 职业性肿瘤的特点 -----
+\section{职业性肿瘤的特点*}
+
+\begin{keybox}
+\textbf{1. 潜伏期长}：从首次接触到临床发病通常需要10--30年或更长（平均约20年）。因此多数职业性肿瘤发生在接触者的中老年期。
+
+\textbf{2. 阈值问题}：对于遗传毒性致癌物，目前多认为不存在绝对安全的阈值。但对于非遗传毒性致癌物，可能存在阈值。
+
+\textbf{3. 剂量-反应关系}：多数职业性肿瘤表现出明确的剂量-反应关系——接触剂量越大、时间越长，发病风险越高。
+
+\textbf{4. 好发部位}：具有较固定的好发部位——多发生于致癌物接触最直接、最强烈的部位：
+\begin{itemize}[leftmargin=*]
+    \item 呼吸道（吸入性致癌物）：石棉→肺癌、间皮瘤
+    \item 皮肤（皮肤接触）：煤焦油→皮肤癌
+    \item 膀胱（经尿排泄）：联苯胺→膀胱癌
+    \item 肝脏（代谢活化部位）：氯乙烯→肝血管肉瘤
+    \item 造血系统：苯→白血病
+\end{itemize}
+
+\textbf{5. 影响因素*：}
+\begin{itemize}[leftmargin=*]
+    \item 吸烟（协同作用）：石棉暴露+吸烟→肺癌风险增加数十倍
+    \item 年龄（初次接触年龄越轻，风险越高）
+    \item 个体遗传易感性（代谢酶基因多态性、DNA修复能力差异）
+\end{itemize}
+
+\textbf{6. 病理类型}：某些职业性肿瘤具有特定的病理类型。例如氯乙烯所致肝血管肉瘤、联苯胺所致膀胱癌（移行上皮癌为主）。
+\end{keybox}
+
+% ----- 6.3 我国法定职业性肿瘤 -----
+\section{我国法定职业性肿瘤（11种）}
+
+\begin{keybox}
+\begin{table}[H]
+\centering
+\caption{我国法定职业性肿瘤（11种）}
+\begin{tabularx}{\textwidth}{ll}
+\hline
+\textbf{职业性肿瘤} & \textbf{接触因素} \\
+\hline
+1. 石棉所致肺癌、间皮瘤 & 石棉 \\
+2. 联苯胺所致膀胱癌 & 联苯胺 \\
+3. 苯所致白血病 & 苯 \\
+4. 氯甲醚、双氯甲醚所致肺癌 & 氯甲醚、双氯甲醚 \\
+5. 砷及其化合物所致肺癌、皮肤癌 & 砷及其无机化合物 \\
+6. 氯乙烯所致肝血管肉瘤 & 氯乙烯 \\
+7. 焦炉逸散物所致肺癌 & 焦炉逸散物（含PAHs）\\
+8. 六价铬化合物所致肺癌 & 六价铬化合物 \\
+9. 毛沸石所致肺癌、间皮瘤 & 毛沸石 \\
+10. 煤焦油、煤焦油沥青、石油沥青所致皮肤癌 & 煤焦油、沥青 \\
+11. $\beta$-萘胺所致膀胱癌 & $\beta$-萘胺 \\
+\hline
+\end{tabularx}
+\end{table}
+\end{keybox}
+
+% ----- 6.4 职业性肿瘤的识别和预防 -----
+\section{职业性致癌因素的识别与判定}
+
+\begin{enumerate}[leftmargin=*]
+    \item \imp{临床观察}：临床医生通过病例报告发现可疑致癌因素
+    \item \imp{流行病学调查}：队列研究、病例对照研究等——\textbf{是识别和确认职业性致癌因素中\keyword{最重要的一步}，最具说服力}
+    \item \imp{动物实验}：致癌性生物鉴定（长期致癌试验）
+    \item \imp{短期试验}：Ames试验（致突变试验）等
+    \item \imp{分子流行病学}：生物标志物（DNA加合物、基因突变谱等）
+\end{enumerate}
+
+\begin{tipbox}
+\textbf{职业性致癌因素的判定标准（WHO/IARC分类）：}
+\begin{itemize}[leftmargin=*]
+    \item \textbf{IARC 1类（确定致癌物）}：对人类致癌的充分证据（如石棉、苯、六价铬、氯乙烯等）
+    \item \textbf{IARC 2A类（很可能致癌物）}：有限的人群证据+充分的动物实验证据
+    \item \textbf{IARC 2B类（可能致癌物）}：有限的人群证据+不充分的动物证据
+    \item \textbf{IARC 3类}：无法分类（证据不足）
+\end{itemize}
+\textbf{注意：}流行病学调查证据是判定确认致癌物的根本依据。仅凭动物实验阳性不足以将某因素列为确认致癌物。
+\end{tipbox}
+
+\begin{exambox}
+\textbf{工程措施与管理措施的区分：}
+\begin{itemize}[leftmargin=*]
+    \item \textbf{工程措施}：通过技术手段从根本上减少或消除危害，如密闭化生产自动化、通风排毒、湿式作业、隔声吸声、密闭尘源、无毒代有毒等
+    \item \textbf{管理措施/组织措施}：通过制度和管理手段控制危害，如合理安排作息时间、轮换作业、安全操作规程、健康监护制度、安全教育培训等
+    \item 工程措施是\textbf{首选}的预防策略（从源头消除危害），管理措施和个人防护为辅助手段
+\end{itemize}
+\end{exambox}
+
+\section{职业性肿瘤的预防原则}
+
+\begin{enumerate}[leftmargin=*]
+    \item 严格执行有关职业卫生标准和法律法规
+    \item 建立和完善有效的职业性肿瘤监测体系
+    \item 落实预防致癌危害的管理办法
+    \item 加强对职业性致癌因素的控制和管理
+    \item 加强健康教育提高自我防护能力
+    \item 科学预防：识别高危人群、定期医学监护
+\end{enumerate}
+
+% ----- 6.5 复习题 -----
+\section{复习题}
+
+\begin{enumerate}[leftmargin=*, itemsep=8pt]
+    \item \textbf{【名词解释】}职业性致癌因素；确认致癌物；可疑致癌物
+    \item \textbf{【简答题】}简述职业性肿瘤的六大特点。
+    \item \textbf{【简答题】}列举至少5种我国法定职业性肿瘤及其接触因素。
+    \item \textbf{【简答题】}简述职业性致癌因素的识别与判定方法。
+    \item \textbf{【简答题】}简述职业性肿瘤的预防原则。
+\end{enumerate}
+
+\subsection*{参考答案要点}
+
+\begin{enumerate}[leftmargin=*]
+    \item \textbf{职业性致癌因素}：劳动过程中可能引起职业性肿瘤的各种因素（化学、物理、生物）。\textbf{确认致癌物}：流行病学和动物实验均充分证明对人致癌。\textbf{可疑致癌物}：动物证据充分但人体证据有限（2A类）。
+    \item 六大特点：潜伏期长（10--30年）；阈值问题（遗传毒性致癌物无安全阈值）；明确的剂量-反应关系；好发部位较固定（接触最直接的部位）；吸烟和个体易感性为重要影响因素；某些肿瘤有特定病理类型。
+    \item 石棉→肺癌/间皮瘤；联苯胺→膀胱癌；苯→白血病；氯甲醚→肺癌；砷→肺癌/皮肤癌；氯乙烯→肝血管肉瘤；焦炉逸散物→肺癌；六价铬→肺癌；煤焦油沥青→皮肤癌。
+    \item 临床观察→流行病学调查（最具说服力）→动物实验（长期致癌试验）→短期试验（Ames试验等）→分子流行病学（生物标志物）。
+    \item 执行法律法规标准；建立肿瘤监测体系；落实预防致癌危害管理办法；加强致癌因素控制管理；加强健康教育；科学预防（识别高危人群、定期监护）。
+\end{enumerate}
+
+\newpage
+
+% =====================================================================
+%  CHAPTER 7: 其他职业病
+% =====================================================================
+\chapter{其他职业病}
+\setcounter{chapter}{7}
+
+\section{职业性皮肤病}
+
+\begin{defbox}
+\textbf{职业性皮肤病}：在职业活动中接触化学、物理、生物等职业性有害因素引起的皮肤及其附属器的疾病。是职业病中最常见的一大类。
+
+\textbf{常见类型：}
+\begin{enumerate}[leftmargin=*]
+    \item \imp{职业性皮炎}：刺激性接触性皮炎（最常见）和变应性接触性皮炎
+    \item \imp{职业性皮肤色素变化}：色素沉着（煤焦油、沥青）和色素减退
+    \item \imp{职业性痤疮}：油痤疮（矿物油）和氯痤疮（卤代芳烃如二噁英）
+    \item \imp{职业性皮肤溃疡}：铬疮（六价铬化合物引起的深在性溃疡）
+    \item \imp{职业性皮肤肿瘤}：煤焦油和沥青→皮肤癌
+    \item \imp{职业性感染性皮肤病}：炭疽等
+\end{enumerate}
+\end{defbox}
+
+\section{职业性眼病}
+
+\begin{itemize}[leftmargin=*]
+    \item \imp{化学性眼灼伤}：酸碱溅入眼内
+    \item \imp{电光性眼炎}：紫外线照射→急性角膜结膜炎（潜伏期4--12h）
+    \item \imp{职业性白内障}：红外线（玻璃工人白内障）、TNT、微波等
+\end{itemize}
+
+\section{职业性耳鼻喉及口腔疾病}
+
+\begin{itemize}[leftmargin=*]
+    \item \imp{噪声聋}：感音性耳聋，高频听力下降为主
+    \item \imp{铬鼻病}：六价铬引起鼻中隔穿孔
+    \item \imp{牙酸蚀症}：长期接触酸雾导致牙齿硬组织脱钙
+\end{itemize}
+
+\newpage
+
+% =====================================================================
+%  CHAPTER 8: 职业伤害（职业安全）
+% =====================================================================
+\chapter{职业伤害（职业安全）}
+\setcounter{chapter}{8}
+
+\section{概述}
+
+\begin{defbox}
+\textbf{职业伤害（Occupational Injury）}：在生产劳动过程中，由于外部因素直接作用而引起机体组织的突发性意外损伤。
+
+\textbf{职业安全}：以防止职工在职业活动过程中发生各种伤害和职业病为目的的工作领域及在法律、技术、设备、组织制度和教育等方面所采取的相应措施。
+\end{defbox}
+
+\section{安全事故的流行病学特征}
+
+\begin{itemize}[leftmargin=*]
+    \item \imp{事故发生率高的行业}：建筑、采矿、交通运输、制造业
+    \item \imp{常见事故类型}：高处坠落、物体打击、机械伤害、触电、车辆伤害
+    \item 时间分布：工作日的开始和结束时段事故高发
+    \item 人群分布：青年工人、新工人、缺乏经验者事故率高
+\end{itemize}
+
+\section{导致工伤的因素}
+
+\begin{enumerate}[leftmargin=*]
+    \item 生产设备有缺陷
+    \item 防护设备缺乏
+    \item 劳动组织不合理、生产管理不善
+    \item 个人因素（疲劳、注意力不集中、违反操作规程）
+    \item 不良生产环境（照明不足、噪声等）
+    \item 管理者与劳动者缺乏安全观念和知识
+\end{enumerate}
+
+\section{事故预防对策与措施}
+
+\begin{enumerate}[leftmargin=*]
+    \item 安全技术措施（设备安全设计、防护装置）
+    \item 安全管理制度（操作规程、安全责任制）
+    \item 安全教育与培训（三级安全教育）
+    \item 个人防护用品的使用
+    \item 事故应急处理预案
+    \item 监督检查与事故调查分析
+\end{enumerate}
+
+\newpage
+
+% =====================================================================
+%  CHAPTER 9: 职业有害因素的识别与评价
+% =====================================================================
+\chapter{职业有害因素的识别与评价}
+\setcounter{chapter}{9}
+\chapterintro{
+掌握职业卫生调查的步骤和方法； 掌握作业环境监测中化学物质的采样和测定方法；掌握生物监测的概念、特点和指标；掌握职业流行病学调查在职业卫生中的应用；掌握职业有害因素的危险度评价。
+}
+
+\section{职业卫生调查}
+
+\subsection{调查类型}
+
+\begin{enumerate}[leftmargin=*]
+    \item \imp{基本情况调查}：了解企业基本职业卫生状况
+    \item \imp{专题调查}：针对特定职业危害因素的深入调查
+    \item \imp{应急性调查}：发生急性职业中毒或安全事故时进行
+\end{enumerate}
+
+\subsection{调查步骤}
+
+\begin{enumerate}[leftmargin=*]
+    \item 准备阶段（查阅资料、制定方案、准备仪器）
+    \item 现场调查阶段（了解生产工艺、识别有害因素、采样监测）
+    \item 资料整理和分析阶段
+    \item 撰写调查报告
+\end{enumerate}
+
+\section{作业环境监测}
+
+\subsection{有害化学物质的检测}
+
+\begin{enumerate}[leftmargin=*]
+    \item \imp{采样方法}：个体采样（个体采样器）和区域采样（定点采样）
+    \item \imp{测定方法}：比色法、紫外可见分光光度法、原子吸收光谱法、气相/液相色谱法
+\end{enumerate}
+
+\subsection{职业接触限值（OEL）}
+
+\begin{defbox}
+\textbf{最高容许浓度（MAC）}：工作地点空气中任何一次有代表性的采样测定均不得超过的浓度。适用于急性危害较大的物质。
+
+\textbf{时间加权平均容许浓度（PC-TWA）}：以时间为权数规定的8h工作日的平均容许接触水平。
+
+\textbf{短时间接触容许浓度（PC-STEL）}：在遵守PC-TWA前提下容许15min短时间接触的浓度。
+
+\textbf{制定依据：}有害物质的理化特性资料、动物实验资料、人体毒理学资料、现场职业卫生调查资料、流行病学调查资料。
+\end{defbox}
+
+\section{生物监测}
+
+\begin{defbox}
+\textbf{生物监测}：在规定的时间间隔内，系统地采集人体生物材料（血、尿、呼出气等），测定其中化学物质或其代谢产物的含量，或测定非损害性生化效应指标，以评价人体的内暴露水平和健康危险。
+
+\textbf{特点：}
+\begin{enumerate}[leftmargin=*]
+    \item 反映机体总的内暴露剂量（考虑所有吸收途径和个体差异）
+    \item 反映已吸收的量（而非环境中存在的量）
+    \item 可反映机体对有害物质的代谢转化能力
+    \item 可与健康效应指标相结合
+\end{enumerate}
+
+\textbf{生物监测指标：}
+\begin{itemize}[leftmargin=*]
+    \item 接触指标：血铅、尿汞、尿酚等
+    \item 效应指标：ZPP、$\delta$-ALA、胆碱酯酶活性等
+\end{itemize}
+
+\textbf{生物接触限值（BEI）}：工人接触有害物质时，生物材料中该物质或其代谢产物或效应指标的容许限值。
+\end{defbox}
+
+\section{职业流行病学调查}
+
+在职业卫生中的应用：
+\begin{enumerate}[leftmargin=*]
+    \item 阐明职业性损害在人群中的分布、发生和发展规律
+    \item 发现职业性有害因素对健康的影响
+    \item 为制定、修订职业卫生标准和职业病诊断标准提供依据
+    \item 评价职业卫生和职业病防治工作质量及其预防措施效果
+\end{enumerate}
+
+\section{职业有害因素的危险度评价}
+
+\begin{keybox}
+\textbf{危险度评价（Risk Assessment）}：对职业有害因素损害健康的可能性和程度进行系统、科学的评价。
+
+\textbf{内容：}
+\begin{enumerate}[leftmargin=*]
+    \item \imp{危害鉴定}：判断某因素是否对健康有害（定性）
+    \item \imp{暴露评价}：评估暴露的强度、频率和持续时间
+    \item \imp{剂量-反应关系评价}：量化剂量与效应关系（核心）
+    \item \imp{危险度特征分析}：综合前三阶段，判断危害可能性大小
+\end{enumerate}
+
+\textbf{危险度管理}：根据危险度评价结果，结合经济、技术、社会等因素，制定和执行控制措施的过程。
+\end{keybox}
+
+\section{职业健康监护}
+
+\begin{defbox}
+\textbf{职业健康监护}：以预防为目的，根据劳动者职业接触史，通过定期或不定期的医学健康检查和健康相关资料收集，连续监测劳动者健康状况，分析健康变化与职业病危害因素的关系，及时采取干预措施。
+
+\textbf{内容：}(1)就业前健康检查（发现职业禁忌证）；(2)定期健康检查（早期发现职业损害）；(3)离岗时健康检查；(4)应急健康检查。
+\end{defbox}
+
+% ----- 复习题 -----
+\section{复习题}
+
+\begin{enumerate}[leftmargin=*, itemsep=8pt]
+    \item \textbf{【名词解释】}职业接触限值；MAC；PC-TWA；PC-STEL
+    \item \textbf{【名词解释】}生物监测；生物接触限值（BEI）；职业健康监护
+    \item \textbf{【名词解释】}危险度评价；危险度管理
+    \item \textbf{【简答题】}简述职业卫生调查的类型和步骤。
+    \item \textbf{【简答题】}简述生物监测的特点和常用指标。
+    \item \textbf{【简答题】}简述职业有害因素危险度评价的四个阶段。
+    \item \textbf{【简答题】}简述职业健康监护的内容。
+\end{enumerate}
+
+\subsection*{参考答案要点}
+
+\begin{enumerate}[leftmargin=*]
+    \item \textbf{职业接触限值}：为保护劳动者健康而规定的职业接触有害因素不应超过的限量值。\textbf{MAC}：任何一次采样均不得超过的最高浓度。\textbf{PC-TWA}：8h工作日时间加权平均容许浓度。\textbf{PC-STEL}：15min短时间接触容许浓度。
+    \item \textbf{生物监测}：系统采集人体生物材料测定化学物或其代谢产物含量以评价内暴露水平。\textbf{BEI}：生物材料中容许的限值。\textbf{职业健康监护}：通过医学检查连续监测劳动者健康状况。
+    \item \textbf{危险度评价}：对有害因素损害健康的可能性和程度的系统评价。\textbf{危险度管理}：基于评价结果制定和执行控制措施。
+    \item 三类：基本情况调查、专题调查、应急性调查。步骤：准备→现场调查→资料整理分析→撰写报告。
+    \item 特点：反映总内暴露剂量（所有途径）、反映已吸收量、反映个体代谢差异、可与健康效应指标结合。指标：接触指标（血铅、尿汞）、效应指标（ZPP、ChE活性）。
+    \item 四个阶段：危害鉴定（定性判断是否对健康有害）→暴露评价（评估暴露强度、频率和持续时间）→剂量-反应关系评价（核心，量化关系）→危险度特征分析（综合判断危害可能性）。
+    \item 就业前健康检查（发现禁忌证）、定期健康检查（早期发现损害）、离岗时健康检查、应急健康检查。
+\end{enumerate}
+
+\newpage
+
+% =====================================================================
+%  CHAPTER 10: 职业有害因素的监督与控制
+% =====================================================================
+\chapter{职业有害因素的监督与控制}
+\setcounter{chapter}{10}
+\chapterintro{
+掌握职业卫生标准的分类和应用；掌握工业通风的类型和原理；掌握个人防护用品的分类和适用条件；了解职业卫生监督的类型和内容。
+}
+
+\section{职业卫生标准}
+
+\subsection{职业卫生标准的分类与应用}
+
+\begin{defbox}
+\textbf{制定职业卫生标准的原则：}
+\begin{enumerate}[leftmargin=*]
+    \item 保障劳动者不发生急性及慢性职业性损害
+    \item 选用最敏感的指标（最敏感人群、最敏感观察指标）
+    \item 经济技术上可行
+\end{enumerate}
+\end{defbox}
+
+\subsection{职业接触限值的应用}
+
+\begin{itemize}[leftmargin=*]
+    \item MAC：适用于急性毒性较大的物质，评价瞬时暴露
+    \item PC-TWA：适用于慢性毒性物质，评价长期平均暴露水平
+    \item PC-STEL：与PC-TWA配合使用，控制短期高浓度暴露
+    \item 化学致癌物的职业接触限值：对遗传毒性致癌物，力争将接触水平降至最低
+\end{itemize}
+
+\section{工业通风}
+
+\begin{defbox}
+\textbf{工业通风}：通过合理组织车间内外的气流，控制生产过程中产生的有害气体、蒸气、粉尘等，使其浓度降低到国家卫生标准以下的工程技术措施。
+
+\textbf{通风类型：}
+\begin{enumerate}[leftmargin=*]
+    \item \imp{自然通风}：利用风压和热压进行通风（经济节能）
+    \item \imp{机械通风}：利用通风机进行通风
+    \begin{itemize}
+        \item 全面通风：对整个车间的空气进行交换
+        \item 局部通风（优先采用）：局部排风（在有害物质发生源就地将其排出）和局部送风
+    \end{itemize}
+\end{enumerate}
+
+\textbf{局部排风系统组成}：吸尘（气）罩→风管→净化设备→风机→排气筒
+\end{defbox}
+
+\section{个人防护用品}
+
+\begin{defbox}
+\textbf{个人防护用品（PPE）}：劳动者在生产过程中为防御物理、化学、生物等有害因素伤害人体而穿戴和使用的各种物品。
+
+\textbf{分类：}
+\begin{enumerate}[leftmargin=*]
+    \item \imp{呼吸防护器}：防尘口罩、防毒面具、供气式呼吸器
+    \item \imp{防护服}：防尘服、防毒服、防热服、防辐射服
+    \item \imp{防护手套}：防振手套、防酸碱手套、绝缘手套
+    \item \imp{防护鞋}：防砸鞋、绝缘鞋、耐酸碱鞋
+    \item \imp{护耳器}：耳塞、耳罩
+    \item \imp{护目镜和面罩}：防冲击、防化学物飞溅、防辐射
+\end{enumerate}
+
+\textbf{使用注意事项：}
+\begin{itemize}[leftmargin=*]
+    \item 根据危害因素类型选择合适的防护用品
+    \item 正确佩戴和使用
+    \item 定期检查和更换
+    \item 加强维护和保养
+\end{itemize}
+\end{defbox}
+
+\section{作业环境管理}
+
+\begin{itemize}[leftmargin=*]
+    \item 作业场所采光照明应符合标准
+    \item 设置应急救援设施和警示标识
+    \item 定期检测作业场所有害因素浓度
+    \item 建立职业卫生档案
+\end{itemize}
+
+% ----- 复习题 -----
+\section{复习题}
+
+\begin{enumerate}[leftmargin=*, itemsep=8pt]
+    \item \textbf{【名词解释】}工业通风；局部排风；个人防护用品（PPE）
+    \item \textbf{【简答题】}简述工业通风的类型及适用条件。
+    \item \textbf{【简答题】}简述个人防护用品的分类和使用注意事项。
+    \item \textbf{【简答题】}简述职业卫生标准的制定原则。
+\end{enumerate}
+
+\subsection*{参考答案要点}
+
+\begin{enumerate}[leftmargin=*]
+    \item \textbf{工业通风}：通过合理组织气流控制有害气体的工程技术措施。\textbf{局部排风}：在有害物发生源就地将其排出的通风方式。\textbf{PPE}：防御有害因素伤害人体而穿戴使用的各种物品。
+    \item 自然通风（利用风压和热压，经济）和机械通风（全面通风和局部通风）。有害物质源固定时优先采用局部排风。
+    \item 分类：呼吸防护器、防护服、防护手套、防护鞋、护耳器、护目镜和面罩。注意：按危害因素选型、正确佩戴、定期检查更换、加强维护保养。
+    \item 三项原则：保障不发生急慢性职业损害；选用最敏感指标（最敏感人群、最敏感观察指标）；经济技术上可行。
+\end{enumerate}
+
+\newpage
+
+% =====================================================================
+%  CHAPTER 11: 主要行业的职业卫生
+% =====================================================================
+\chapter{主要行业的职业卫生}
+\setcounter{chapter}{11}
+\chapterintro{
+了解采矿、冶金、化工、建筑、农业等行业的主要职业有害因素及防护要点。
+}
+
+\section{采矿行业}
+
+\begin{itemize}[leftmargin=*]
+    \item \imp{主要危害因素}：粉尘（矽尘、煤尘等）→尘肺；噪声和振动（凿岩机、爆破）；高温高湿（深矿井）；有毒气体（爆破产生CO、NOx等）；不良体位
+    \item \imp{防护要点}：湿式作业、通风除尘、噪声控制、个体防护
+\end{itemize}
+
+\section{冶金行业}
+
+\begin{itemize}[leftmargin=*]
+    \item \imp{主要危害因素}：高温和热辐射→中暑；粉尘（金属粉尘、煤尘）；有毒气体（CO、SO$_2$、氟化物等）；噪声
+    \item \imp{防护要点}：隔热降温、通风排毒、噪声控制
+\end{itemize}
+
+\section{化工行业}
+
+\begin{itemize}[leftmargin=*]
+    \item \imp{主要危害因素}：各类化学毒物（有机溶剂、刺激性气体、致癌物等）；火灾爆炸危险
+    \item \imp{防护要点}：密闭化自动化生产、通风排毒、个人防护、应急救援预案
+\end{itemize}
+
+\section{建筑行业}
+
+\begin{itemize}[leftmargin=*]
+    \item \imp{主要危害因素}：高处坠落、物体打击、粉尘（水泥尘、矽尘）、噪声和振动、高温和寒冷
+    \item \imp{防护要点}：安全防护设施、个体防护、安全教育培训
+\end{itemize}
+
+\section{农业}
+
+\begin{itemize}[leftmargin=*]
+    \item \imp{主要危害因素}：农药中毒、有机粉尘（农民肺）、人畜共患传染病（布氏杆菌病、炭疽）、不良气象条件、机械伤害
+    \item \imp{防护要点}：农药安全使用、通风防尘、个人防护、健康教育
+\end{itemize}
+
+\newpage
+
+% =====================================================================
+%  附录：核心名词解释速记表
+% =====================================================================
+\chapter*{附录：核心名词解释速记表}
+\addcontentsline{toc}{chapter}{附录：核心名词解释速记表}
+
+\begin{table}[htbp]
+\centering
+\begin{tabularx}{\textwidth}{lX}
+\hline
+\textbf{名词} & \textbf{核心释义} \\
+\hline
+职业卫生 & 研究劳动条件对健康的影响，识别、评价、预测、控制不良劳动条件 \\
+职业医学 & 对受职业危害因素损害的个体进行检测、诊断、治疗和康复 \\
+职业病 & 职业活动中接触有害因素引起、具有医学和法律双重含义的疾病 \\
+工作有关疾病 & 职业因素为多因素之一的疾病，改善工作条件可控制或缓解 \\
+三级预防 & 一级（病因预防）、二级（发病预防——健康监护）、三级（康复预防）\\
+职业中毒 & 工作人员在生产过程中接触生产性毒物引起的中毒 \\
+中毒性肺水肿 & 吸入高浓度刺激性气体后肺泡及间质过量体液潴留 \\
+铅中毒 & 卟啉代谢障碍→贫血、周围神经病（垂腕）、铅绞痛、铅线 \\
+汞中毒 & 易兴奋症（特有）、意向性震颤、口腔炎 \\
+锰中毒 & 帕金森氏综合征（面具脸、慌张步态、齿轮样肌张力、震颤）\\
+苯中毒 & CNS麻醉（急性）、造血系统损害→再障→白血病（慢性，1类致癌物）\\
+有机磷中毒 & 不可逆抑制AChE→ACh蓄积→M样+N样+CNS症状。解毒：阿托品+氯磷定 \\
+CO中毒 & 与Hb结合→HbCO（樱桃红色），亲和力比O$_2$大200--300倍 \\
+HCN中毒 & 抑制细胞色素氧化酶Fe$^{3+}$→中断呼吸链→细胞窒息。解毒：亚硝酸钠-硫代硫酸钠 \\
+尘肺 & 长期吸入矿物性粉尘所致的以肺弥漫性纤维化为主的疾病 \\
+矽肺 & 吸入游离SiO$_2$粉尘所致，矽结节为特征性病理改变 \\
+石棉肺 & 吸入石棉纤维所致，弥漫性间质纤维化、石棉小体、胸膜斑 \\
+矽肺结核 & 矽肺合并肺结核，最常见最严重并发症 \\
+石棉致肺癌/间皮瘤 & 石棉IARC 1类致癌物，吸烟有协同致癌作用 \\
+防尘八字方针 & 革、水、密、风、护、管、教、查 \\
+\hline
+\end{tabularx}
+\end{table}
+
+\begin{table}[htbp]
+\centering
+\begin{tabularx}{\textwidth}{lX}
+\hline
+\textbf{名词} & \textbf{核心释义} \\
+\hline
+热射病 & 最严重中暑类型：高热>40$^\circ$C、无汗、意识障碍 \\
+减压病 & 高气压下减压过快氮气释放形成气泡栓塞 \\
+噪声聋 & 长期接触生产性噪声引起的以高频听力下降为主的感音性耳聋 \\
+健康工人效应（HWE） & 工人总死亡率低于一般人群的现象，职业流行病学重要偏倚来源 \\
+热适应 & 机体在长期高温环境下产生的形态、结构和生理功能的适应性变化 \\
+热习服 & 短期反复接触高温后生理功能补偿性调整，7--14天形成，脱离后消退 \\
+射频电磁场 & 高频（HF）、超高频（VHF/UHF）、微波（MW），热效应和非热效应 \\
+电光性眼炎 & 紫外线引起的急性角膜结膜炎，潜伏期4--12h \\
+振动性白指（VWF） & 寒冷诱发手指苍白（雷诺现象），局部振动病最特征性改变 \\
+职业性肿瘤 & 职业活动中接触致癌因素引起的肿瘤，潜伏期长 \\
+确定致癌物 & 流行病学证据充分+IARC 1类，流行病学调查为最重要识别手段 \\
+职业接触限值 & MAC（最高容许浓度）、PC-TWA（时间加权）、PC-STEL（短时间）\\
+生物监测 & 测定生物材料中化学物或其代谢产物以评价内暴露水平 \\
+职业健康监护 & 就业前体检+定期体检+离岗时体检+应急检查 \\
+\hline
+\end{tabularx}
+\end{table}
+
+\newpage
+
+\vspace*{3cm}
+\begin{center}
+    {\Large\color{main}\textbf{--- 复习笔记完 ---}}\\[20pt]
+    {\normalsize\color{gray!70}
+    \vspace{20pt}
+    祝考试顺利！\\[20pt]
+    \textit{By greedyCat}
+    }
+\end{center}
+
+\end{document}
