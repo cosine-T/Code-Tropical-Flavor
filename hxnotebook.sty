@@ -1,4 +1,4 @@
-% hxnotebook.sty - 环境卫生学复习笔记专用样式
+% hxnotebook.sty
 \ProvidesPackage{hxnotebook}
 
 % 页边距
@@ -31,9 +31,11 @@
 \newif\ifTitlePage
 \TitlePagetrue
 
-% 颜色
-\definecolor{mainblue}{RGB}{0,82,136}
-\definecolor{lightblue}{RGB}{230,240,250}
+% ===================== 核心修改：只定义抽象颜色名 main / light =====================
+% 不在 sty 里写死蓝色，留给主文档 .tex 去定义
+% 主文档必须先定义 \definecolor{main}{...}{...} 和 \definecolor{light}{...}{...}
+
+% 其他固定颜色不变
 \definecolor{keyred}{RGB}{180,30,30}
 \definecolor{darkgreen}{RGB}{0,100,50}
 \definecolor{orange}{RGB}{220,120,0}
@@ -55,12 +57,12 @@
 \titlespacing*{\chapter}{0pt}{-20pt}{20pt}
 
 \titleformat{\section}
-  {\normalfont\Large\bfseries\color{mainblue}}
+  {\normalfont\Large\bfseries\color{main}}
   {\thesection}{1em}{}[\vspace{-6pt}\rule{\textwidth}{0.5pt}]
 \titlespacing*{\section}{0pt}{10pt}{5pt}
 
 \titleformat{\subsection}
-  {\normalfont\large\bfseries\color{mainblue!80}}
+  {\normalfont\large\bfseries\color{main!80}}
   {\thesubsection}{1em}{}
 \titlespacing*{\subsection}{0pt}{6pt}{3pt}
 
@@ -68,8 +70,8 @@
 \setlength{\headheight}{15pt}
 \pagestyle{fancy}
 \fancyhf{}
-\fancyhead[L]{\small\color{mainblue}\leftmark}
-\fancyhead[R]{\small\color{mainblue}\textbf{Agent is all you need!}}
+\fancyhead[L]{\small\color{main}\leftmark}
+\fancyhead[R]{\small\color{main}\textbf{Agent is all you need!}}
 \fancyfoot[C]{\small\thepage}
 \renewcommand{\headrulewidth}{0.4pt}
 \renewcommand{\footrulewidth}{0.2pt}
@@ -82,9 +84,9 @@
     before={\vspace{2pt}},after={\vspace{2pt}},breakable
 }
 \newtcolorbox{defbox}{
-    colback=lightblue,colframe=mainblue,boxrule=0.8pt,arc=3pt,
+    colback=light,colframe=main,boxrule=0.8pt,arc=3pt,
     left=4pt,right=4pt,top=3pt,bottom=3pt,
-    before upper={\textbf{\color{mainblue}[概念]\ 概念释义：}},
+    before upper={\textbf{\color{main}[概念]\ 概念释义：}},
     before={\vspace{2pt}},after={\vspace{2pt}},breakable
 }
 \newtcolorbox{tipbox}{
@@ -101,13 +103,13 @@
 }
 
 \newcommand{\chapterintro}[1]{%
-    \begin{tcolorbox}[colback=mainblue!5,colframe=mainblue,boxrule=0.5pt,arc=3pt,left=6pt,right=6pt,top=3pt,bottom=3pt,before={\vspace{2pt}},after={\vspace{4pt}},breakable]
+    \begin{tcolorbox}[colback=main!5,colframe=main,boxrule=0.5pt,arc=3pt,left=6pt,right=6pt,top=3pt,bottom=3pt,before={\vspace{2pt}},after={\vspace{4pt}},breakable]
     \textbf{本章导览：}#1\end{tcolorbox}
 }
 
 % 自定义命令
 \newcommand{\keyword}[1]{\textbf{\color{keyred}#1}}
-\newcommand{\imp}[1]{\textbf{\color{mainblue}#1}}
+\newcommand{\imp}[1]{\textbf{\color{main}#1}}
 \raggedbottom
 \newcommand{\seeref}[1]{（详见第\ref{#1}节）}
 
@@ -118,10 +120,10 @@
   \TitlePagetrue
 
   \begin{tikzpicture}[remember picture, overlay]
-      % 封面渐变背景（你要的蓝色！）
-      \shade[top color=mainblue!90, bottom color=mainblue!40] (current page.north west) rectangle (current page.south east);
+      % 封面渐变背景（使用 main 颜色）
+      \shade[top color=main!90, bottom color=main!40] (current page.north west) rectangle (current page.south east);
       % 左侧深蓝色条
-      \fill[mainblue!95] (current page.north west) rectangle ([xshift=2.5cm]current page.south west);
+      \fill[main!95] (current page.north west) rectangle ([xshift=2.5cm]current page.south west);
       % 装饰白点
       \foreach \x in {1,2,...,10} {
           \fill[white, opacity=0.03] (current page.north west) ++(rand*20, rand*25) circle (2+rand*2);

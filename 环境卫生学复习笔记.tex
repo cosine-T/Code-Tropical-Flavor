@@ -1,4 +1,8 @@
 \documentclass[10pt,a4paper,oneside]{ctexbook}
+\RequirePackage{xcolor}
+\definecolor{main}{RGB}{0,82,136}
+\definecolor{light}{RGB}{230,240,250}
+
 \usepackage{hxnotebook}
 
 \begin{document}
@@ -22,7 +26,7 @@
     \item 本复习笔记严格依照《环境卫生学》教学大纲（2026版）章节编排，重点内容与大纲标注的掌握内容一致。
     \item 各章末附有复习题（名词解释、简答题、非标准答案题），题目主要来源于教学平台题库及大纲重点内容。
     \item \textbf{\color{keyred}红色框}标识的内容为必须重点掌握的核心知识。
-    \item \textbf{\color{mainblue}蓝色框}为概念释义，帮助理解专业术语。
+    \item \textbf{\color{main}主题框}为概念释义，帮助理解专业术语。
     \item 建议结合教师授课PPT中的标红内容重点复习。
 \end{itemize}
 
@@ -60,7 +64,7 @@
 
 环境卫生学以\keyword{人类及其周围的环境}为研究对象，包括自然环境与生活环境。
 
-\begin{tcolorbox}[colback=lightblue, colframe=mainblue, boxrule=0.5pt, arc=4pt, title=\textbf{环境卫生学的研究内容}, breakable]
+\begin{tcolorbox}[colback=light, colframe=main, boxrule=0.5pt, arc=4pt, title=\textbf{环境卫生学的研究内容}, breakable]
 \begin{enumerate}[leftmargin=*, itemsep=3pt]
     \item \imp{环境与健康关系的基础理论研究}——揭示环境因素对健康的影响机制。包括：
     \begin{itemize}
@@ -1543,11 +1547,11 @@ SO$_2$ & 反映燃煤污染 \\
     \node[gray!60, anchor=south west] at (12,5) {\footnotesize\ 饱和溶解氧};
 
     % DO curve
-    \draw[thick, mainblue] (0,5)
+    \draw[thick, main] (0,5)
         .. controls (2,4.6) and (3,3.2) .. (4.5,2.5)
         .. controls (6,1.8) and (7.5,3.2) .. (10,4.9)
         .. controls (11,5.5) and (11.8,5.3) .. (12,5.2);
-    \node[mainblue, anchor=west] at (12,5.2) {\footnotesize\ DO曲线};
+    \node[main, anchor=west] at (12,5.2) {\footnotesize\ DO曲线};
 
     % Critical point
     \draw[fill=keyred] (4.5,2.5) circle (2.5pt);
@@ -2971,7 +2975,7 @@ AQI & 空气质量指数，含SO$_2$、NO$_2$、PM$_{10}$、PM$_{2.5}$、CO、O$
 
 \vspace*{3cm}
 \begin{center}
-    {\Large\color{mainblue}\textbf{--- 复习笔记完 ---}}\\[20pt]
+    {\Large\color{main}\textbf{--- 复习笔记完 ---}}\\[20pt]
     {\normalsize\color{gray!70}
     本笔记依据以下资料整理：\\[5pt]
     《环境卫生学》教学大纲（2026版）\\
