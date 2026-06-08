@@ -1,0 +1,199 @@
+% =====================================================================
+%  CHAPTER 11: 健康危险因素评价
+% =====================================================================
+\chapter{健康危险因素评价}
+\setcounter{chapter}{11}
+\chapterintro{
+掌握健康危险因素评价的概念、步骤（\textbf{教学难点}）；掌握危险分数的意义和来源、评价年龄和增长年龄的概念（\textbf{教学难点}）；熟悉健康危险因素的个体和群体评价方法；了解健康危险因素的概念、分类特点及大数据应用。
+}
+
+% ----- 11.1 健康危险因素 -----
+\section{健康危险因素概述}
+
+\begin{defbox}
+\textbf{健康危险因素（Health Risk Factors）}：能使疾病或死亡发生的可能性增加的因素，或者能使健康不良后果发生概率增加的因素。
+\end{defbox}
+
+\subsection{健康危险因素的分类}
+
+\begin{tcolorbox}[colback=light, colframe=main, boxrule=0.5pt, arc=4pt, title=\textbf{健康危险因素的四大分类}, breakable]
+\begin{enumerate}[leftmargin=*]
+    \item \imp{环境因素}——自然环境（空气、水、土壤污染）；社会环境（经济、文化、教育、社会支持等）
+    \item \imp{生物遗传因素}——遗传易感性、家族史、年龄、性别等
+    \item \imp{行为生活方式因素}——吸烟、酗酒、不合理饮食、缺乏运动、药物滥用等
+    \item \imp{医疗卫生服务因素}——卫生服务可及性、质量、医疗保障覆盖等
+\end{enumerate}
+\end{tcolorbox}
+
+\subsection{健康危险因素的特点}
+
+\begin{enumerate}[leftmargin=*]
+    \item \imp{潜伏期长}——危险因素暴露后往往经过很长时间才出现疾病后果
+    \item \imp{联合作用}——多种危险因素同时存在的联合作用比单个因素大
+    \item \imp{广泛存在}——危险因素在人群中广泛分布
+    \item \imp{特异性弱}——一种危险因素可与多种疾病相关，一种疾病也可与多种因素相关
+    \item \imp{可干预性}——许多危险因素可以通过行为和环境的改变加以控制和消除
+\end{enumerate}
+
+\subsection{健康危险因素的作用过程}
+
+\begin{enumerate}[leftmargin=*]
+    \item 危险因素暴露→机体内部分子/细胞/生理发生变化→亚临床状态→临床疾病→死亡
+    \item 大部分危险因素通过影响机体中间表型（血压、血脂、血糖等）间接导致疾病
+    \item 危险因素之间存在相互作用，如吸烟+饮酒的协同致癌效应
+\end{enumerate}
+
+% ----- 11.2 健康危险因素评价 -----
+\section{健康危险因素评价}
+
+\begin{defbox}
+\textbf{健康危险因素评价（Health Risk Appraisal/Accessment, HRA）}：研究危险因素与慢性病发病及死亡之间数量依存关系及其规律性的一种技术方法。通过收集个体生活方式、健康检查、家族史等信息，定量评估个体在未来一定时期内发病或死亡的风险，以及通过改变不良行为而避免或延缓发病或死亡的可能性。
+\end{defbox}
+
+\subsection{评价步骤（教学难点*）}
+
+\begin{keybox}
+\imp{（教学难点*）}\textbf{健康危险因素评价的四大步骤：}
+
+\textbf{第一步：收集资料}
+\begin{enumerate}[leftmargin=*]
+    \item \imp{当地死亡资料}——按年龄、性别、死因别死亡率（通常取最近3-5年平均）
+    \item \imp{个体危险因素资料}——通过问卷调查、体格检查和实验室检测获取
+    \begin{itemize}
+        \item 行为生活方式：吸烟、饮酒、体力活动、饮食等
+        \item 体格检查：身高、体重、血压等
+        \item 实验室检查：血糖、血脂、肝功能等
+        \item 家族史：主要慢性病的家族史
+    \end{itemize}
+    \item \imp{危险分数资料}——危险因素与死亡率之间定量关系的流行病学证据（来自大规模队列研究或Mata分析）
+\end{enumerate}
+
+\textbf{第二步：计算危险分数}
+\begin{itemize}[leftmargin=*]
+    \item \imp{危险分数的概念}（教学难点*）：危险因素处于某一水平时发生某病死亡的危险与人群平均死亡危险的比值
+    \item 基准：全死因平均死亡危险 = 1.0
+    \item 危险分数 $>$ 1.0：该个体的死亡危险高于同龄同性别平均人群水平
+    \item 危险分数 $<$ 1.0：该个体的死亡危险低于平均人群水平
+    \item \imp{组合危险分数}：综合考虑多种危险因素后计算出的总危险分数
+\end{itemize}
+
+\textbf{第三步：计算评价年龄与增长年龄}
+\begin{itemize}[leftmargin=*]
+    \item \imp{评价年龄（Appraisal Age）}：根据个体存在的危险因素，依据死亡率与年龄的函数关系推算出的该个体当前的"疾病死亡危险性相当于某一年龄的平均水平"。评价年龄 $>$ 实际年龄表示危险因素水平高于平均水平
+    \item \imp{增长年龄（Achievable Age/可达到年龄）}：如果该个体采取医生建议的控制危险因素的措施后，可能达到的"相当于某一年龄的平均水平"。增长年龄 $\leq$ 评价年龄
+    \item \imp{危险降低量} = 评价年龄 $-$ 增长年龄：反映通过行为改变可获得的健康收益
+\end{itemize}
+
+\textbf{第四步：评价与建议}
+\begin{itemize}[leftmargin=*]
+    \item 向个体或群体反馈评价结果
+    \item 指出主要危险因素及可改变的方向
+    \item 给出具体的健康促进和疾病预防建议
+\end{itemize}
+\end{keybox}
+
+\subsection{健康危险因素的个体评价方法}
+
+\begin{keybox}
+根据评价年龄和增长年龄与\imp{实际年龄}的关系，被评估者分为四种类型：
+
+\begin{enumerate}[leftmargin=*]
+    \item \imp{健康型}：评价年龄 $<$ 实际年龄。个体的危险因素水平低于人群平均水平，健康状况良好
+    \item \imp{存在少量危险因素型}：评价年龄 $\approx$ 实际年龄，略高于或等于。有少量危险因素但影响不大
+    \item \imp{存在危险因素但可改变型}：评价年龄 $>$ 实际年龄，但增长年龄与评价年龄差距较大（危险降低量 $>$ 1岁）。有较多危险因素但多数可改变，通过干预可显著降低健康风险
+    \item \imp{存在大量不可改变危险因素型}：评价年龄 $>$ 实际年龄，且增长年龄与评价年龄差距较小（危险降低量 $\leq$ 1岁）。危险因素中有大量不可改变因素（年龄、遗传等），可干预空间有限
+\end{enumerate}
+\end{keybox}
+
+\subsection{健康危险因素的群体评价方法}
+
+\begin{enumerate}[leftmargin=*]
+    \item \imp{危险分数分布分析}：将群体按危险分数分组，分析不同危险水平人群的分布规律
+    \item \imp{归因危险度分析}：计算某危险因素在人群中导致疾病的归因分值，评估其公共卫生学意义
+    \item \imp{潜在寿命损失分析}：估计去除某危险因素后可能避免的死亡和寿命损失
+    \item \imp{群体干预效果模拟}：模拟不同干预策略下人群健康的改善效果
+\end{enumerate}
+
+% ----- 11.3 大数据与HRA -----
+\section{大数据与健康危险因素评价}
+
+\begin{enumerate}[leftmargin=*]
+    \item 大数据技术为HRA提供更精准的个体风险预测——整合电子健康档案、可穿戴设备数据、基因组学数据
+    \item 机器学习算法可识别传统方法难以捕捉的复杂危险因素交互作用
+    \item 实时监测和预测健康风险——可穿戴设备+手机APP的持续健康监测
+    \item 个性化健康管理——基于个人风险图谱的精准干预建议
+\end{enumerate}
+
+% ----- 复习题 -----
+\section{复习题}
+
+\subsection*{一、选择题}
+\begin{enumerate}[leftmargin=*, itemsep=3pt]
+    \item 健康危险因素评价中，基准危险分数为：
+    \begin{enumerate}
+        \item[(A)] 0.5
+        \item[(B)] 1.0
+        \item[(C)] 1.5
+        \item[(D)] 2.0
+    \end{enumerate}
+    \item 评价年龄大于实际年龄说明：
+    \begin{enumerate}
+        \item[(A)] 个体危险因素水平低于平均
+        \item[(B)] 个体危险因素水平高于平均
+        \item[(C)] 个体健康状况极好
+        \item[(D)] 无法判断
+    \end{enumerate}
+    \item 危险降低量等于：
+    \begin{enumerate}
+        \item[(A)] 实际年龄 $-$ 评价年龄
+        \item[(B)] 评价年龄 $-$ 增长年龄
+        \item[(C)] 增长年龄 $-$ 实际年龄
+        \item[(D)] 增长年龄 $-$ 评价年龄
+    \end{enumerate}
+    \item 健康危险因素评价中被评估者分为四种类型，其中"危险因素可改变但尚未改变"的是：
+    \begin{enumerate}
+        \item[(A)] 健康型
+        \item[(B)] 存在少量危险因素型
+        \item[(C)] 存在危险因素但可改变型
+        \item[(D)] 存在大量不可改变危险因素型
+    \end{enumerate}
+\end{enumerate}
+
+\subsection*{二、名词解释}
+\begin{enumerate}[leftmargin=*, itemsep=3pt]
+    \item \textbf{健康危险因素评价（HRA）}
+    \item \textbf{评价年龄（Appraisal Age）}
+    \item \textbf{增长年龄（Achievable Age）}
+    \item \textbf{危险分数}
+\end{enumerate}
+
+\subsection*{三、简答题}
+\begin{enumerate}[leftmargin=*, itemsep=3pt]
+    \item 简述健康危险因素评价的四大步骤。
+    \item 简述健康危险因素个体评价的四种类型。
+    \item 简述危险分数、评价年龄和增长年龄三者之间的关系。
+    \item 简述健康危险因素的特点。
+\end{enumerate}
+
+\subsection*{参考答案要点}
+
+\subsubsection*{一、选择题}
+1. (B)；2. (B)；3. (B)；4. (C)
+
+\subsubsection*{二、名词解释}
+\begin{enumerate}[leftmargin=*]
+    \item \textbf{HRA}：研究危险因素与慢性病发病及死亡之间数量依存关系的一种技术方法，定量评估个体未来发病或死亡风险及通过行为改变可避免的程度。
+    \item \textbf{评价年龄}：根据个体危险因素，依据死亡率与年龄的函数关系推算的"相当于某年龄平均水平"的年龄。
+    \item \textbf{增长年龄}：个体采取控制危险因素措施后可能达到的"相当于某年龄平均水平"的年龄。
+    \item \textbf{危险分数}：危险因素处于某水平时发生某病死亡的危险与人群平均死亡危险的比值，基准为1.0。
+\end{enumerate}
+
+\subsubsection*{三、简答题}
+\begin{enumerate}[leftmargin=*]
+    \item 四步：①收集资料（当地死亡率资料、个体危险因素资料、危险分数资料）；②计算危险分数（单个因素危险分数→组合危险分数）；③计算评价年龄和增长年龄；④评价与建议（反馈结果、指出主要可改变因素、给出干预建议）。
+    \item 四种类型：①健康型（评价年龄$<$实际年龄）；②存在少量危险因素型（评价年龄$\approx$实际年龄）；③存在危险因素但可改变型（评价年龄$>$实际年龄，危险降低量大）；④存在大量不可改变因素型（评价年龄$>$实际年龄，危险降低量小）。
+    \item 三者关系：危险分数决定了评价年龄（危险分数越高→评价年龄越大）；增长年龄是控制危险因素后可能达到的年龄（通常$\leq$评价年龄）；危险降低量=评价年龄$-$增长年龄，反映可干预空间。
+    \item 五大特点：潜伏期长、联合作用、广泛存在、特异性弱、可干预性。
+\end{enumerate}
+
+\newpage
