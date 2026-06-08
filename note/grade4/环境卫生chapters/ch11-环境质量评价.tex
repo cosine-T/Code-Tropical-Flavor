@@ -1,0 +1,210 @@
+\chapter{环境质量评价}
+\setcounter{chapter}{11}
+\chapterintro{
+掌握环境质量评价的概念、目的和种类；掌握环境质量指数法的基本原理；了解主要大气质量评价指数（AQI等）和水质评价指数的特点；了解环境影响评价的内容和工作程序。
+}
+
+\section{概述}
+
+\begin{defbox}
+\textbf{环境质量评价（Environmental Quality Assessment）}：按照一定的评价标准和方法，对一定区域范围内的环境质量进行定性和定量的评定。
+\end{defbox}
+
+\textbf{目的：}了解区域环境质量现状和变化趋势；为环境规划管理提供依据；为制定环境标准法规提供参考；评价污染对人群健康的影响。
+
+\textbf{主要内容：}①\imp{污染源评价}——确定主要污染源和污染物；②\imp{环境质量评价}——评价各要素质量；③\imp{环境效应评价}——评价对生态和健康的影响。
+
+\section{环境质量评价方法}
+
+\subsection{环境质量指数法}
+
+\begin{keybox}
+\textbf{环境质量指数（EQI）}的计算方法：
+
+\textbf{1. 比值法：}分指数 $I_i = C_i / S_i$（$C_i$为实测浓度，$S_i$为标准值）
+
+\textbf{2. 评分法：}根据污染物浓度分级评分
+
+\textbf{多项分指数合并方法：}简单叠加、算术平均、加权平均、几何平均、Nemerow法（兼顾最大值和平均值）。
+
+\textbf{注意：}需对分指数进行\imp{方向性纠正}：
+\begin{itemize}[leftmargin=*]
+    \item \textbf{正向指标}（如Cd）：实测值越高，分指数越大，污染越严重
+    \item \textbf{逆向指标}（如DO）：实测值越低，分指数越大，污染越严重
+    \item \textbf{双向指标}（如pH）：实测值离中心值越远，分指数越大，污染越严重
+\end{itemize}
+\end{keybox}
+
+\subsection{大气质量评价指数}
+
+\begin{table}[htbp]
+\centering
+\caption{主要大气质量评价指数及特点}
+\begin{tabularx}{\textwidth}{lX}
+\hline
+\textbf{指数类型} & \textbf{特点} \\
+\hline
+简单叠加型 & 各分指数相加，简单但信息损失大 \\
+比值算术均数型 & 各分指数算术平均 \\
+加权算数均数型 & 按重要性加权 \\
+I$_1$大气质量指数 & 幂函数模型，考虑S型剂量-反应关系 \\
+\imp{AQI（空气质量指数）} & 分段线性函数型，含SO$_2$、NO$_2$、PM$_{10}$、PM$_{2.5}$、CO、O$_3$六项 \\
+\hline
+\end{tabularx}
+\end{table}
+
+\subsection{水质评价指数}
+
+\begin{table}[htbp]
+\centering
+\caption{主要水质评价指数及特点}
+\begin{tabularx}{\textwidth}{lX}
+\hline
+\textbf{指数} & \textbf{特点} \\
+\hline
+\imp{Brown水质指数（WQI）} & 评分加权征询法，Delphi法确定权重 \\
+\imp{Ross水质指数} & 分级评分叠加型 \\
+\imp{综合营养状态指数（TSI）} & 评价富营养化；基准参数：Chl-a、TP、TN、SD、COD$_{Mn}$ \\
+\imp{污生指数} & 生物学评价，根据指示生物评价有机污染 \\
+\hline
+\end{tabularx}
+\end{table}
+
+\subsection{土壤环境质量评价}
+
+\begin{defbox}
+\textbf{分级污染指数}：按污染物浓度超过背景值的倍数划分污染等级。
+
+\textbf{Nemerow指数}：兼顾平均分指数和最大分指数，$I = \sqrt{\frac{I_{\max}^2 + I_{\text{avg}}^2}{2}}$
+\end{defbox}
+
+\section{污染源评价}
+
+\textbf{确定主要污染源和主要污染物：}
+\begin{enumerate}[leftmargin=*]
+    \item \imp{等标污染负荷法}：$P_i = \frac{Q_i}{C_{0i}} \times 10^{-6}$。将i污染物的排放量稀释到其相应排放标准时所需的介质量，评价各污染源和各污染物的相对危害程度。\textbf{等标污染负荷比}最高的污染物即为最主要的污染物
+    \item \imp{排毒系数法}：$F_i = \frac{Q_i}{d_i}$，其中$d_i$为i污染物的评价标准（慢性毒作用阈剂量）。排毒系数表示假设每日排放的i污染物数量长期全部被人们吸入或摄入时，可引起呈现慢性中毒效应的人数
+\end{enumerate}
+
+\section{环境影响评价}
+
+\begin{defbox}
+\textbf{环境影响评价（EIA）}：对规划和建设项目实施后可能造成的环境影响进行分析、预测和评估，提出预防或减轻不良环境影响的对策和措施。
+\end{defbox}
+
+\textbf{我国EIA制度特点：}法定制度；分类管理（报告书/报告表/登记表）；公众参与；资质管理。
+
+\textbf{技术工作程序：}工程分析→环境现状调查评价→环境影响预测评价→环保措施论证→编制报告书。
+
+\section{其他环境要素质量评价}
+
+\subsection{室内环境质量评价}
+采用指数综合评价法：
+\begin{enumerate}[leftmargin=*]
+    \item 确定评价指标，建立分级标准，统一指标方向性
+    \item 计算各分指数 $I_i = C_i / S_i$
+    \item 计算综合指数
+    \item 确定卫生质量等级：一级（很好，$0 \leq Pi < 0.5$）、二级（较好，$0.5 \leq Pi < 1.0$）、三级（较差，$1.0 \leq Pi < 1.5$）、四级（很差，$Pi \geq 1.5$）
+\end{enumerate}
+
+\subsection{土壤环境质量评价}
+\begin{itemize}[leftmargin=*]
+    \item \imp{分级污染指数}：按污染物浓度超过背景值的倍数划分污染等级
+    \item \imp{内梅罗（Nemerow）污染指数}：兼顾平均分指数和最大分指数
+\end{itemize}
+
+\subsection{生态环境质量评价}
+评价生态环境优劣度和动态变化状况。指标包括：生物丰度、生物覆盖指数、水网密度指数、环境质量指数、土地退化指数、生态环境状况指数（EI）。
+
+\section{复习题}
+
+\begin{enumerate}[leftmargin=*, itemsep=8pt]
+    \item \textbf{【名词解释】}环境质量评价；环境影响评价（EIA）
+    \item \textbf{【名词解释】}环境质量指数（EQI）；等标污染负荷
+    \item \textbf{【名词解释】}AQI；综合营养状态指数（TSI）
+    \item \textbf{【简答题】}简述环境质量评价的目的和主要内容。
+    \item \textbf{【简答题】}简述环境质量指数法的基本原理。
+    \item \textbf{【简答题】}AQI日报的主要监测指标有哪些？
+    \item \textbf{【简答题】}简述环境影响评价的技术工作程序。
+\end{enumerate}
+
+\subsection*{参考答案要点}
+
+\begin{enumerate}[leftmargin=*, itemsep=5pt]
+    \item \textbf{环境质量评价}：按一定标准和方法对区域环境质量进行定性和定量评定。\textbf{EIA}：对规划和建设项目可能造成的环境影响进行分析、预测和评估。
+
+    \item \textbf{EQI}：将环境监测数据转化为可比较的无量纲数值的方法。\textbf{等标污染负荷}：污染物排放量与其评价标准值之比。
+
+    \item \textbf{AQI}：空气质量指数（分段线性函数型），包含SO$_2$、NO$_2$、PM$_{10}$、PM$_{2.5}$、CO、O$_3$六项。\textbf{TSI}：以Chl-a、TP、TN、SD、COD$_{Mn}$为基准参数评价富营养化程度。
+
+    \item 目的：了解现状和趋势、为规划管理提供依据、为标准法规提供参考、评价健康影响。内容：污染源评价、环境质量评价、环境效应评价。
+
+    \item 比值法：$I_i=C_i/S_i$。评分法：按浓度分级评分。合并方法：叠加、平均、加权等。需注意方向性统一。
+
+    \item SO$_2$、NO$_2$、PM$_{10}$、PM$_{2.5}$、CO、O$_3$共六项。
+
+    \item 工程分析→环境现状调查评价→环境影响预测评价→环保措施论证→编制报告书。
+\end{enumerate}
+
+\newpage
+
+% =====================================================================
+%  附录
+% =====================================================================
+\chapter*{附录一：核心名词解释速记表}
+\addcontentsline{toc}{chapter}{附录一：核心名词解释速记表}
+
+\begin{table}[htbp]
+\centering
+\begin{tabularx}{\textwidth}{lX}
+\hline
+\textbf{名词} & \textbf{核心释义} \\
+\hline
+环境卫生学 & 研究自然环境和生活环境与人群健康关系的科学 \\
+一次污染物 & 污染源直接排放的未变化污染物 \\
+二次污染物 & 一次污染物经物化生作用转化形成的新污染物 \\
+生物放大作用 & 重金属/难降解有机物经食物链逐级浓缩放大 \\
+人群健康效应谱 & 暴露人群不良反应的五级分布（负荷↑→代偿→亚临床→临床→死亡） \\
+健康危险度评价(HRA) & 危害鉴定+暴露评价+剂量反应+风险特征的综合评价 \\
+基准 vs 标准 & 科学参考值 vs 法律强制限量值 \\
+温室效应 & CO$_2$等温室气体吸收地表热辐射使大气增温 \\
+光化学烟雾 & NOx+VOCs+日光紫外线→O$_3$、PAN等强氧化性烟雾 \\
+酸雨 & pH$<$5.6的降水，我国以硫酸型为主 \\
+逆温 & 大气温度随高度升高而上升，极不利于扩散 \\
+PM$_{2.5}$ & 细颗粒物，粒径$\leq$2.5$\mu$m，可入肺泡 \\
+水体自净 & 污染物在水体物化生作用下浓度降低的过程 \\
+富营养化 & 含P、N污水使藻类大量繁殖（淡水→水华，海湾→赤潮） \\
+DO/BOD/COD & 溶解氧/生化需氧量/化学耗氧量 \\
+介水传染病 & 通过饮用或接触受病原体污染水引起的传染病 \\
+混凝沉淀 & 加入混凝剂使水中悬浮物和胶体聚合沉淀 \\
+氯化消毒 & 含氯制剂生成HOCl杀菌 \\
+土壤背景值 & 未受污染天然土壤中各元素含量 \\
+POPs特性 & 持久性、蓄积性、迁移性、高毒性 \\
+生物地球化学性疾病 & 因环境中元素过多或过少引起的特异性疾病 \\
+水俣病 & 甲基汞经食物链引起的慢性中毒，损害神经系统 \\
+痛痛病 & 镉污染引起的慢性中毒，骨骼病变和肾损害 \\
+克山病 & 低硒相关的地方性心肌病 \\
+AQI & 空气质量指数，含SO$_2$、NO$_2$、PM$_{10}$、PM$_{2.5}$、CO、O$_3$六项 \\
+\hline
+\end{tabularx}
+\end{table}
+
+\newpage
+
+\vspace*{3cm}
+\begin{center}
+    {\Large\color{main}\textbf{--- 复习笔记完 ---}}\\[20pt]
+    {\normalsize\color{gray!70}
+    本笔记依据以下资料整理：\\[5pt]
+    《环境卫生学》教学大纲（2026版）\\
+    教师授课PPT/PDF课件\\
+    往届复习参考资料\\
+    教学平台在线题库\\
+    \vspace{20pt}
+    祝考试顺利！\\[20pt]
+    \textit{By greedyCat}
+    }
+\end{center}
+
+\end{document}
+\newpage
