@@ -10,13 +10,15 @@
 
 ### 步骤1：收集和整理参考资料
 
-在 `note/grade4/` 下建立 `XX参考/` 文件夹，放入：
+在查看 `XX参考/` 文件夹，放入：
 
 | 文件类型 | 说明 | 用途 |
 |---------|------|------|
 | `大纲.doc` | 本学年课程教学大纲（.doc 格式） | 确定章节框架、重难点划分 |
-| `*.pptx` | 教师授课PPT（每个章节/主题一个文件） | 知识点详细内容 |
-| `往年资料.pdf` / `往届笔记.pdf` | 往届复习笔记或参考资料 | 补充知识点、参考题型 |
+| `*.pptx/pdf` | 教师授课PPT（每个章节/主题一个文件） | 知识点详细内容 |
+| `其他资料.pdf` / `往届笔记.pdf` | 往届复习笔记或参考资料 | 补充知识点 |
+
+需要确定类型和原始文件存在，
 
 ### 步骤2：提取大纲内容
 
@@ -58,7 +60,7 @@ for slide in prs.slides:
 ```python
 from PyPDF2 import PdfReader
 
-reader = PdfReader("往届笔记.pdf")
+reader = PdfReader("XXX.pdf")
 for page in reader.pages:
     text = page.extract_text()
     if text:
@@ -80,8 +82,8 @@ note/grade4/
 │   └── ...
 └── XX参考/                # 参考资料文件夹
     ├── 大纲.doc
-    ├── *.pptx
-    └── 往年资料.pdf
+    ├── *.pptx/pdf
+    └── xx资料.pdf
 ```
 
 ---
@@ -122,7 +124,7 @@ note/grade4/
     \item \textbf{\color{keyred}红色框}标识的内容为必须重点掌握的核心知识（对应大纲双下划线内容）。
     \item \textbf{\color{main}主题框}为概念释义，帮助理解专业术语。
     \item \textbf{\color{darkgreen}绿色提示框}为要点提示与补充说明。
-    \item \textbf{\color{orange}橙色考点框}为常见考点与易考内容。
+    \item \textbf{\color{orange}X色考点框}为常见考点与易考内容。
     \item 大纲中\textbf{句尾"*"标识}为教学难点，笔记中已特别标注。
 \end{itemize}
 
@@ -155,14 +157,14 @@ note/grade4/
 
 ### 颜色方案
 
-每门科目使用**不同的 main 颜色**以便区分：
+每门科目使用**不同的 main 颜色**以便区分，需要读取既往颜色并作区分，示例如下表：
 
-| 科目 | main RGB | light RGB | 色调 |
-|------|----------|-----------|------|
-| 环境卫生学 | `{0,82,136}` | `{230,240,250}` | 蓝色系 |
-| 职业卫生 | `{160,100,20}` | `{255,248,230}` | 琥珀色系 |
-| 社会医学 | `{0,105,92}` | `{230,245,238}` | 青绿色系 |
-| 儿少卫生 | `{102,51,153}` | `{245,240,252}` | 紫罗兰色系 |
+| 科目 | main RGB | light RGB |
+|------|----------|-----------|
+| 环境卫生学 | `{0,82,136}` | `{230,240,250}` |
+| 职业卫生 | `{160,100,20}` | `{255,248,230}` |
+| 社会医学 | `{0,105,92}` | `{230,245,238}` |
+| 儿少卫生 | `{102,51,153}` | `{245,240,252}` |
 
 ---
 
@@ -175,7 +177,7 @@ note/grade4/
 \chapter{章节名}
 \setcounter{chapter}{X}
 \chapterintro{
-掌握...；熟悉...；了解...。（一句话概述本章学习目标）
+掌握...；熟悉...；了解...。（一句话概述本章学习目标），严格参考大纲内容
 }
 
 % ----- X.1 第一节 -----
@@ -186,17 +188,17 @@ note/grade4/
 \textbf{概念名}定义内容...
 \end{defbox}
 
-% 重点掌握框（红色）
+% 重点掌握框
 \begin{keybox}
 重点掌握的核心知识...
 \end{keybox}
 
-% 要点提示框（绿色）
+% 要点提示框
 \begin{tipbox}
 补充说明和提示...
 \end{tipbox}
 
-% 常见考点框（橙色）
+% 常见考点框
 \begin{exambox}
 常考知识点...
 \end{exambox}
@@ -205,8 +207,8 @@ note/grade4/
 \section{复习题}
 
 \begin{enumerate}[leftmargin=*, itemsep=8pt]
-    \item \textbf{【名词解释】}术语1；术语2
-    \item \textbf{【简答题】}简述XXXX。
+    \item \textbf{【题型1】}
+    \item \textbf{【题型2】}
 \end{enumerate}
 
 \subsection*{参考答案要点}
@@ -244,7 +246,18 @@ note/grade4/
 ```latex
 \chapterintro{本章学习目标概述...}
 ```
-生成主题色背景的章节导览框。
+生成主题色背景的章节导览框。可通过 `\renderchapterintrofalse` 全局关闭。
+
+### 复习题条件渲染
+
+```latex
+\reviewcontent{
+\section{复习题}
+...复习题内容（选择/名词解释/简答/参考答案）...
+\newpage
+}
+```
+将章末复习题包裹在此命令内，即可通过 `\renderreviewfalse` 全局关闭渲染。
 
 ### 封面
 
@@ -265,13 +278,61 @@ note/grade4/
 
 ### 编译器
 
-**必须使用 xelatex**（pdflatex 不支持中文文件名路径）：
+**必须使用 xelatex**（pdflatex 不支持中文文件名路径）。
+
+### 标准编译（完整模式）
 
 ```bash
 cd "note/grade4"
 xelatex -interaction=nonstopmode -output-directory=. "XX复习笔记.tex"
 # 运行两次以解析交叉引用
 xelatex -interaction=nonstopmode -output-directory=. "XX复习笔记.tex"
+```
+
+### 条件编译（使用 build.py）
+
+通过 `scripts/build.py` 可以在编译时控制是否渲染章导览和复习题，无需手动修改 .tex 文件：
+
+```bash
+# 完整编译（默认全部渲染）
+python scripts/build.py note/grade4/社会医学.tex
+
+# 不渲染章导览（适合只看知识点的快速复习）
+python scripts/build.py note/grade4/社会医学.tex --no-intro
+
+# 不渲染复习题（适合只看内容的场合，输出更紧凑）
+python scripts/build.py note/grade4/社会医学.tex --no-review
+
+# 两者都不渲染（最精简的纯知识点版本）
+python scripts/build.py note/grade4/社会医学.tex --no-intro --no-review
+
+# 清理辅助文件
+python scripts/build.py note/grade4/社会医学.tex --clean
+```
+
+**实现原理：**
+- `\chapterintro` 通过 `hxnotebook.sty` 内置的 `\ifrenderchapterintro` LaTeX 布尔开关控制（`--no-intro` → 设为 false，命令体自动跳过）
+- 复习题：新章节文件如果使用 `\reviewcontent{...}` 包裹，通过 `\ifrenderreview` 开关控制；旧章节文件由脚本预处理，自动注释掉 `\section{复习题}` 段落
+- 脚本生成临时文件编译，不影响原始 .tex
+
+**章节文件推荐写法（新文件请遵循）：**
+
+```latex
+% 章导览（由 --no-intro 开关自动控制）
+\chapterintro{
+掌握...；熟悉...；了解...。
+}
+
+% ... 正文内容 ...
+
+% 复习题（用 \reviewcontent 包裹，由 --no-review 开关自动控制）
+\reviewcontent{
+\section{复习题}
+...复习题内容...
+\subsection*{参考答案要点}
+...答案...
+\newpage
+}
 ```
 
 ### 常见编译问题

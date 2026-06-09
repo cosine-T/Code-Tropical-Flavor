@@ -40,9 +40,16 @@
 \definecolor{darkgreen}{RGB}{0,100,50}
 \definecolor{orange}{RGB}{220,120,0}
 \definecolor{graybg}{RGB}{248,248,248}
-\definecolor{chapterbg}{RGB}{0,82,136}
-\definecolor{highlight}{RGB}{255,255,200}
 \definecolor{warnbg}{RGB}{255,240,240}
+
+% ===================== 条件渲染开关 =====================
+% 在主文档 \begin{document} 前设置：
+%   \renderchapterintrofalse  关闭各章导览
+%   \renderreviewfalse        关闭各章复习题
+\newif\ifrenderchapterintro
+\newif\ifrenderreview
+\renderchapterintrotrue   % 默认渲染章导览
+\renderreviewtrue          % 默认渲染复习题
 
 \backgroundsetup{
   contents={\ifTitlePage\else\textcolor{gray!50}{\Huge\textit{By greedyCat}}\fi},
@@ -103,8 +110,10 @@
 }
 
 \newcommand{\chapterintro}[1]{%
+    \ifrenderchapterintro
     \begin{tcolorbox}[colback=main!5,colframe=main,boxrule=0.5pt,arc=3pt,left=6pt,right=6pt,top=3pt,bottom=3pt,before={\vspace{2pt}},after={\vspace{4pt}},breakable]
     \textbf{本章导览：}#1\end{tcolorbox}
+    \fi
 }
 
 % 自定义命令
@@ -112,6 +121,12 @@
 \newcommand{\imp}[1]{\textbf{\color{main}#1}}
 \raggedbottom
 \newcommand{\seeref}[1]{（详见第\ref{#1}节）}
+
+% 条件渲染复习题内容（用于新章节文件）
+% 用法：\reviewcontent{ \section{复习题} ... \newpage }
+\long\def\reviewcontent#1{%
+    \ifrenderreview#1\fi
+}
 
 % ===================== 封面：带渐变蓝色 + 4参数传入 =====================
 \newcommand{\makecover}[5]{
