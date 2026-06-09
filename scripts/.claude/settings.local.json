@@ -1,0 +1,14 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(python build.py \"../note/grade4/营养与食品卫生学复习笔记.tex\")",
+      "Bash(where xelatex *)",
+      "Bash(python build.py \"../note/grade4/营养与食品卫生学复习笔记.tex\" --no-intro)",
+      "Bash(python build.py \"../note/grade4/营养与食品卫生学复习笔记.tex\" --no-review)",
+      "Bash(python build.py \"../note/grade4/营养与食品卫生学复习笔记.tex\" --no-intro --no-review)",
+      "Bash(python -c ' *)",
+      "Bash(python build.py \"../note/grade4/社会医学.tex\")",
+      "Bash(python build.py \"../note/grade4/营养与食品卫生学复习笔记.tex\" --clean)"
+    ]
+  }
+}
