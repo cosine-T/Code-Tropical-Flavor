@@ -46,7 +46,7 @@ HXnote/
 
 笔记采用统一的色彩体系——深红标识重点掌握、主题色标识概念释义、深绿提示要点、橙色标记考点。每章开头有导览框说明学习目标（掌握/熟悉/了解），章末附有选择题、名词解释、简答题及参考答案。所有内容严格对应教学大纲的双下划线（掌握）和单下划线（熟悉）标注，大纲中的教学难点在正文中特别标记。
 
-<img src="fig\ex-note.png" alt="示例内容" style="zoom: 25%;" /><img src="fig\covers.png" alt="示例封面" style="zoom:25%;" />
+<img src="fig\ex-note.png" alt="示例内容" style="zoom: 20%;" /><img src="fig\covers.png" alt="示例封面" style="zoom:20%;" />
 
 ### Skill 系统
 
