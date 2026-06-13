@@ -109,6 +109,13 @@
     before={\vspace{2pt}},after={\vspace{2pt}},breakable
 }
 
+% ===================== 教学难点内联标签 =====================
+% 用法: \difficulty 在标题后产生红色上标 [教学难点] 标记
+% 对应大纲句尾 "*" 的教学难点标识
+\newcommand{\difficulty}{%
+    \textsuperscript{\color{keyred}\textbf{[教学难点]}}%
+}
+
 \newcommand{\chapterintro}[1]{%
     \ifrenderchapterintro
     \begin{tcolorbox}[colback=main!5,colframe=main,boxrule=0.5pt,arc=3pt,left=6pt,right=6pt,top=3pt,bottom=3pt,before={\vspace{2pt}},after={\vspace{4pt}},breakable]
