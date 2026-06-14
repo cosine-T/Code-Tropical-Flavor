@@ -107,12 +107,31 @@
 
 \subsection{健康危险因素的群体评价方法}
 
+\begin{keybox}
+\textbf{群体评价的四种主要方法：}
+
 \begin{enumerate}[leftmargin=*]
-    \item \imp{危险分数分布分析}：将群体按危险分数分组，分析不同危险水平人群的分布规律
-    \item \imp{归因危险度分析}：计算某危险因素在人群中导致疾病的归因分值，评估其公共卫生学意义
-    \item \imp{潜在寿命损失分析}：估计去除某危险因素后可能避免的死亡和寿命损失
-    \item \imp{群体干预效果模拟}：模拟不同干预策略下人群健康的改善效果
+    \item \imp{危险分数分布分析}：将群体按危险分数分组，分析不同危险水平人群的分布规律及在人群中的构成比例
+
+    \item \imp{归因危险度分析（Attributable Risk Analysis）}：
+    \begin{itemize}
+        \item 计算某危险因素在人群中导致疾病的\imp{人群归因分值（Population Attributable Fraction, PAF）}
+        \item PAF = (人群发病率 $-$ 非暴露组发病率) / 人群发病率
+        \item 反映消除该危险因素后人群疾病负担可减少的比例，评估其公共卫生学意义
+    \end{itemize}
+
+    \item \imp{潜在寿命损失分析}：
+    \begin{itemize}
+        \item 估计去除某危险因素后可能避免的早死人数和寿命损失年数
+        \item 常用指标：\imp{YPLL（潜在寿命损失年）}、\imp{危险降低程度（Risk Reduction）}
+        \item 危险降低程度 = 评价年龄 $-$ 增长年龄，数值越大说明可干预空间越大
+    \end{itemize}
+
+    \item \imp{群体干预效果模拟}：模拟不同干预策略下人群健康的改善效果，为公共卫生决策和资源配置提供依据
 \end{enumerate}
+
+\textbf{单项危险因素分析示例：}对群体中各危险因素分别计算危险强度（平均评价年龄-实际年龄）、危险频度（具有该因素的比例）和危险程度（危险强度 $\times$ 危险频度），以确定\imp{应优先干预的危险因素}。
+\end{keybox}
 
 % ----- 11.3 大数据与HRA -----
 \section{大数据与健康危险因素评价}
