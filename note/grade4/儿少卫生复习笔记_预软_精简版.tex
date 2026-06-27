@@ -1,0 +1,74 @@
+\makeatletter
+\def\input@path{{../}{./}}
+\makeatother
+\documentclass[10pt,a4paper,oneside]{ctexbook}
+\RequirePackage{xcolor}
+\definecolor{main}{RGB}{102,51,153}
+\definecolor{light}{RGB}{245,240,252}
+
+\usepackage{hxnotebook}
+
+% ===== 精简版：关闭章节导览和复习题 =====
+\renderchapterintrofalse
+\renderreviewfalse
+
+\begin{document}
+
+% cover
+\makecover
+  {儿少卫生学}
+  {华西大纲·PPT·往届笔记整理}
+  {复习笔记（精简版）}
+  {\today}
+  {greedyCat}
+
+% ===== Table of Contents =====
+\tableofcontents
+
+% ===== 使用说明 =====
+\chapter*{使用说明}
+\addcontentsline{toc}{chapter}{使用说明}
+
+\begin{itemize}[leftmargin=*]
+    \item 本复习笔记严格依照《儿童少年卫生学》教学大纲章节编排，重点内容与大纲标注的掌握内容一致。
+    \item 精简版不含各章导览框和复习题，保留全部正文知识内容，适合快速阅读和考前速览。
+    \item \textbf{\color{keyred}红色框}标识的内容为必须重点掌握的核心知识（对应大纲双下划线内容）。
+    \item \textbf{\color{main}主题框}为概念释义，帮助理解专业术语。
+    \item \textbf{\color{darkgreen}绿色提示框}为要点提示与补充说明。
+    \item \textbf{\color{orange}橙色考点框}为常见考点与易考内容。
+    \item 大纲中\textbf{句尾"*"标识}为教学难点，笔记中已特别标注。
+\end{itemize}
+
+\vspace{1cm}
+\begin{center}
+\begin{tcolorbox}[colback=yellow!10, colframe=yellow!80!black, boxrule=0.8pt, arc=6pt, width=0.85\textwidth, breakable]
+\textbf{考核形式提示：}
+\begin{itemize}[leftmargin=*]
+    \item 平时考核成绩 50\% + 期末理论考核 50\%
+    \item 考试范围：以教学大纲和教师课堂讲授内容为主
+    \item 大纲双下划线内容 = 掌握内容（本笔记已用红色框标注）
+    \item 大纲单下划线内容 = 熟悉内容
+    \item 大纲句尾"*" = 教学难点
+\end{itemize}
+\end{tcolorbox}
+\end{center}
+
+\newpage
+
+% =====================================================================
+%  导入各章
+% =====================================================================
+
+\input{儿少卫生预软chapters/ch01-绪论与生长发育规律.tex}
+\input{儿少卫生预软chapters/ch02-生长发育影响因素.tex}
+\input{儿少卫生预软chapters/ch03-青春期发育.tex}
+\input{儿少卫生预软chapters/ch04-身体发育.tex}
+\input{儿少卫生预软chapters/ch05-心理发育.tex}
+\input{儿少卫生预软chapters/ch06-心理问题.tex}
+\input{儿少卫生预软chapters/ch07-常见病.tex}
+\input{儿少卫生预软chapters/ch08-慢性病.tex}
+\input{儿少卫生预软chapters/ch09-传染病.tex}
+\input{儿少卫生预软chapters/ch10-学校健康教育.tex}
+\input{儿少卫生预软chapters/ch11-学校突发公共卫生事件.tex}
+
+\end{document}
