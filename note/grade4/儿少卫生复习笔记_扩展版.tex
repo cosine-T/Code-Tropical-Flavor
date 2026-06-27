@@ -1,0 +1,78 @@
+\makeatletter
+\def\input@path{{../}{./}}
+\makeatother
+\documentclass[10pt,a4paper,oneside]{ctexbook}
+\RequirePackage{xcolor}
+\definecolor{main}{RGB}{102,51,153}
+\definecolor{light}{RGB}{245,240,252}
+
+\usepackage{hxnotebook}
+
+\begin{document}
+
+% cover
+\makecover
+  {儿少卫生学}
+  {华西大纲·PPT·往届笔记整理}
+  {复习笔记}
+  {\today}
+  {greedyCat}
+
+% ===== Table of Contents =====
+\tableofcontents
+
+% ===== 使用说明 =====
+\chapter*{使用说明}
+\addcontentsline{toc}{chapter}{使用说明}
+
+\begin{itemize}[leftmargin=*]
+    \item 本复习笔记严格依照《儿童少年卫生学》教学大纲章节编排，重点内容与大纲标注的掌握内容一致。
+    \item 本笔记内容依据教学大纲重点内容及往届笔记整理，供复习参考使用。
+    \item \textbf{\color{keyred}红色框}标识的内容为必须重点掌握的核心知识（对应大纲双下划线内容）。
+    \item \textbf{\color{main}主题框}为概念释义，帮助理解专业术语。
+    \item \textbf{\color{darkgreen}绿色提示框}为要点提示与补充说明。
+    \item \textbf{\color{orange}橙色考点框}为常见考点与易考内容。
+    \item 大纲中句尾"*"标识为教学难点，笔记中已特别标注。
+    \item 建议结合教师授课PPT中的重点内容复习。
+\end{itemize}
+
+\vspace{1cm}
+\begin{center}
+\begin{tcolorbox}[colback=yellow!10, colframe=yellow!80!black, boxrule=0.8pt, arc=6pt, width=0.85\textwidth, breakable]
+\textbf{考核形式提示：}
+\begin{itemize}[leftmargin=*]
+    \item 平时考核成绩 50\% + 期末理论考核 50\%
+    \item 考试范围：以教学大纲和教师课堂讲授内容为主
+    \item 大纲双下划线内容 = 掌握内容（本笔记已用红色框标注）
+    \item 大纲单下划线内容 = 熟悉内容
+    \item 大纲句尾"*" = 教学难点
+\end{itemize}
+\end{tcolorbox}
+\end{center}
+
+\newpage
+
+% =====================================================================
+%  导入各章（遵循大纲1 十八章节编排）
+% =====================================================================
+
+\input{儿少卫生扩展版chapters/ch01-绪论.tex}
+\input{儿少卫生扩展版chapters/ch02-生长发育概述.tex}
+\input{儿少卫生扩展版chapters/ch03-身体发育.tex}
+\input{儿少卫生扩展版chapters/ch04-心理行为发育.tex}
+\input{儿少卫生扩展版chapters/ch05-青春期发育.tex}
+\input{儿少卫生扩展版chapters/ch06-生长发育影响因素.tex}
+\input{儿少卫生扩展版chapters/ch07-健康状况.tex}
+\input{儿少卫生扩展版chapters/ch08-常见病.tex}
+\input{儿少卫生扩展版chapters/ch09-传染病.tex}
+\input{儿少卫生扩展版chapters/ch10-心理卫生问题及精神障碍.tex}
+\input{儿少卫生扩展版chapters/ch11-伤害与暴力.tex}
+\input{儿少卫生扩展版chapters/ch12-卫生服务和学校卫生监督.tex}
+\input{儿少卫生扩展版chapters/ch13-生长发育调查评价与监测.tex}
+\input{儿少卫生扩展版chapters/ch14-学校心理卫生服务.tex}
+\input{儿少卫生扩展版chapters/ch15-教育过程卫生.tex}
+\input{儿少卫生扩展版chapters/ch16-学校教学设施与设备卫生.tex}
+\input{儿少卫生扩展版chapters/ch17-学校健康教育.tex}
+\input{儿少卫生扩展版chapters/ch18-学校突发公共卫生事件.tex}
+
+\end{document}
