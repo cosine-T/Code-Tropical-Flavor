@@ -1,0 +1,79 @@
+\makeatletter
+\def\input@path{{../}{./}}
+\makeatother
+\documentclass[10pt,a4paper,oneside]{ctexbook}
+\RequirePackage{xcolor}
+\definecolor{main}{RGB}{185,70,45}
+\definecolor{light}{RGB}{252,240,235}
+
+\usepackage{hxnotebook}
+
+\begin{document}
+
+% cover
+\makecover
+  {营养与食品卫生学}
+  {华西大纲·PPT·往年资料整理}
+  {复习笔记}
+  {\today}
+  {greedyCat}
+
+% ===== Table of Contents =====
+\tableofcontents
+
+% ===== 使用说明 =====
+\chapter*{使用说明}
+\addcontentsline{toc}{chapter}{使用说明}
+
+\begin{itemize}[leftmargin=*]
+    \item 本复习笔记严格依照《营养与食品卫生学》教学大纲章节编排，以授课PPT内容为主要填充，往年笔记为补充参考。
+    \item 各章末附有复习题（名词解释、简答题），覆盖该章核心知识点。
+    \item \textbf{\color{keyred}红色框}标识的内容为必须重点掌握的核心知识（对应大纲双下划线内容）。
+    \item \textbf{\color{main}主题框}为概念释义，帮助理解专业术语。
+    \item \textbf{\color{darkgreen}绿色提示框}为要点提示与补充说明。
+    \item \textbf{\color{orange}橙色考点框}为常见考点与易考内容。
+    \item 大纲中\textbf{句尾"*"标识}为教学难点，笔记中已特别标注。
+    \item 笔记末尾附有\textbf{英文缩写与专有名词汇总}，涵盖食品安全相关的国际组织、标准、术语等。
+\end{itemize}
+
+\vspace{1cm}
+\begin{center}
+\begin{tcolorbox}[colback=yellow!10, colframe=yellow!80!black, boxrule=0.8pt, arc=6pt, width=0.85\textwidth, breakable]
+\textbf{考核形式提示：}
+\begin{itemize}[leftmargin=*]
+    \item 平时考核成绩 50\% + 期末理论考核 50\%
+    \item 考试范围：以教学大纲和教师课堂讲授内容为主
+    \item 大纲双下划线内容 = 掌握内容（本笔记已用红色框标注）
+    \item 大纲单下划线内容 = 熟悉内容
+    \item 大纲句尾"*" = 教学难点
+\end{itemize}
+\end{tcolorbox}
+\end{center}
+
+\newpage
+
+% =====================================================================
+%  导入各章
+% =====================================================================
+
+\input{营养chapters/ch00-绪论.tex}
+\input{营养chapters/ch01a-蛋白质.tex}
+\input{营养chapters/ch01b-脂类.tex}
+\input{营养chapters/ch01c-碳水化合物.tex}
+\input{营养chapters/ch01d-能量.tex}
+\input{营养chapters/ch01e-矿物质.tex}
+\input{营养chapters/ch01f-维生素与水.tex}
+\input{营养chapters/ch02-生物活性成分.tex}
+\input{营养chapters/ch03-各类食物的营养价值.tex}
+\input{营养chapters/ch04-特殊人群营养.tex}
+\input{营养chapters/ch05-公共营养.tex}
+\input{营养chapters/ch06-营养与疾病.tex}
+\input{营养chapters/ch08-食品污染及其预防.tex}
+\input{营养chapters/ch09-食品添加剂及其管理.tex}
+\input{营养chapters/ch10-各类食品卫生及其管理.tex}
+\input{营养chapters/ch11-食源性疾病及其预防.tex}
+\input{营养chapters/ch12-食品安全性风险分析和控制.tex}
+\input{营养chapters/ch13-食品安全监督管理.tex}
+\input{营养chapters/ch99-英文缩写与专有名词汇总.tex}
+
+\end{document}
